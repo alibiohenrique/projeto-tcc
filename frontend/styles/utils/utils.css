@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 *{
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
 }
 
 .section{
@@ -37,7 +37,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background: red;
+    background: #5E17EB;
     margin: auto;
     border-radius: 12px;
     gap: 5em;
@@ -45,4 +45,19 @@
 
 .pop-up p{
     text-align: center;
+    margin-bottom: 1em;
+}
+
+
+.pop-up .exit-btn{
+    position: relative;
+    display: flex;
+    align-self: flex-end;
+}
+
+.exit-btn svg{
+    color: #d30000;
+    background: #fff;    
+    border-radius: 100px;
+    height: 30px;
 }
