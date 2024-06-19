@@ -1,20 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-evenly;
-    background: #5E17EB;
+    background: var(--roxo);
     height: 70px;
     width: 94vw;
-    border-radius: 10px;
+    border-radius: 30px;
     margin-left: 3vw;
     position: fixed;
     bottom: 0;
     z-index: 5;
 }
+
 svg {
     height: 40px;
     margin: 15px;
