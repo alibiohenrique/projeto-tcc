@@ -10,6 +10,7 @@
     --header-background: var(--white);
     --navBar: var(--purple);
     --body: var(--black);
+    --btn:var(--purple);
 
 }
 
@@ -79,7 +80,7 @@ iframe {
     font-weight: 500;
     border: none;
     border-radius: 10px;
-    background: #ccc;
+    background: var(--btn);
 }
 
 .pop-up {
@@ -91,7 +92,7 @@ iframe {
     justify-content: center;
     align-items: center;
     position: relative;
-    background: #5E17EB;
+    background: var(--btn);
     margin: auto;
     border-radius: 12px;
     gap: 5em;
