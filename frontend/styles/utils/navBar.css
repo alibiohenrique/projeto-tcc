@@ -6,7 +6,7 @@
 nav {
     display: flex;
     justify-content: space-evenly;
-    background: var(--roxo);
+    background: var(--nav);
     height: 70px;
     width: 94vw;
     border-radius: 30px;

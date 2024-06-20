@@ -1,7 +1,10 @@
 @charset "utf-8";
 
 :root {
-    --roxo: #5E17EB;
+    --header-color:#5E17EB
+    --header-background-color:#fff; 
+    --navBar: #5E17EB;
+
 }
 
 .section{
