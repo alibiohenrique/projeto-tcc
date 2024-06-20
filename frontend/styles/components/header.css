@@ -3,19 +3,20 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background: #000;
-}
 
-header {
-    padding: 15px;
+header {    
+    width: 100vw;
+    position: fixed;
+    padding: 25px;
     display: flex;
-    height: 80px;
-    background: var(--header-background) ;
+    height: 90px;
+    background: var(--header-background);
     align-items: center;
     justify-content: space-between;
+    z-index: 10;
 }
 
 header .nav{
@@ -35,7 +36,7 @@ header a {
     align-items: center;
     display: flex;
     text-decoration: none;
-    color: var(--roxo);
+    color: var(--header-color);
     font-size: 20px;
 }
 
@@ -45,7 +46,18 @@ header a {
     }
 }
 
+@media screen and (max-width: 768px){
+    header{
+        background: none;
+    }
+    img{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .logo {
     border: none;
-    width: 220px;
+    width: 200px;
+    transform: translatey(5px);
 }

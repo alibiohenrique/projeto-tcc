@@ -76,7 +76,14 @@
     </nav>
 
     <main>
-
+        <div class="section" id="LPSection">
+            <div class="textSection" id="LPSection">
+                <h2>algum titulo <br><span>aqui mesmo</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <div class="btnSection"><button class="btn">Entrar</button> <button class="btn">cadastre-se</button></div>
+            </div>
+            <iframe src="https://www.youtube.com/embed/wMTnjSJGWCs?si=ZkHGBrhkyhx6DwqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
         <div class="pop-up">
             <div class="exit-btn">
 

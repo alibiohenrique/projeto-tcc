@@ -6,7 +6,7 @@
 nav {
     display: flex;
     justify-content: space-evenly;
-    background: var(--nav);
+    background: var(--navBar);
     height: 70px;
     width: 94vw;
     border-radius: 30px;
@@ -14,6 +14,12 @@ nav {
     position: fixed;
     bottom: 0;
     z-index: 5;
+}
+
+@media screen and (min-width: 768px){
+    nav{
+        display: none;
+    }
 }
 
 svg {
