@@ -1,0 +1,53 @@
+
+.textSection {
+    text-align: center;
+}
+
+.textSection h2 {
+    color: black;
+    text-transform: uppercase;
+}
+
+.textSection h2 span {
+    color: var(--ciano);
+}
+
+iframe {
+    width: 80vw;
+    height: 30vh;
+}
+
+.card{
+    width: 100%;
+}
+
+.card p {
+    margin: 1em;
+    width: 100%;
+}
+
+.cHead{
+    display: flex;
+    flex-direction: row;
+}
+
+.card .cHead img {
+    width: 30%;
+}
+
+@media screen and (min-width: 768px) {
+    #LPSection {
+        flex-direction: row;
+        padding: 50px;
+    }
+    iframe{
+        width: 35vw;
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btnSection{
+        transform: translateY(+37vh);
+    }
+}

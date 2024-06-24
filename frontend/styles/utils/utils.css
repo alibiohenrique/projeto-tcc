@@ -18,15 +18,13 @@ body {
     padding: 0;
     border: 0;
     width: 100vw;
-    background: var(--black);
     overflow-x: hidden;
 }
 
 p {
     width: 50vw;
+    margin: 2em auto;
 }
-
-
 
 .section {
     width: 100%;
@@ -40,39 +38,13 @@ p {
     background-color: var(--white);
 }
 
-.textSection {
-    text-align: center;
-}
-
-.textSection h2
-
-#LPSection span {
-    color: var(--ciano);
-}
-
-iframe {
-    width: 80vw;
-    height: 30vh;
-}
-
-@media screen and (min-width: 768px) {
-    #LPSection {
-        flex-direction: row;
-        padding: 50px;
-    }
-    iframe{
-        width: 35vw;
-        height: 35vh;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .btnSection{
-        transform: translateY(37vh);
-    }
-}
 .section:nth-child(2) {
     background: blue;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
 }
 
 .btn {
