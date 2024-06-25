@@ -1,11 +1,23 @@
 @charset "utf-8";
 
+/* default settings  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fonts */
+
+/* fonts */
+
 :root {
     --white: #fff;
     --black: #000;
     --purple: #5E17EB;
     --ciano: #048A81;
-
+    
     --header-color: var(--purple);
     --header-background: var(--white);
     --navBar: var(--purple);
@@ -13,12 +25,14 @@
     --btn:var(--purple);
 }
 
-body {
-    padding: 0;
-    border: 0;
-    width: 100vw;
-    overflow-x: hidden;
-}
+/* ref */
+
+/* ref */
+
+/* default settings  */
+
+/* ------------------------ */
+
 
 p {
     width: 50vw;
