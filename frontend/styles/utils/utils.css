@@ -16,13 +16,15 @@
     --white: #fff;
     --black: #000;
     --purple: #5E17EB;
-    --ciano: #048A81;
+    --cyan: #048A81;
+    --lite-blue:#5ce1e6
     
     --header-color: var(--purple);
     --header-background: var(--white);
     --navBar: var(--purple);
     --body: var(--black);
     --btn:var(--purple);
+    --nav-selected:var(var(--lite-blue));
 }
 
 body {
@@ -30,6 +32,7 @@ body {
     border: 0;
     width: 100vw;
     overflow-x: hidden;
+    font-family: sans-serif;
 }
 
 /* ref */
@@ -40,12 +43,6 @@ body {
 
 /* ------------------------ */
 
-
-p {
-    width: 50vw;
-    margin: 2em auto;
-}
-
 .section {
     width: 100%;
     margin: auto;
@@ -55,7 +52,8 @@ p {
     justify-content: center;
     position: relative;
     flex-direction: column;
-    background-color: var(--white);
+    background-color: none;
+    background-attachment: fixed;
 }
 
 .section:nth-child(2) {
@@ -69,16 +67,26 @@ p {
 
 .btn {
     padding: 0.7em 2em;
-    font-weight: 500;
+    font-weight: 900;
     border: none;
     border-radius: 10px;
     background: var(--btn);
+    border: 5px, solid, var(--btn);
+    text-wrap: nowrap;
 }
 
+.btn1 {
+    border: 5px, solid, var(--btn);
+    background: none; 
+    color: var(--btn);
+    background: #ffffff9f;
+}
+
+/* sera ativado com js */
 .pop-up{
     width: 65%;
     text-align: center;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     gap: 2em;
@@ -103,4 +111,7 @@ p {
     background: #fff;
     border-radius: 100px;
     height: 30px;
+}
+.bottom{
+    padding-bottom: 100px;
 }
