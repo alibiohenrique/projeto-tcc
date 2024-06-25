@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.cardSection{
+    background: var(--background);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100vw;
+}
+
+.card-inform{
+    background: var(--purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7vw;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 30px;
+}
+
+.card-inform h2, p{
+    color: #fff;
+}
+
+.card-inform h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.card-inform p{
+    width: 70vw;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
