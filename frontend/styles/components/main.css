@@ -1,4 +1,4 @@
-@charset "utf-8" ;
+@charset "utf-8";
 
 /* default settings */
 
@@ -7,6 +7,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+p {
+    width: 50vw;
+    margin: 2em auto;
+}
+
+body {
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+iframe {
+    width: 80vw;
+    height: 30vh;
+}
+
 
 /* fonts */
 
@@ -32,12 +50,9 @@
     color: var(--ciano);
 }
 
-iframe {
-    width: 80vw;
-    height: 30vh;
-}
 
-.card{
+
+.card {
     width: 100%;
 }
 
@@ -46,7 +61,7 @@ iframe {
     width: 100%;
 }
 
-.cHead{
+.cHead {
     display: flex;
     flex-direction: row;
 }
@@ -60,14 +75,15 @@ iframe {
         flex-direction: row;
         padding: 50px;
     }
-    iframe{
+
+    iframe {
         width: 35vw;
         height: 35vh;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .btnSection{
+    .btnSection {
         transform: translateY(+37vh);
     }
 }

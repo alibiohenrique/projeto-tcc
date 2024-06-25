@@ -17,34 +17,21 @@
     --black: #000;
     --purple: #5E17EB;
     --ciano: #048A81;
-    
+
     --header-color: var(--purple);
     --header-background: var(--white);
     --navBar: var(--purple);
     --body: var(--black);
-    --btn:var(--purple);
+    --btn: var(--white);
+    --default-btn-bg: var(--purple);
 }
 
-body {
-    padding: 0;
-    border: 0;
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-/* ref */
 
 /* ref */
 
 /* default settings  */
 
 /* ------------------------ */
-
-
-p {
-    width: 50vw;
-    margin: 2em auto;
-}
 
 .section {
     width: 100%;
@@ -58,10 +45,6 @@ p {
     background-color: var(--white);
 }
 
-.section:nth-child(2) {
-    background: blue;
-}
-
 .card {
     display: flex;
     flex-direction: column;
@@ -72,10 +55,10 @@ p {
     font-weight: 500;
     border: none;
     border-radius: 10px;
-    background: var(--btn);
+    background: var(--btn, var(--default-btn-bg));
 }
 
-.pop-up{
+.pop-up {
     width: 65%;
     text-align: center;
     display: flex;
@@ -85,6 +68,10 @@ p {
     background: var(--purple);
     border-radius: 20px;
     padding-bottom: 4em;
+}
+
+.pop-up h2 {
+    margin-top: 50px;
 }
 
 .pop-up p {

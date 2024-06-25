@@ -3,16 +3,18 @@
 
 <head>
     <!-- HTML5 & page default configs -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title> KidScript | Início </title>
+    <link rel="stylesheet" href="../styles/components/header.css">
+    <link rel="stylesheet" href="../styles/components/about.css">
+    <link rel="stylesheet" href="../styles/utils/utils.css">
+    <link rel="stylesheet" href="../styles/utils/navBar.css">
     <!-- HTML5 default configs -->
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="../styles/components/header.css">
-    <link rel="stylesheet" href="../styles/components/main.css">
-    <link rel="stylesheet" href="../styles/utils/utils.css">
-    <link rel="stylesheet" href="../styles/utils/navbar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kidscript</title>
 </head>
 
 <body>
@@ -94,66 +96,84 @@
     </nav>
 
     <main>
-        <div class="section" id="LPSection">
-            <div class="textSection">
-                <h2>algum titulo <br><span>aqui mesmo</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <div class="btnSection"><button class="btn">Entrar</button> <button class="btn">cadastre-se</button>
+
+        <div class="section" id="CDSection">
+
+            <div class="cardSection" id="CDSection">
+
+                <div class="card-inform">
+
+                    <h2>Missão</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vel ex magnam error dolorem
+                        aliquam consequuntur nobis impedit! Similique minus quae molestias. Doloribus accusantium,
+                        reiciendis magnam repudiandae nulla officia mollitia.</p>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#fff"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+
                 </div>
-            </div>
-            <iframe src="https://www.youtube.com/embed/wMTnjSJGWCs?si=ZkHGBrhkyhx6DwqY" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="textSection">
-            <h2> aprenda jogando</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
 
-        </div>
+                <div class="card-inform">
 
-        <div class="section" id="LPSection2">
-            <div class="card">
-                <div class="cHead">
-                    <div class="textSection">
-                        <h2>Nome do expeecialista</h2>
-                        <p>Expecialidades, crgos e etc aqui</p>
+                    <h2>Visão</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vel ex magnam error dolorem
+                        aliquam consequuntur nobis impedit! Similique minus quae molestias. Doloribus accusantium,
+                        reiciendis magnam repudiandae nulla officia mollitia.</p>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#fff"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+                <div class="card-inform">
+
+                    <h2>Valores</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vel ex magnam error dolorem
+                        aliquam consequuntur nobis impedit! Similique minus quae molestias. Doloribus accusantium,
+                        reiciendis magnam repudiandae nulla officia mollitia.</p>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#fff"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+                <div class="card-inform">
+
+                    <h2>Sobre nós</h2>
+                    <iframe src="https://www.youtube.com/embed/wMTnjSJGWCs?si=ZkHGBrhkyhx6DwqY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <div class="btnSection"><button class="btn">Entrar</button> <button class="btn">cadastre-se</button>
                     </div>
-                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user" alt="">
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum saepe suscipit ullam. Obcaecati, ad? Natus voluptas consequuntur non, officia officiis illum corporis? Tempora recusandae ipsam culpa doloremque aliquam necessitatibus animi?</p>
             </div>
+
+
         </div>
 
         <div class="pop-up">
-                <div class="close-button">
-                    <a href="Close event">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-x-lg" viewBox="0 0 16 16">
-                        <path
-                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                    </svg>
-                    </a>
-                </div>
+            <div class="exit-btn">
 
-                <h2>
-                    Title
-                </h2>
-
-                <h3>
-                    Sub-title
-                </h3>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo autem neque non. Possimus ab ducimus
-                    quia doloribus ex qui, excepturi corporis, odit sunt placeat illo neque magnam labore, perspiciatis
-                    dolorem!
-                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                </svg>
             </div>
+            <h2>Título</h2>
+            <h3>Sub-título</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem fuga, dolore iusto porro
+                repudiandae voluptatibus modi a alias accusantium in, et rem? Quam sit cupiditate, repellat hic
+                voluptatibus alias facilis!</p>
         </div>
+
     </main>
 
 </body>

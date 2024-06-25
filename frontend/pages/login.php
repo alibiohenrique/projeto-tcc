@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <!-- HTML5 & page default configs -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title> KidScript | Início </title>
+    <title> KidScript | Login </title>
     <!-- HTML5 default configs -->
 
     <!-- Page styles -->
     <link rel="stylesheet" href="../styles/components/header.css">
-    <link rel="stylesheet" href="../styles/components/main.css">
+    <link rel="stylesheet" href="../styles/components/login.css">
     <link rel="stylesheet" href="../styles/utils/utils.css">
     <link rel="stylesheet" href="../styles/utils/navbar.css">
 </head>
 
 <body>
+
+
     <header>
         <img src="../assets/logo.png" alt="Logo Kidscript" class="logo">
         <div class="nav">
@@ -62,8 +64,6 @@
 
         </div>
     </header>
-
-
     <nav>
         <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house-fill"
                 viewBox="0 0 16 16">
@@ -93,68 +93,28 @@
             </svg></a>
     </nav>
 
-    <main>
-        <div class="section" id="LPSection">
-            <div class="textSection">
-                <h2>algum titulo <br><span>aqui mesmo</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <div class="btnSection"><button class="btn">Entrar</button> <button class="btn">cadastre-se</button>
-                </div>
-            </div>
-            <iframe src="https://www.youtube.com/embed/wMTnjSJGWCs?si=ZkHGBrhkyhx6DwqY" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="textSection">
-            <h2> aprenda jogando</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
-
-        </div>
-
-        <div class="section" id="LPSection2">
-            <div class="card">
-                <div class="cHead">
-                    <div class="textSection">
-                        <h2>Nome do expeecialista</h2>
-                        <p>Expecialidades, crgos e etc aqui</p>
-                    </div>
-                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user" alt="">
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum saepe suscipit ullam. Obcaecati, ad? Natus voluptas consequuntur non, officia officiis illum corporis? Tempora recusandae ipsam culpa doloremque aliquam necessitatibus animi?</p>
-            </div>
-        </div>
-
+    <section class="section">
         <div class="pop-up">
-                <div class="close-button">
-                    <a href="Close event">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-x-lg" viewBox="0 0 16 16">
-                        <path
-                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                    </svg>
-                    </a>
-                </div>
+            <h2>FAÇA SEU LOGIN</h2>
 
-                <h2>
-                    Title
-                </h2>
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
 
-                <h3>
-                    Sub-title
-                </h3>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required><br><br>
 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo autem neque non. Possimus ab ducimus
-                    quia doloribus ex qui, excepturi corporis, odit sunt placeat illo neque magnam labore, perspiciatis
-                    dolorem!
-                </p>
-            </div>
+                <input type="submit" value="Entrar" class="btn btn-login">
+
+
+            </form>
+
+            <a href="#">Esqueci minha senha?</a>
+
         </div>
-    </main>
+        <a href="#">Não tenho cadastro?</a>
+
+    </section>
 
 </body>
 
