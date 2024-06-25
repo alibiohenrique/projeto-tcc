@@ -9,16 +9,16 @@
     <!-- HTML5 default configs -->
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="styles/components/header.css">
-    <link rel="stylesheet" href="styles/components/main.css">
-    <link rel="stylesheet" href="styles/utils/utils.css">
-    <link rel="stylesheet" href="styles/utils/navbar.css">
+    <link rel="stylesheet" href="../styles/components/header.css">
+    <link rel="stylesheet" href="../styles/utils/utils.css">
+    <link rel="stylesheet" href="../styles/components/main.css">
+    <link rel="stylesheet" href="../styles/utils/navbar.css">
     <!-- Page styles -->
 </head>
 
 <body>
     <header>
-        <img src="assets/logo.png" alt="Logo Kidscript" class="logo">
+        <img src="../assets/logo.png" alt="Logo Kidscript" class="logo">
         <div class="nav">
             <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house-fill"
@@ -96,6 +96,60 @@
 
     <main>
         <div class="section" id="LPSection">
+            <div class="settings">
+                <h3>Configurações
+                    <a href="Close button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                        </svg>
+                    </a>
+                </h3>
+                <div class="options">
+
+                    <div class="option">
+                        <p>Opção :
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="option">
+                        <p>Opção :
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="option">
+                        <p>Opção :
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="option">
+                        <p>Opção :
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="option">
+                        <p>Opção :
+                            <button class="btn">
+                                <a href="Redirect">></a>
+                            </button>
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
             <div class="textSection">
                 <h2>algum titulo <br><span>aqui mesmo</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
@@ -109,10 +163,26 @@
         </div>
         <div class="textSection">
             <h2> aprenda jogando</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim
+                fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni
+                obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim
+                fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni
+                obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim
+                fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni
+                obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt nobis? Eum enim
+                fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium magni
+                obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique ipsam.</p>
 
         </div>
 
@@ -123,13 +193,16 @@
                         <h2>Nome do expeecialista</h2>
                         <p>Expecialidades, crgos e etc aqui</p>
                     </div>
-                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user" alt="">
+                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user"
+                        alt="">
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum saepe suscipit ullam. Obcaecati, ad? Natus voluptas consequuntur non, officia officiis illum corporis? Tempora recusandae ipsam culpa doloremque aliquam necessitatibus animi?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum saepe suscipit ullam. Obcaecati, ad?
+                    Natus voluptas consequuntur non, officia officiis illum corporis? Tempora recusandae ipsam culpa
+                    doloremque aliquam necessitatibus animi?</p>
             </div>
         </div>
 
-        <div class="pop-up">
+        <!-- <div class="pop-up">
                 <div class="close-button">
                     <a href="Close event">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -154,7 +227,10 @@
                     dolorem!
                 </p>
             </div>
-        </div>
+        </div> -->
+
+
+
     </main>
 
 </body>
