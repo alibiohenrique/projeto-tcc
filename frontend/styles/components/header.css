@@ -51,7 +51,11 @@ li, a{
     header{
         position: fixed;
         bottom: 0;
-        width: 100%;
+        width: 99%;
+        margin: 0.1em;
+        background: #6104a8;
+        border-radius: 30px;
+        padding: 0.2em 0 0.2em 0;
     }
     .logo{
         display: none;
@@ -61,6 +65,9 @@ li, a{
     }
     li{
         padding: 0;
+    }
+    .material-symbols-outlined{
+        color: #000;
     }
 }
 
