@@ -45,3 +45,12 @@ svg {
     margin: 15px;
     color: #fff;
 }
+
+svg .selected{
+    color: aqua;
+    background-color: #ff00ff;
+}
+/* 
+@media screen and (max-width:322px) {
+    transform: 
+} */

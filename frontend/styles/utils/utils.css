@@ -17,56 +17,73 @@
     --black: #000;
     --purple: #5E17EB;
     --cyan: #048A81;
+    --lite-blue:#5ce1e6;
+    
     --header-color: var(--purple);
     --header-background: var(--white);
     --navBar: var(--purple);
     --body: var(--black);
+    --btn:var(--purple);
+    --nav-selected:var(var(--lite-blue));
+}
+
+body {
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+/* ref */
+
+/* ref */
+
+/* default settings  */
+
+/* ------------------------ */
+
+.section {
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    background-color: none;
+    background-attachment: fixed;
+}
+
+    /* Section  */
+
+    /* button */
+
+.btn {
+    padding: 0.7em 2em;
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    border: 5px, solid, var(--btn);
+    background: var(--btn);
+    text-wrap: nowrap;
 
 }
-    /* Section  */
 
-    .section {
-        width: 100%;
-        margin: auto;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        flex-direction: column;
-        background-color: var(--white);
-    }
+ /* pop-up */
 
-    /* Section  */
-
-    /* button */
-
-    .btn {
-        padding: 0.7em 2em;
-        font-weight: 500;
-        border: none;
-        border-radius: 10px;
-    }
-
-    /* button */
-
-
-    /* pop-up */
-    .pop-up {
-        width: 65%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2em;
-        background: var(--purple);
-        border-radius: 20px;
-        padding-bottom: 4em;
-    }
-
-    .pop-up h2 {
-        margin-top: 50px;
-    }
+.pop-up{
+    width: 65%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    background: var(--purple);
+    border-radius: 20px;
+    padding-bottom: 4em;
+}
 
     .pop-up p {
         align-self: center;
@@ -184,3 +201,6 @@
         display: flex;
         justify-content: center;
     }
+    .bottom{
+    padding-bottom: 100px;
+}

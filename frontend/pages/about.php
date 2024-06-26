@@ -35,7 +35,7 @@
                 </svg>
                 <span>Informações</span>
             </a>
-            <a href="play.php">
+            <a href="game.php">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-play-circle-fill"
                     viewBox="0 0 16 16">
                     <path
@@ -75,7 +75,7 @@
                 <path
                     d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
             </svg></a>
-        <a href="play.php"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-play-circle-fill"
+        <a href="game.php"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-play-circle-fill"
                 viewBox="0 0 16 16">
                 <path
                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
