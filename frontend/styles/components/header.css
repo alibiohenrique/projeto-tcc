@@ -3,7 +3,6 @@
 /* default settings */
 
 * {
-    /* border: 1px solid lightgreen; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,7 +35,7 @@ header{
 
 li, a{
     display: flex;
-    padding: 1em;
+    padding: 0.5em;
     align-items: center;
     color: #000;
     text-decoration: none;
@@ -48,12 +47,11 @@ li, a{
     color: #6104a8;
 }
 
-@media screen and (max-width: 605px) {
+@media screen and (max-width: 768px) {
     header{
         position: fixed;
         bottom: 0;
         width: 100%;
-        
     }
     .logo{
         display: none;
