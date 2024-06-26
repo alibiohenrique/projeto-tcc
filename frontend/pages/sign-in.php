@@ -95,24 +95,30 @@
 
     <section class="section">
         <div class="pop-up">
-            <h2>FAÇA SEU LOGIN</h2>
+            <h2>FAÇA SEU CADASTRO</h2>
 
             <form action="#" method="POST">
+
                 <label for="nome">Usuário:</label>
                 <input type="text" id="username-input" name="username-input" required><br><br>
 
                 <label for="senha">Senha:</label>
                 <input type="password" id="password-input" name="password-input" required><br><br>
 
-                <input type="submit" value="Entrar" class="btn btn-login">
+                <label for="nome">Confirmar senha:</label>
+                <input type="text" id="password-input-validation" name="password-input-validation" required><br><br>
+
+                <label for="senha">E-mail:</label>
+                <input type="password" id="email-input" name="email-input" required><br><br>
+
+
+                <input type="submit" value="Cadastrar" class="btn btn-login">
 
 
             </form>
 
-            <a href="#">Esqueci minha senha?</a>
-
         </div>
-        <a href="#">Não tenho cadastro?</a>
+        <a href="#">Ou entre com o Google</a>
 
     </section>
 
@@ -129,7 +135,7 @@
     if (!$conn) {
         die("Erro: " . mysqli_connect_error());
     }
-    echo "Sucesso";
+    echo "Sucesso!";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $username_input = mysqli_real_escape_string($conn, $_POST['username-input']);
@@ -142,12 +148,12 @@
             mysqli_stmt_bind_param($stmt, "ss", $username_input, $password_input);
 
             if (mysqli_stmt_execute($stmt)) {
-                echo "Records inserted successfully.";
+                echo "Usuário inserido com sucesso! ";
             } else {
-                echo "ERROR: Could not execute query: $sql. " . mysqli_error($conn);
+                echo "Erro: Não foi possível inserir a consulta desse usuário: $sql. " . mysqli_error($conn);
             }
         } else {
-            echo "ERROR: Could not prepare query: $sql. " . mysqli_error($conn);
+            echo "Erro: A preparação da consulta falhou: $sql. " . mysqli_error($conn);
         }
 
         mysqli_stmt_close($stmt);
