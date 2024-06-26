@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-* {
-    /* border: solid red 1px; */
-}
-
-
 .section{
     background: var(--background);
     width: 100vw;
@@ -59,7 +54,7 @@
     color: #fff;
     font-size: 1.2em;
     padding: 0 20px;
-    border: solid #fff 5px ;
+    border: solid #fff 5px;
     border-radius: 30px;
 }
 

@@ -16,188 +16,171 @@
     --white: #fff;
     --black: #000;
     --purple: #5E17EB;
-    --ciano: #10cfb9;
-    --red: #de3232;
-
+    --cyan: #048A81;
     --header-color: var(--purple);
     --header-background: var(--white);
     --navBar: var(--purple);
     --body: var(--black);
-    --btn: var(--purple);
+
 }
+    /* Section  */
 
-/* ref */
+    .section {
+        width: 100%;
+        margin: auto;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        flex-direction: column;
+        background-color: var(--white);
+    }
 
-/* https://uiverse.io/ : for some buttons */
+    /* Section  */
 
-/* ref */
+    /* button */
 
-a {
-    text-decoration: none;
-}
+    .btn {
+        padding: 0.7em 2em;
+        font-weight: 500;
+        border: none;
+        border-radius: 10px;
+    }
 
-/* default settings  */
-
-/* ------------------------ */
-
-/* Section */
-
-.section {
-    width: 100%;
-    margin: auto;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
-    background-color: var(--white);
-}
-
-/* Section */
-
-/* button */
-
-.btn {
-    padding: 0.7em 2em;
-    font-weight: 500;
-    border: none;
-    border-radius: 10px;
-    background: var(--btn);
-    cursor: pointer;
-}
-
-/* button */
+    /* button */
 
 
-/* pop-ups */
+    /* pop-up */
+    .pop-up {
+        width: 65%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+        background: var(--purple);
+        border-radius: 20px;
+        padding-bottom: 4em;
+    }
 
-.pop-up {
-    width: 65%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2em;
-    background: var(--purple);
-    border-radius: 20px;
-    padding-bottom: 4em;
-}
+    .pop-up h2 {
+        margin-top: 50px;
+    }
 
-.pop-up p {
-    align-self: center;
-    text-align: justify;
-}
+    .pop-up p {
+        align-self: center;
+        text-align: justify;
+    }
 
-.close-button svg {
-    color: var(--ciano);
-    display: flex;
-    align-self: flex-end;
-}
+    .close-button svg {
+        color: var(--ciano);
+        display: flex;
+        align-self: flex-end;
+    }
 
-/* settings pop-up */
+    /* pop-up */
 
-.settings {
-    
-    display: none; /* temporario */
-    
-    position: fixed;
-    z-index: 20;
-    background: var(--purple);
-    width: 90%;
-    margin: auto;
-    border-radius: 10px;
-    color: #ffffff;
-    padding: 0.3em;
-}
+    /* settings */
 
-.settings h3 {
-    padding: 0.2em;
-    display: flex;
-    justify-content: space-between;
-    margin: 1em;
-}
+    .settings {
 
-.settings p {
-    padding: 0.2em;
-    font-size: 18px;
-}
+        display: none;
+        /* temporario */
 
-.settings .option {
-    background: #4612aecb;
-    width: 80%;
-    margin: auto;
-}
+        position: fixed;
+        z-index: 20;
+        background: var(--purple);
+        width: 90%;
+        margin: auto;
+        border-radius: 10px;
+        color: #ffffff;
+        padding: 0.3em;
+    }
 
-.switch {
-    font-size: 17px;
-    position: relative;
-    display: inline-block;
-    width: 3em;
-    height: 1.4em;
-}
+    .settings h3 {
+        padding: 0.2em;
+        display: flex;
+        justify-content: space-between;
+        margin: 1em;
+    }
 
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
+    .settings p {
+        padding: 0.2em;
+        font-size: 18px;
+    }
 
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--red);
-    transition: .4s;
-    border-radius: 10px;
-}
+    .settings .option {
+        background: #4612aecb;
+        width: 80%;
+        margin: auto;
+    }
 
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 0.8em;
-    width: 0.8em;
-    border-radius: 8px;
-    left: 0.3em;
-    bottom: 0.3em;
-    transform: rotate(270deg);
-    background-color: rgb(255, 255, 255);
-    transition: .4s;
-}
+    .switch {
+        font-size: 17px;
+        position: relative;
+        display: inline-block;
+        width: 3em;
+        height: 1.4em;
+    }
 
-.switch input:checked+.slider {
-    background-color: #21cc4c;
-}
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
 
-.switch input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
-}
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--red);
+        transition: .4s;
+        border-radius: 10px;
+    }
 
-.switch input:checked+.slider:before {
-    transform: translateX(1.5em);
-}
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 0.8em;
+        width: 0.8em;
+        border-radius: 8px;
+        left: 0.3em;
+        bottom: 0.3em;
+        transform: rotate(270deg);
+        background-color: rgb(255, 255, 255);
+        transition: .4s;
+    }
+
+    .switch input:checked+.slider {
+        background-color: #21cc4c;
+    }
+
+    .switch input:focus+.slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    .switch input:checked+.slider:before {
+        transform: translateX(1.5em);
+    }
 
 
-.option .btn {
-    background: var(--purple);
-    border: 2px #fff solid              ;
-    padding: 0;
-    margin: 0 auto;
-    height: 1.5em;
-    width: 3.5em;
-    align-items: center;
-}
+    .option .btn {
+        background: var(--purple);
+        border: 2px #fff solid;
+        padding: 0;
+        margin: 0 auto;
+        height: 1.5em;
+        width: 3.5em;
+        align-items: center;
+    }
 
-.option .btn a {
-    color: #fff;
-    font-weight: 100;
-    display: flex;
-    justify-content: center;
-}
-
-/* settings pop-up */
-
-/* pop-ups */
+    .option .btn a {
+        color: #fff;
+        font-weight: 100;
+        display: flex;
+        justify-content: center;
+    }
