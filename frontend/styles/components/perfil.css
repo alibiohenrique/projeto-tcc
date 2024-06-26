@@ -1,30 +1,32 @@
 @charset "utf-8";
 
 * {
-    /* border: solid red 1px; */
+    border: solid red 1px;
 }
 
 
-.section{
+.section {
     background: var(--background);
     width: 100vw;
 }
 
+.profile {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
 .perfil {
     background: #1D152E;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 95vw;
-    margin-top: 80px;
-    margin-bottom: 60px;
     padding: 5vw;
     gap: 12px;
     border-radius: 40px;
     color: #fff;
 }
 
-.perfil img{
+.perfil img {
     border: solid #ebdc17 8px;
 }
 
@@ -35,11 +37,12 @@
     font-size: 1.4em;
 }
 
-.perfil span{
+.perfil span {
     color: #fff;
 }
 
-.perfil h2, h3{
+.perfil h2,
+h3 {
     text-align: center;
     font-size: 2em;
 }
@@ -54,12 +57,53 @@
     width: 100vw;
 }
 
-.btn-perfil{
+.btn-perfil {
     background: var(--purple);
     color: #fff;
     font-size: 1.2em;
     padding: 0 20px;
-    border: solid #fff 5px ;
+    border: solid #fff 5px;
     border-radius: 30px;
 }
 
+.btn-close {
+    font-size: 1.8em;
+    background: red;
+    padding: 0 10px;
+    border: none;
+    border-radius: 50%;
+}
+.btn-primary{
+    color: #fff;
+}
+.modal {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: var(--purple);
+    color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    z-index: 20;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+
+.modal-footer{
+    display: flex;
+    justify-content: center;
+}
+
+/* .blur {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+} */
