@@ -1,108 +1,86 @@
 @charset "utf-8";
 
-/* default settings */
+/* default settings  */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* fonts */
+
+/* fonts */
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --purple: #5E17EB;
+    --cyan: #048A81;
+    --lite-blue:#5ce1e6;
+    
+    --header-color: var(--purple);
+    --header-background: var(--white);
+    --navBar: var(--purple);
+    --body: var(--black);
+    --btn:var(--purple);
+    --nav-selected:var(var(--lite-blue));
 }
 
 body {
-    background: #ffffff;
-    background: linear-gradient(103deg, #ffffff 34%, #ef00ff 36%, #5c037e 56%, #5c0078 59%, #5800b6 81%, #2b0036 84%);
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: sans-serif;
 }
 
-/* fonts */
+/* ref */
 
-/* fonts */
+/* ref */
 
+/* default settings  */
 
-/* refs */
+/* ------------------------ */
 
-/* refs */
+.landing-page{
+    height: 100vh;
+    width: 100% !important;
+    /* background: url(../../assets/design3.jpeg); */
+    background: #e3c7ff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 4.5em;   
+}
 
-/* default settings */
-
-.btnSection {
+.landing-texts{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 50vw;
-    margin: 1em;
+    justify-content: space-between;
+    margin: 5em;
 }
 
-.textSection {
-    text-align: center;
-}
-
-.textSection h2 {
-    color: black;
+.l-text:nth-child(2){
     text-transform: uppercase;
 }
 
-.textSection h2 span {
-    color: var(--ciano);
+.l-text{
+    font-weight: 700;
 }
 
-p {
-    width: 50vw;
-    margin: 2em;
-}
-
-
-
-.card {
-    width: 100%;
-}
-
-.card p {
-    margin: 1em;
-    width: 100%;
-}
-
-.cHead {
+.content{
+    margin: 4.5em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.card:nth-child(odd) .cHead {
-    flex-direction: row-reverse;
+.content .btn{
+    width: 80px;
 }
 
-.card .cHead img {
-    width: 30%;
-}
-
-@media screen and (min-width: 768px) {
-    #LPSection {
-        flex-direction: row;
-        padding: 50px;
-    }
-
-    iframe {
-        width: 35vw;
-        height: 35vh;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #btnS {
-        transform: translateY(+39vh);
-    }
-
-    .btnSection {
-        width: 100vw;
-    }
-
-    iframe{
-        transform: translateY(-3vh);
-    }
-
-    p {
-        margin-left: 10vw;
-        width: 80VW;
-        text-align: center;
+@media screen and (max-width: 768px){
+    .landing-page{
+        margin-top: 0;
     }
 }

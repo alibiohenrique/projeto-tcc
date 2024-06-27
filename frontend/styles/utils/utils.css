@@ -52,8 +52,8 @@ body {
     justify-content: center;
     position: relative;
     flex-direction: column;
-    background-color: none;
-    background-attachment: fixed;
+    /* background-color: none; */
+    /* background-attachment: fixed; */
 }
 
     /* Section  */
