@@ -96,60 +96,7 @@
 
     <main>
         <div class="section" id="LPSection">
-            <div class="settings">
-                <h3>Configurações
-                    <a href="Close button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                            class="bi bi-x-lg" viewBox="0 0 16 16">
-                            <path
-                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                        </svg>
-                    </a>
-                </h3>
-                <div class="options">
 
-                    <div class="option">
-                        <p>Opção :
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider"></span>
-                            </label>
-                        </p>
-                    </div>
-                    <div class="option">
-                        <p>Opção :
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider"></span>
-                            </label>
-                        </p>
-                    </div>
-                    <div class="option">
-                        <p>Opção :
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider"></span>
-                            </label>
-                        </p>
-                    </div>
-                    <div class="option">
-                        <p>Opção :
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider"></span>
-                            </label>
-                        </p>
-                    </div>
-                    <div class="option">
-                        <p>Opção :
-                            <button class="btn">
-                                <a href="Redirect">></a>
-                            </button>
-                        </p>
-                    </div>
-                    
-                </div>
-            </div>
             <div class="textSection">
                 <h2>algum titulo <br><span>aqui mesmo</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>

@@ -3,6 +3,7 @@
 /* default settings  */
 
 * {
+    /* border: 1px solid limegreen; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -63,7 +64,7 @@ a {
     font-weight: 500;
     border: none;
     border-radius: 10px;
-    background: var(--btn);
+    /* background: var(--btn); */
     cursor: pointer;
 }
 
@@ -73,7 +74,7 @@ a {
 /* pop-ups */
 
 .pop-up {
-    width: 65%;
+    width: 70%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -98,9 +99,8 @@ a {
 /* settings pop-up */
 
 .settings {
-    
-    display: none; /* temporario */
-    
+    /* display: none;  */
+    /* temporario */
     position: fixed;
     z-index: 20;
     background: var(--purple);
@@ -111,10 +111,9 @@ a {
     padding: 0.3em;
 }
 
-.settings h3 {
-    padding: 0.2em;
+.settings h2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 1em;
 }
 
@@ -197,6 +196,18 @@ a {
     display: flex;
     justify-content: center;
 }
+
+.settings .close{
+    width: 40%;
+    font-weight: 200 ;
+    background: var(--ciano);
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
 
 /* settings pop-up */
 
