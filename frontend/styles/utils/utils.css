@@ -63,7 +63,6 @@ a {
     font-weight: 500;
     border: none;
     border-radius: 10px;
-    background: var(--btn);
     cursor: pointer;
 }
 
@@ -183,7 +182,7 @@ a {
 
 .option .btn {
     background: var(--purple);
-    border: 2px #fff solid              ;
+    border: 2px #fff solid;
     padding: 0;
     margin: 0 auto;
     height: 1.5em;
