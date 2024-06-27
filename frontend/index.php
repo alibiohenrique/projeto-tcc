@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 
 <head>
     <!-- HTML5 & page default configs -->
@@ -211,22 +209,7 @@
         </div>
     </main>
 
-    <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "kidscript-db";
 
-    // Create connection
-    $conn = mysqli_connect($servername, $username, $password, $database);
-
-    // Check connection
-    if (!$conn) {
-        die("Erro: " . mysqli_connect_error());
-    }
-    echo "Sucesso";
-    ?>
-    
 
     <script>
         AOS.init();
