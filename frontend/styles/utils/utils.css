@@ -60,7 +60,7 @@
     font-weight: 500;
     border: none;
     border-radius: 10px;
-    background: var(--btn);
+    /* background: var(--btn); */
     cursor: pointer;
 }
 
@@ -96,9 +96,8 @@
 /* settings pop-up */
 
 .settings {
-    
-    display: none; /* temporario */
-    
+    /* display: none;  */
+    /* temporario */
     position: fixed;
     z-index: 20;
     background: var(--purple);
@@ -109,10 +108,9 @@
     padding: 0.3em;
 }
 
-.settings h3 {
-    padding: 0.2em;
+.settings h2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 1em;
 }
 
@@ -195,5 +193,17 @@
     display: flex;
     justify-content: center;
 }
+
+.settings .close{
+    width: 40%;
+    font-weight: 200 ;
+    background: var(--ciano);
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
 
 /* settings pop-up */

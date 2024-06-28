@@ -13,10 +13,10 @@
     <!-- HTML5 default configs -->
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="styles/utils/utils.css">
     <link rel="stylesheet" href="styles/components/header.css">
-    <link rel="stylesheet" href="styles/utils/navbar.css">
     <link rel="stylesheet" href="styles/components/main.css">
+    <link rel="stylesheet" href="styles/utils/utils.css">
+    <!-- <link rel="stylesheet" href="styles/utils/navbar.css"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Page styles -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

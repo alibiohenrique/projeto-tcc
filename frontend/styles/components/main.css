@@ -24,12 +24,12 @@ body {
 
 /* default settings */
 
-body {
+/* body {
     padding: 0;
     border: 0;
     width: 100vw;
     overflow-x: hidden;
-}
+} */
 
 .btnSection {
     display: flex;
