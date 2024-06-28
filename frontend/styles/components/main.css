@@ -24,6 +24,13 @@ body {
 
 /* default settings */
 
+body {
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 .btnSection {
     display: flex;
     flex-direction: row;
@@ -51,7 +58,10 @@ p {
     margin: 2em;
 }
 
-
+.textSection p {
+    width: 50vw;
+    margin: 2em auto;
+}
 
 .card {
     width: 100%;
