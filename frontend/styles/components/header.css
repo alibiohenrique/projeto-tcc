@@ -29,28 +29,36 @@ body {
 header {
     background: #fff;
 }
-
+/* 
 .logo {
-    padding: 1rem;
     width: 450px;
-}
+} */
 
 .navbar {
+    z-index: 2000;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-.icons,
-.navlink {
+.icons, .navlink {
     display: flex;
-    padding: 0.5em;
     align-items: center;
+    justify-content: center;
     color: #000;
     text-decoration: none;
 }
 
+.navlink p{
+    width: fit-content;
+}
+.navlink span{
+    width: fit-content;
+    overflow-y: hidden;
+}
+
+
 .material-symbols-outlined {
-    width: 100px;
     overflow-y: hidden;
     color: #6104a8;
 }

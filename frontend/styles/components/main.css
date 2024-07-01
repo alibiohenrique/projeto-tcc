@@ -9,6 +9,7 @@
 }
 
 body {
+    z-index: 1;
     background: linear-gradient(103deg, #ffffff 34%, #ef00ff 36%, #5c037e 56%, #5c0078 59%, #5800b6 81%, #2b0036 84%);
 }
 
