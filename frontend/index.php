@@ -71,47 +71,37 @@
     </header>
 
     <main>
-        <section class="section" id="LPSection">
-            <div class="textSection">
-                <h2>algum titulo <br><span>aqui mesmo</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <div class="btnSection" id="btnS">
-                    <button class="btn">Entrar</button>
-                    <button class="btn btn1">cadastre-se</button>
-                </div>
-                <iframe src="https://www.youtube.com/embed/wMTnjSJGWCs?si=ZkHGBrhkyhx6DwqY" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
+        <section class="section textSection" id="LPSection">
+
+            <h2>algum titulo <br><span>aqui mesmo</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div class="btnSection" id="btnS">
+                <button class="btn">Entrar</button>
+                <button class="btn btn1">cadastre-se</button>
+            </div>
+            <iframe src="https://www.youtube.com/embed/wMTnjSJGWCs?si=ZkHGBrhkyhx6DwqY" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
 
         </section>
         <section class="section textSection">
             <h2> aprenda jogando</h2>
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt
-                nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium
-                magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique
-                ipsam.</p>
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt
-                nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium
-                magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique
-                ipsam.</p>
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt
-                nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium
-                magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique
-                ipsam.</p>
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt
-                nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium
-                magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique
-                ipsam.</p>
+            <p data-aos="fade-up">Aqui crianças aprendem conceitos fundamentais de programação como: lógica
+                computacional e algoritmos através de jogos interativos e desafios estimulantes. Cada atividade é
+                cuidadosamente projetada para não
+                apenas ensinar habilidades técnicas, mas também para desenvolver o pensamento crítico e a resolução de
+                problemas.
+
+            </p>
+            <p data-aos="fade-up">Enfrentar desafios e lidar com frustrações faz parte do aprendizado. À medida que as
+                crianças descobrem como transformar ideias em código, elas não apenas adquirem novas habilidades
+                digitais, mas também fortalecem sua capacidade de enfrentar obstáculos com criatividade e determinação.
+                O pensamento computacional se torna uma ferramenta poderosa para decompor problemas complexos em passos
+                claros e encontrar soluções inovadoras.</p>
+            <p data-aos="fade-up">Nossos jogos educativos e projetos práticos incentivam a experimentação e a colaboração, criando um ambiente onde o aprendizado é tanto desafiador quanto gratificante. Através de cada linha de código escrita e cada quebra-cabeça resolvido, as crianças não apenas dominam habilidades essenciais para o futuro, mas também cultivam uma paixão duradoura pela criatividade e pela resolução de problemas. Junte-se a nós nesta jornada emocionante de aprender programação enquanto se diverte!</p>
+
 
         </section>
 
@@ -119,7 +109,7 @@
             <div data-aos="fade-up" class="card">
                 <div class="cHead">
                     <div class="textSection">
-                        <h2>Nome do expeecialista</h2>
+                        <h2>Ta</h2>
                         <p>Expecialidades, cargos e etc aqui</p>
                     </div>
                     <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user"
@@ -154,13 +144,16 @@
                     </div>
                     <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user"
                         alt="">
-                    
+
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum saepe suscipit ullam. Obcaecati, ad?
                     Natus voluptas consequuntur non, officia officiis illum corporis? Tempora recusandae ipsam culpa
                     doloremque aliquam necessitatibus animi?</p>
 
             </div>
+
+        </section>
+        <section class="section">
             <div class="btnSection bottom">
                 <button class="btn">Entrar</button>
                 <button class="btn btn1">cadastre-se</button>
