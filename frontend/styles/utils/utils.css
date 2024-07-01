@@ -14,10 +14,15 @@
 /* fonts */
 
 :root {
+
     --white: #fff;
     --black: #000;
     --purple: #5E17EB;
-    --ciano: #10cfb9;
+    --cyan: #10cfb9;
+    --blue-sky: #5CE1E6;
+    --light-purple: #D4C2FC;
+    --medium-purple: #7951FF;
+    --dark-purple: #260E69;
     --red: #de3232;
 
     --header-color: var(--purple);
@@ -25,6 +30,7 @@
     --navBar: var(--purple);
     --body: var(--black);
     --btn: var(--purple);
+
 }
 
 /* ref */
