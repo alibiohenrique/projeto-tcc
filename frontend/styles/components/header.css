@@ -9,7 +9,7 @@
     overflow-x: hidden;
 }
 
-body{
+body {
     background: #ccc;
 }
 
@@ -24,31 +24,39 @@ body{
 
 /* default settings */
 
-header{
+
+
+header {
     background: #fff;
 }
 
-.navbar{
+.logo {
+    padding: 1rem;
+    width: 450px;
+}
+
+.navbar {
     display: flex;
     justify-content: space-evenly;
 }
 
-.icons, .navlink{
+.icons,
+.navlink {
     display: flex;
-    padding: 0.3em;
+    padding: 0.5em;
     align-items: center;
     color: #000;
     text-decoration: none;
 }
 
-.material-symbols-outlined{
+.material-symbols-outlined {
+    width: 100px;
     overflow-y: hidden;
-    padding: 0.3em;
     color: #6104a8;
 }
 
 @media screen and (max-width: 768px) {
-    header{
+    header {
         position: fixed;
         bottom: 0;
         width: 99%;
@@ -57,18 +65,20 @@ header{
         border-radius: 30px;
         padding: 0.2em 0 0.2em 0;
     }
-    .logo{
+
+    .logo {
         display: none;
     }
-    li p{
+
+    li p {
         display: none;
     }
-    li{
+
+    li {
         padding: 0;
     }
-    .material-symbols-outlined{
+
+    .material-symbols-outlined {
         color: #000;
     }
 }
-
-
