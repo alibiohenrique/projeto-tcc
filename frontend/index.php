@@ -30,7 +30,7 @@
             </li>
 
             <li class="icons">
-                <a href="" class="navlink">
+                <a href="index.php" class="navlink">
                     <span class="material-symbols-outlined">
                         home
                     </span>
@@ -38,7 +38,7 @@
                 </a>
             </li>
             <li class="icons">
-                <a href="" class="navlink">
+                <a href="./pages/about.php" class="navlink">
                     <span class="material-symbols-outlined">
                         info
                     </span>
@@ -46,7 +46,7 @@
                 </a>
             </li>
             <li class="icons">
-                <a href="" class="navlink">
+                <a href="./pages/game.php" class="navlink">
                     <span class="material-symbols-outlined">
                         play_circle
                     </span>
@@ -54,7 +54,7 @@
                 </a>
             </li>
             <li class="icons">
-                <a href="" class="navlink">
+            <a href="./pages/settings.php" class="navlink">
                     <span class="material-symbols-outlined">
                         settings
                     </span>
@@ -62,7 +62,7 @@
                 </a>
             </li>
             <li class="icons">
-                <a href="/pages/profile.php" class="navlink">
+                <a href="./pages/profile.php" class="navlink">
                     <span class="material-symbols-outlined">
                         person
                     </span>
