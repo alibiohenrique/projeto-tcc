@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             mysqli_stmt_bind_param($stmt, "sss", $username_input, $hashed_password, $email_input);
 
             if (mysqli_stmt_execute($stmt)) {
-                
+
                 echo "Usuário inserido com sucesso!";
                 header("Location: login.php");
 
@@ -60,44 +60,97 @@ mysqli_close($conn);
     <meta charset="UTF-8">
     <title> KidScript | Login </title>
     <!-- HTML5 default configs -->
+    <!-- icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <!-- icons -->
 
     <!-- Page styles -->
     <link rel="stylesheet" href="../styles/components/header.css">
-    <link rel="stylesheet" href="../styles/components/login.css">
     <link rel="stylesheet" href="../styles/utils/utils.css">
-    <link rel="stylesheet" href="../styles/utils/navbar.css">
+    <link rel="stylesheet" href="../styles/components/sign-in.css">
 </head>
 
 <body>
+    <header>
+        <ul class="navbar">
+            <li class="logo">
+                <img src="../assets/logo.png" alt="" width="120px">
+            </li>
+
+            <li class="icons">
+                <a href="" class="navlink">
+                    <span class="material-symbols-outlined">
+                        home
+                    </span>
+                    <p>Início</p>
+                </a>
+            </li>
+            <li class="icons">
+                <a href="" class="navlink">
+                    <span class="material-symbols-outlined">
+                        info
+                    </span>
+                    <p>Sobre</p>
+                </a>
+            </li>
+            <li class="icons">
+                <a href="" class="navlink">
+                    <span class="material-symbols-outlined">
+                        play_circle
+                    </span>
+                    <p>Jogue</p>
+                </a>
+            </li>
+            <li class="icons">
+                <a href="" class="navlink">
+                    <span class="material-symbols-outlined">
+                        settings
+                    </span>
+                    <p>Configurações</p>
+                </a>
+            </li>
+            <li class="icons">
+                <a href="" class="navlink">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="container">
+
+        <section class="section">
+
+            <div class="pop-up sign-in">
+                <h2>FAÇA SEU CADASTRO</h2>
+
+                <form action="" method="POST" class="sign-in-form">
+                    <label for="nome">Usuário:</label>
+                    <input type="text" id="username-input" name="username-input" required><br><br>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="password-input" name="password-input" required><br><br>
+
+                    <label for="senha">Confirmar senha:</label>
+                    <input type="password" id="password-input-validation" name="password-input-validation"
+                        required><br><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email-input" name="email-input" required><br><br>
+
+                    <input type="submit" value="Cadastrar" class="btn btn-login">
+                </form>
+                <a href="#">Ou entre com o Google</a>
 
 
+            </div>
 
 
-    <section class="section">
-        <div class="pop-up">
-            <h2>FAÇA SEU CADASTRO</h2>
+        </section>
+    </div>
 
-            <form action="" method="POST">
-                <label for="nome">Usuário:</label>
-                <input type="text" id="username-input" name="username-input" required><br><br>
-
-                <label for="senha">Senha:</label>
-                <input type="password" id="password-input" name="password-input" required><br><br>
-
-                <label for="senha">Confirmar senha:</label>
-                <input type="password" id="password-input-validation" name="password-input-validation" required><br><br>
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email-input" name="email-input" required><br><br>
-
-                <input type="submit" value="Cadastrar" class="btn btn-login">
-            </form>
-
-
-        </div>
-        <a href="#">Ou entre com o Google</a>
-
-    </section>
 
 
 </body>
