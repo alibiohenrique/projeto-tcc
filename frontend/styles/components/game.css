@@ -18,6 +18,15 @@
     box-sizing: border-box;
 }
 
+.ide{display: none;
+    background: #000;
+    position: absolute;
+    z-index: 200;
+    width: 90%;
+    height: 80%;
+    margin: 5%;
+}
+
 canvas {
     margin: 0;
     padding: 0;
@@ -39,7 +48,26 @@ canvas {
     height: 100vh;
 }
 
+.landScape .game-panel{
+    flex-direction: row;
+}
+
+.panel{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: row;
+}
+
+.landScape{
+    flex-direction: column;
+}
+
 .score {
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -52,6 +80,23 @@ canvas {
     font-size: 3rem;
     display: block;
     margin-top: -10px;
+}
+
+#rotate{
+    overflow: hidden;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#rotate img{
+    overflow: hidden;
+    width: var(--btn-control-size);
+    display: flex;
+    float:right;
 }
 
 .menu-screen {
@@ -93,6 +138,27 @@ canvas {
 
 body{
     color: #238d1d;
+}
+
+.gameNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600;
+    overflow: hidden;
+}
+
+.gameNav svg{
+    width: var(--btn-control-size);
+    height: var(--btn-control-size);
+}
+
+.landScape .gameNav{
+    flex-direction: column;
+    width: var(--btn-control-size) * 3;
+    height: 100%;
 }
 
 .control svg{
@@ -138,4 +204,11 @@ button svg:hover {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+}
+
+#ide{
+    overflow: hidden;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
