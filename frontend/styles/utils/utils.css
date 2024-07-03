@@ -3,7 +3,6 @@
 /* default settings  */
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,10 +13,15 @@
 /* fonts */
 
 :root {
+
     --white: #fff;
     --black: #000;
     --purple: #5E17EB;
-    --ciano: #10cfb9;
+    --cyan: #10cfb9;
+    --blue-sky: #5CE1E6;
+    --light-purple: #D4C2FC;
+    --medium-purple: #7951FF;
+    --dark-purple: #260E69;
     --red: #de3232;
 
     --header-color: var(--purple);
@@ -25,6 +29,32 @@
     --navBar: var(--purple);
     --body: var(--black);
     --btn: var(--purple);
+
+}
+
+@font-face {
+    font-family: chau;
+    src: url(../../assets/fonts/Chau-Philomene/ChauPhilomeneOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: open-sans;
+    src: url(../../assets/fonts/Open-Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: gliker;
+    src: url(../../assets/fonts/Gilker/Gliker-Regular.ttf);
+}
+
+@font-face {
+    font-family: gagalin;
+    src: url(../../assets/fonts/Gagalin/Gagalin-Regular.otf);
 }
 
 /* ref */
@@ -78,6 +108,10 @@
     background: var(--purple);
     border-radius: 20px;
     padding-bottom: 4em;
+}
+
+.pop-up h2 {
+    font-family: roboto;
 }
 
 .pop-up p {
