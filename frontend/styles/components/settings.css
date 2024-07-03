@@ -1,0 +1,57 @@
+    /* settings pop-up */
+
+    .settings {
+        max-width: 580px;
+        background: var(--purple);
+        width: 90%;
+        margin: auto;
+        border-radius: 30px;
+        color: #ffffff;
+        padding: 3em;
+    }
+
+    .settings h2 {
+        display: flex;
+        justify-content: center;
+        margin: 1em;
+        font-size: 2.4em;
+    }
+
+    .settings p {
+        padding: 0.2em;
+        font-size: 1.5em;
+    }
+
+    .settings .option {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+
+    .option .btn {
+        background: var(--purple);
+        border: 2px #fff solid;
+        margin-top: 8px;
+        padding: 0;
+        height: 1.5em;
+        width: 4em;
+        align-items: center;
+    }
+
+    .option .btn a {
+        color: #fff;
+        font-weight: 100;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* .settings .close {
+        width: 40%;
+        font-weight: 200;
+        background: var(--ciano);
+        margin: 1em auto;
+        display: flex;
+        justify-content: center;
+    } */

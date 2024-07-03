@@ -23,7 +23,7 @@ body {
     text-wrap: wrap;
 }
 
-.top-texts {
+.btnSection {
     display: flex;
     justify-content: space-between;
     margin: 4em;
