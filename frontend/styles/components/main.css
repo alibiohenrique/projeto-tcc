@@ -53,14 +53,15 @@ body {
 
 iframe {
     width: 90%;
-    height: 20em;
+    height: 35em;
     transform: scaleY(-1);
     z-index: 100;
+    position: absolute;
 }
 
 .landing-seguiment {
     background: url(../../assets/side-wave_background.jpg);
-    mask-image: linear-gradient(to bottom, transparent 20%, black 90%);
+    mask-image: linear-gradient(to bottom, transparent 1%, black 90%);
     background-repeat: no-repeat;
     background-size: cover;
     transform: scaleY(-1);
@@ -76,16 +77,31 @@ iframe {
 }
 
 .aside-texts{
-    width: 60%;
+    width: 50%;
 }
 
 .aside-texts p {
-    margin: 1em;
+    margin: 2em;
     text-align: justify;
+}
+
+.aside-assets{
+    width: 40%;
+    margin: auto;
 }
 
 hr{
     border: var(--dark-purple) 1px solid;
+}
+
+.avaliations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.avaliation{
+    display: flex;
 }
 
 @media screen and (max-width: 768px) {
@@ -132,6 +148,10 @@ hr{
     }
     .aside-texts{
         margin: auto;
+    }
+    .aside-texts p {
+        margin: 2em 0.5em;
+        text-align: justify;
     }
     .aside-assets{
         margin: auto;
