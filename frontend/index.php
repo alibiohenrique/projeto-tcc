@@ -5,8 +5,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title> KidScript | Início </title>
     <!-- icons -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
     <!-- icons -->
     <!-- HTML5 default configs -->
 
@@ -72,103 +71,51 @@
     </header>
 
     <main>
-        <section class="section" id="LPSection">
-            <div class="textSection">
-                <h2>algum titulo <br><span>aqui mesmo</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <div class="btnSection" id="btnS">
+        <div class="landing-page">
+            <div class="top-texts">
+                <h2>
+                    Aprender! <br>
+                    Criar! <br>
+                    Inovar!
+                </h2>
+                <h2>
+                    O PLAYGROUND <br>
+                    DIGITAL PARA <br>
+                    JOVENS <br>
+                    PROGRAMADORES!
+                </h2>
+            </div>
+            <div class="bottom-texts">
+                <h3>
+                    Onde as crianças criam tecnologia! <br><br>
                     <button class="btn">Entrar</button>
-                    <button class="btn btn1">cadastre-se</button>
-                </div>
-                <iframe src="https://www.youtube.com/embed/wMTnjSJGWCs?si=ZkHGBrhkyhx6DwqY" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
-
-        </section>
-        <section class="section textSection">
-            <h2> aprenda jogando</h2>
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt
-                nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium
-                magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique
-                ipsam.</p>
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt
-                nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium
-                magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique
-                ipsam.</p>
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt
-                nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium
-                magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique
-                ipsam.</p>
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. At eaque repellendus, error alias quos nihil vitae voluptatem incidunt
-                nobis? Eum enim fugit consequatur ad repudiandae expedita rem fugiat qui mollitia. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Voluptatem aut fugiat assumenda quod debitis laboriosam praesentium
-                magni obcaecati a tenetur rem aperiam corrupti dolore, perspiciatis voluptatum numquam ea similique
-                ipsam.</p>
-
-        </section>
-
-        <section class="section" id="LPSection2">
-            <div data-aos="fade-up" class="card">
-                <div class="cHead">
-                    <div class="textSection">
-                        <h2>Nome do expeecialista</h2>
-                        <p>Expecialidades, cargos e etc aqui</p>
-                    </div>
-                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user"
-                        alt="">
-
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum saepe suscipit ullam. Obcaecati, ad?
-                    Natus voluptas consequuntur non, officia officiis illum corporis? Tempora recusandae ipsam culpa
-                    doloremque aliquam necessitatibus animi?</p>
-
+                    <button class="btn">Cadastre-se</button>
+                </h3>
             </div>
-            <div data-aos="fade-up" class="card">
-                <div class="cHead">
-                    <div class="textSection">
-                        <h2>Nome do expeecialista</h2>
-                        <p>Expecialidades, cargos e etc aqui</p>
-                    </div>
-                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user"
-                        alt="">
-
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum saepe suscipit ullam. Obcaecati, ad?
-                    Natus voluptas consequuntur non, officia officiis illum corporis? Tempora recusandae ipsam culpa
-                    doloremque aliquam necessitatibus animi?</p>
-
+        </div>
+        <div class="section landing-seguiment">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RYbI07-3HmM?si=fzACzgUH-ts8cGtJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <h2 class="section-title">Aprenda Jogando!</h2>
+        <div class="learn-playing">
+            <div class="aside-texts">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rem quidem inventore nihil et. Eaque placeat expedita ab ratione recusandae aspernatur, animi inventore, laboriosam repellat quidem in corporis quasi suscipit.
+                </p>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rem quidem inventore nihil et. Eaque placeat expedita ab ratione recusandae aspernatur, animi inventore, laboriosam repellat quidem in corporis quasi suscipit.
+                </p>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rem quidem inventore nihil et. Eaque placeat expedita ab ratione recusandae aspernatur, animi inventore, laboriosam repellat quidem in corporis quasi suscipit.
+                </p>
+                <hr>
             </div>
-            <div data-aos="fade-up" class="card">
-                <div class="cHead">
-                    <div class="textSection">
-                        <h2>Nome do expeecialista</h2>
-                        <p>Expecialidades, cargos e etc aqui</p>
-                    </div>
-                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user"
-                        alt="">
-                    
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum saepe suscipit ullam. Obcaecati, ad?
-                    Natus voluptas consequuntur non, officia officiis illum corporis? Tempora recusandae ipsam culpa
-                    doloremque aliquam necessitatibus animi?</p>
-
+            <div class="aside-assets">
+                <img src="assets/preview-plataforms.png" alt="" width="100%">
             </div>
-            <div class="btnSection bottom">
-                <button class="btn">Entrar</button>
-                <button class="btn btn1">cadastre-se</button>
-
-            </div>
-
-        </section>
+        </div>
     </main>
 
 

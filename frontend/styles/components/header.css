@@ -69,9 +69,9 @@ header {
         bottom: 0;
         width: 99%;
         margin: 0.1em;
-        background: #6104a8;
+        background: var(--purple);
         border-radius: 30px;
-        padding: 0.2em 0 0.2em 0;
+        padding: 0.8em 0 0.8em 0;
     }
 
     .logo {
@@ -87,6 +87,6 @@ header {
     }
 
     .material-symbols-outlined {
-        color: #000;
+        color: var(--light-purple);
     }
 }

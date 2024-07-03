@@ -204,6 +204,12 @@
     justify-content: center;
 }
 
+hr{
+    border: 1px var(--black) solid;
+    width: 98%;
+    margin: auto;
+}
+
 
 
 
