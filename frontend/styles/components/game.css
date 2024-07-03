@@ -1,10 +1,13 @@
-.pop-up{
+.pop-up {
     display: none;
 }
 
-:root{
-    --btn-control-size:30px;
+:root {
+    --btn-control-size: 30px;
     --background-panel: #4d713f;
+    --color-red: #ff0000;
+    --color-blue: #0000ff;
+    --color-green: #00ff00;
 }
 
 /* body{
@@ -18,13 +21,36 @@
     box-sizing: border-box;
 }
 
-.ide{display: none;
+.ide {
+    display: none;
+    flex-direction: column;
     background: #000;
     position: absolute;
     z-index: 200;
     width: 90%;
     height: 80%;
     margin: 5%;
+}
+
+.openIde .ide {
+    display: flex;
+}
+
+.ideHeader {
+    background: #1c1b1b;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.ide svg {
+    color: red;
+    height: 20px;
+}
+
+.ide select {
+    background: none;
+    color: #238d1d;
 }
 
 canvas {
@@ -48,11 +74,11 @@ canvas {
     height: 100vh;
 }
 
-.landScape .game-panel{
+.landScape .game-panel {
     flex-direction: row;
 }
 
-.panel{
+.panel {
     display: flex;
     overflow: hidden;
     width: 100%;
@@ -62,7 +88,7 @@ canvas {
     flex-direction: row;
 }
 
-.landScape{
+.landScape {
     flex-direction: column;
 }
 
@@ -82,7 +108,7 @@ canvas {
     margin-top: -10px;
 }
 
-#rotate{
+#rotate {
     overflow: hidden;
     background: none;
     border: none;
@@ -92,18 +118,20 @@ canvas {
     top: 0;
 }
 
-#rotate img{
+#rotate img {
     overflow: hidden;
     width: var(--btn-control-size);
     display: flex;
-    float:right;
+    float: right;
 }
 
 .menu-screen {
-    transform: translateY(10em);
     margin: 0;
     padding: 0;
     position: absolute;
+    transform: translate(-50%);
+    top: 50%;
+    left: 50%;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -136,11 +164,11 @@ canvas {
     cursor: grab;
 }
 
-body{
+body {
     color: #238d1d;
 }
 
-.gameNav{
+.gameNav {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -150,25 +178,25 @@ body{
     overflow: hidden;
 }
 
-.gameNav svg{
+.gameNav svg {
     width: var(--btn-control-size);
     height: var(--btn-control-size);
 }
 
-.landScape .gameNav{
+.landScape .gameNav {
     flex-direction: column;
     width: var(--btn-control-size) * 3;
     height: 100%;
 }
 
-.control svg{
+.control svg {
     width: var(--btn-control-size);
     margin: 0;
 }
 
-.control{
+.control {
     width: var(--btn-control-size) * 3;
-    height:var(--btn-control-size) * 3 ;
+    height: var(--btn-control-size) * 3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,7 +226,7 @@ button svg:hover {
 }
 
 
-.sides{
+.sides {
     width: var(--btn-control-size) * 3;
     display: flex;
     flex-direction: column;
@@ -206,7 +234,7 @@ button svg:hover {
     margin: 0;
 }
 
-#ide{
+.ideBtn {
     overflow: hidden;
     background: none;
     border: none;

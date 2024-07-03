@@ -16,15 +16,157 @@
 
 <body>
     <div class="ide">
+        <!-- comida >forma e cor ; cores da pagina; cores das linhas-->
+        <div class="ideHeader">
+            <span>snake game style</span>
+            <button onclick="openIde()" class="ideBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                </svg>
+            </button>
+        </div>
         <form action="">
-
-            <select name="" id="">
-                <option value="">Cabeça da cobra</option>
-                <option value="">Corpo da cobra</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
+            <select name="elemento" id="elemento">
+                <option value="">elemento</option>
+                <option selected value="cabeca">Cabeça da cobra</option>
+                <option value="corpo">Corpo da cobra</option>
+                <option value="corpo">Comida</option>
+                <option value="corpo">Pagina</option>
+                <option value="corpo">Campo do jogo</option>
+                <option value="corpo">Linhas do campo</option>                
+            </select><span>{</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option selected value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option selected value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span>
+            <p>}</p>
+            <!--  -->
+        
+            <select name="elemento" id="elemento">
+                <option value="">elemento</option>
+                <option value="cabeca">Cabeça da cobra</option>
+                <option value="corpo">Corpo da cobra</option>
+                <option value="corpo">Comida</option>
+                <option value="corpo">Pagina</option>
+                <option value="corpo">Campo do jogo</option>
+                <option value="corpo">Linhas do campo</option>                
+            </select><span>{</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span>
+            <p>}</p>
+            <!--  -->
+            
+            <select name="elemento" id="elemento">
+                <option value="">elemento</option>
+                <option value="cabeca">Cabeça da cobra</option>
+                <option value="corpo">Corpo da cobra</option>
+                <option value="corpo">Comida</option>
+                <option value="corpo">Pagina</option>
+                <option value="corpo">Campo do jogo</option>
+                <option value="corpo">Linhas do campo</option>                
+            </select><span>{</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span>
+            <p>}</p>
+            <!--  -->
+            
+            <select name="elemento" id="elemento">
+                <option value="">elemento</option>
+                <option value="cabeca">Cabeça da cobra</option>
+                <option value="corpo">Corpo da cobra</option>
+                <option value="corpo">Comida</option>
+                <option value="corpo">Pagina</option>
+                <option value="corpo">Campo do jogo</option>
+                <option value="corpo">Linhas do campo</option>                
+            </select><span>{</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span>
+            <p>}</p>
+            <!--  -->
+            
+            <select name="elemento" id="elemento">
+                <option value="">elemento</option>
+                <option value="cabeca">Cabeça da cobra</option>
+                <option value="corpo">Corpo da cobra</option>
+                <option value="corpo">Comida</option>
+                <option value="corpo">Pagina</option>
+                <option value="corpo">Campo do jogo</option>
+                <option value="corpo">Linhas do campo</option>                
+            </select><span>{</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span>
+            <p>}</p>
+            <!--  -->
         </form>
     </div>
     <div class="game-panel">
@@ -79,7 +221,7 @@
                     </svg>
                 </button>
             </div>
-            <button id="ide" onclick="openIde()">
+            <button onclick="openIde()" class="ideBtn">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-file-earmark-code"
                     viewBox="0 0 16 16">
                     <path
@@ -92,6 +234,26 @@
 
     </div>
     <script>
+        document.getElementById('atributo').addEventListener('change', function () {
+            const valorSelect = document.getElementById('valor');
+            valorSelect.innerHTML = ''; // Limpar opções anteriores
+
+            if (this.value === 'cor') {
+                valorSelect.innerHTML = `
+            <option value="">--Select Color--</option>
+            <option value="var(--color-red)" style="color: var(--color-red);">Red</option>
+            <option value="var(--color-blue)" style="color: var(--color-blue);">Blue</option>
+            <option value="var(--color-green)" style="color: var(--color-green);">Green</option>
+        `;
+            } else if (this.value === 'forma') {
+                valorSelect.innerHTML = `
+            <option value="">--Select Shape--</option>
+            <option value="square">Square</option>
+            <option value="circle">Circle</option>
+        `;
+            }
+        });
+
         const rotate = document.getElementById('rotate');
         const body = document.body;
 
@@ -99,7 +261,7 @@
             body.classList.toggle("landScape");
         };
         function openIde() {
-            body.classList.toggle("");
+            body.classList.toggle("openIde");
         };
         const canvas = document.querySelector('canvas')
         const ctx = canvas.getContext('2d') // ctx = context (contexto)
