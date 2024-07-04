@@ -28,7 +28,7 @@
                 </li>
 
                 <li class="icons">
-                    <a href="" class="navlink">
+                    <a href="../index.php" class="navlink">
                         <span class="material-symbols-outlined">
                             home
                         </span>
@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li class="icons">
-                    <a href="" class="navlink">
+                    <a href="./about.php" class="navlink">
                         <span class="material-symbols-outlined">
                             info
                         </span>
@@ -44,7 +44,7 @@
                     </a>
                 </li>
                 <li class="icons">
-                    <a href="" class="navlink">
+                    <a href="./game.php" class="navlink">
                         <span class="material-symbols-outlined">
                             play_circle
                         </span>
@@ -52,7 +52,7 @@
                     </a>
                 </li>
                 <li class="icons">
-                    <a href="" class="navlink">
+                    <a href="./settings.php" class="navlink">
                         <span class="material-symbols-outlined">
                             settings
                         </span>
@@ -60,7 +60,7 @@
                     </a>
                 </li>
                 <li class="icons">
-                    <a href="/pages/profile.php" class="navlink">
+                    <a href="./profile.php" class="navlink">
                         <span class="material-symbols-outlined">
                             person
                         </span>
@@ -90,7 +90,7 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn close" data-bs-dismiss="modal">CANCELAR</button>
+                            <button type="button" class="btn close" data-bs-dismiss="modal" onclick="removeBlur()">CANCELAR</button>
                             <button type="button" class="btn confirm"><strong>CONFIRMAR</strong></button>
                         </div>
                     </div>
@@ -102,11 +102,15 @@
                     <h2>João Brown</h2>
                     <h3>08 anos</h3>
                     <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user" alt="" width="100px">
-                    <p><strong>Insignias: </strong><span>@ # % & * </span></p>
-                    <p><strong>E-mail: </strong><span>joaobrown@gmail.com</span></p>
-                    <p><strong>Senha: </strong><span>********</span></p>
-                    <p><strong>Mudar Senha: </strong><button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="activeBlur()">></button></p>
-                    <p><strong>Sessão Atual: </strong><span>1h 26min 04s</span></p>
+
+                    <div class="profile-text">
+
+                        <p><strong>Insignias: </strong><span>@ # % & * </span></p>
+                        <p><strong>E-mail: </strong><span>joaobrown@gmail.com</span></p>
+                        <p><strong>Senha: </strong><span>********</span></p>
+                        <p><strong>Mudar Senha: </strong><button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="activeBlur()">></button></p>
+                        <p><strong>Sessão Atual: </strong><span>1h 26min 04s</span></p>
+                    </div>
 
                     <div class="email">
                         <p><strong>E-mail Parental:</strong></p>
@@ -117,8 +121,8 @@
             <div id="blur">
             </div>
 
-        </main>
-        
+    </main>
+
 </body>
 
 </html>

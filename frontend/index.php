@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/utils/utils.css">
     <link rel="stylesheet" href="styles/components/header.css">
     <link rel="stylesheet" href="styles/components/main.css">
+    
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -53,7 +54,7 @@
                 </a>
             </li>
             <li class="icons">
-            <a href="./pages/settings.php" class="navlink">
+            <a href="../frontend/pages/settings.php" class="navlink">
                     <span class="material-symbols-outlined">
                         settings
                     </span>
@@ -134,6 +135,15 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus commodi rerum natus, odit placeat harum dolorem sunt ducimus earum. Dolor mollitia assumenda nesciunt. Necessitatibus tenetur facilis iste vel nemo porro.
                 </div>
             </div>
+            <div data-aos="fade-up" class="card">
+                <div class="cHead">
+                    <div class="textSection">
+                        <h2>Nome do expeecialista</h2>
+                        <p>Expecialidades, cargos e etc aqui</p>
+                    </div>
+                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user"
+                        alt="">
+
             <div class="avaliation">
                 <div class="specialist">
                     <img src="https://i.pinimg.com/736x/de/59/4e/de594ec09881da3fa66d98384a3c72ff.jpg" alt="" width="80px">
@@ -142,6 +152,16 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus commodi rerum natus, odit placeat harum dolorem sunt ducimus earum. Dolor mollitia assumenda nesciunt. Necessitatibus tenetur facilis iste vel nemo porro.
                 </div>
             </div>
+
+        </section>
+        <section class="section">
+            <div class="btnSection bottom">
+                <button class="btn">Entrar</button>
+                <button class="btn btn1">cadastre-se</button>
+
+            </div>
+
+        </section>
         </div>
     </main>
 

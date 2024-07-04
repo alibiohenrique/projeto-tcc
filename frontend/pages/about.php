@@ -40,7 +40,7 @@
                 </a>
             </li>
             <li class="icons">
-                <a href="./pages/game.php" class="navlink">
+                <a href="./game.php" class="navlink">
                     <span class="material-symbols-outlined">
                         play_circle
                     </span>
@@ -48,7 +48,7 @@
                 </a>
             </li>
             <li class="icons">
-                <a href="./pages/settings.php" class="navlink">
+                <a href="./settings.php" class="navlink">
                     <span class="material-symbols-outlined">
                         settings
                     </span>
@@ -106,7 +106,7 @@
                         <h2>Sobre nós</h2>
                         <iframe src="https://www.youtube.com/embed/wMTnjSJGWCs?si=ZkHGBrhkyhx6DwqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             
-                            <div class="btnSection"><button class="btn">Entrar</button> <button class="btn">cadastre-se</button>
+                            <div class="btnSection"><button class="btn login">Entrar</button> <button class="btn sign-in">cadastre-se</button>
                         </div>
                     </div>
                 </div>
