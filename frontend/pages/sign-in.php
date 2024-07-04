@@ -127,26 +127,43 @@ mysqli_close($conn);
                 <h2>FAÇA SEU CADASTRO</h2>
 
                 <form action="" method="POST" class="sign-in-form">
-                    <label for="nome">Usuário:</label>
-                    <input type="text" id="username-input" name="username-input" required><br><br>
+                    <div class="input">
+                        <label for="nome">Usuário:</label>
+                        <input type="text" id="username-input" name="username-input" required><br><br>
 
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="password-input" name="password-input" required><br><br>
+                    </div>
+                    <div class="input">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="password-input" name="password-input" required><br><br>
 
-                    <label for="senha">Confirmar senha:</label>
-                    <input type="password" id="password-input-validation" name="password-input-validation"
-                        required><br><br>
+                    </div>
+                    <div class="input">
+                        <label for="senha">Confirmar senha:</label>
+                        <input type="password" id="password-input-validation" name="password-input-validation"
+                            required><br><br>
 
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email-input" name="email-input" required><br><br>
+                    </div>
+                    <div class="input">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email-input" name="email-input" required><br><br>
 
-                    <input type="submit" value="Cadastrar" class="btn btn-login">
+                    </div>
+
+
+
+                    <div class="submit-btn input">
+                        <input type="submit" value="Cadastrar" class="btn btn-login">
+
+                    </div>
+
                 </form>
-                <a href="#">Ou entre com o Google</a>
+                <div class="input login">
+                    <a href="login.php">Ja tenho login?</a>
+
+                </div>
 
 
             </div>
-
 
         </section>
     </div>

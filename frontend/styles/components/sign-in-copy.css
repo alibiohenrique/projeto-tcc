@@ -1,0 +1,271 @@
+* {
+    text-decoration: none;
+}
+
+a {
+    font-weight: 500;
+    color: var(--gray);
+    font-size: var(--base);
+}
+
+label {
+    border: 2px solid red;
+    max-height: 800px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow-y: hidden;
+    color: var(--darker-purple);
+    font-weight: 600;
+    min-height: 25px;
+    max-height: 50px;
+    font-size: var(--lg);
+}
+
+h2 {
+    overflow-y: hidden;
+    color: var(--dark-purple);
+    margin-top: 1.5rem;
+    font-size: var(--3xl);
+    font-weight: 1000;
+    letter-spacing: -0.1rem;
+    font-family: roboto;
+}
+
+.sign-in {
+    overflow-y: hidden;
+}
+
+.sign-in-title {
+    overflow-y: hidden;
+    min-height: 50px;
+    max-height: 60px;
+    margin: 0;
+
+}
+
+.sign-in-form {
+    margin: 0;
+    border: 2PX solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+
+}
+
+.input {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.btn {
+    overflow-y: hidden;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    height: 4rem;
+
+    font-family: roboto;
+    font-weight: 1000;
+    background-color: var(--cyan);
+    color: var(--dark-purple);
+    transition: 0.5s;
+
+}
+
+.btn:hover {
+    color: var(--cyan);
+    background-color: var(--dark-purple);
+}
+
+.btn-submit .input input {
+    overflow-y: hidden;
+}
+
+.login {
+    border: solid 2px green;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 20px;
+    max-height: 50px;
+}
+
+.login a {
+    overflow-y: hidden;
+}
+
+/* xxs */
+@media (max-width: 474px) {
+
+    a,
+    label,
+    input {
+        font-size: var(--base);
+    }
+
+    input {
+        min-height: 20px;
+    }
+
+
+    h2 {
+        font-size: var(--xl);
+    }
+
+    .sign-in {
+        margin: 0 auto;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        display: flex;
+        height: 85vh;
+        width: 65.5vw;
+    }
+
+    .sign-in-title {
+        transform: translateY(25px);
+    }
+}
+
+
+/* xs */
+@media (min-width: 475px) {
+
+    a,
+    label,
+    input {
+        font-size: var(--base);
+    }
+
+    input {
+        min-height: 20px;
+    }
+
+
+    h2 {
+        font-size: var(--lg);
+    }
+
+    .sign-in {
+        max-height: 80vh;
+    }
+
+
+}
+
+/* sm */
+@media (min-width: 640px) {
+
+    a,
+    label,
+    input {
+        font-size: var(--lg);
+    }
+
+    input {
+        min-height: 20px;
+    }
+
+
+    h2 {
+        font-size: var(--xl);
+    }
+
+    .login a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        min-height: 50px;
+        font-size: var(--xl);
+    }
+
+
+
+    .sign-in {
+        max-height: 80vh;
+    }
+
+}
+
+/* md */
+@media (min-width: 768px) {
+
+    a,
+    label,
+    input {
+        font-size: var(--xl);
+    }
+
+    input {
+        min-height: 20px;
+    }
+
+
+    h2 {
+        font-size: var(--2xl);
+    }
+
+    .btn {
+        height: 5rem;
+    }
+
+}
+
+/* lg */
+@media (min-width: 1024px) {
+
+    a,
+    label,
+    input {
+        font-size: var(--2xl);
+    }
+
+    input {
+        min-height: 20px;
+    }
+
+    h2 {
+        font-size: var(--3xl);
+    }
+    .section {
+        display: flex;
+        margin: 0 auto;
+        justify-self: flex-end;
+        background-color: blue;
+    }
+
+    .section .sign-in {
+        background-color: red;
+        height: 100vh;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+    }
+
+
+}
+
+/* xl */
+@media (min-width: 1280px) {}
+
+/* 2xl */
+@media (min-width: 1536px) {}

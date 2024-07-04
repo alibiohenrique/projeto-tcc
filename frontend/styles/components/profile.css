@@ -1,17 +1,37 @@
 @charset "utf-8";
 
+ :root {
+
+    --card: var(--dark-purple);
+    --span: var(--white);
+    --p: var(--purple);
+    --text: var(--white);
+    --background: ;
+    --background-profile: var(--darker-purple);
+    --background-change-password:var(--dark-gray);
+ 
+ }
+
+/* FORMATAÇÃO BASICA */
+
+header {
+    z-index: 8;
+}
+
 .section {
     background: var(--background);
+    color: var(--text);
     width: 100vw;
 }
+
 
 .profile {
     padding-top: 80px;
     padding-bottom: 60px;
 }
 
-.profile {
-    background: #1D152E;
+.profile-card {
+    background: var(--background-profile);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,36 +42,26 @@
     color: #fff;
 }
 
-.profile img {
-    border: solid #ebdc17 8px;
+
+.profile-card img {
+    border: solid var(--yellow) 8px;
 }
 
 
-.profile P {
-    color: var(--purple);
+.profile-card P {
+    color: var(--p);
     width: 80vw;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
-.profile span {
-    color: #fff;
+.profile-card span {
+    color: var(--span);
 }
 
-.profile h2,
+.profile-card h2,
 h3 {
     text-align: center;
-    font-size: 2em;
-}
-
-.unlogged {
-    position: absolute;
-    text-align: center;
-    z-index: 30;
-}
-
-.unlogged .profile {
-    color: #fff;
-    gap: 30px;
+    font-size: 1.8em;
 }
 
 .email {
@@ -64,40 +74,41 @@ h3 {
     width: 100vw;
 }
 
-.btn-primary {
-    font-size: 1.2em;
-    padding: 0 20px;
-    border: solid #fff 5px;
-    background: var(--purple);
-    padding: 0;
-    margin: 0 auto;
-    height: 1.5em;
-    width: 3.5em;
-    color: #fff;
-    border-radius: 30px;
+/* MODIFICAÇÕES CARD NÃO LOGADO */
+
+.unlogged {
+    position: absolute;
+    text-align: center;
+    z-index: 30;
 }
 
-
-.confirm{
-    background: #7ED957;
-    color: #fff;
-    margin-top: 20px;
+.unlogged .profile-card {
+    gap: 30px;
 }
 
-.close {
-    background: red;
-    color: #fff;
-    margin-top: 20px;
+.login {
+    background: var(--cyan);
+}
+.login a, .sign-in a{
+    text-decoration: none;
+    color: var(--white);
+
 }
 
+.sign-in{
+    background: none;
+    border: solid #ebdc17 2px;
+    
+}
+
+/* POP-UP */
 .modal {
     max-width: 90vw;
     display: none;
     position: absolute;
     align-items: center;
     justify-content: center;
-    background: #32322F;
-    color: #fff;
+    background: var(--background-change-password);
     font-size: 1.2em;
     padding: 20px;
     border-radius: 30px;
@@ -125,15 +136,39 @@ h3 {
 
 .modal label {
     font-size: 1.2em;
-    color: var(--purple);
+    color: var(--p);
 }
 
 .modal input {
     background: none;
     width: 30%;
     font-size: 1em;
-    color: #fff;
+    color: var(--white);
     margin-bottom: 10px;
+}
+
+.btn-primary {
+    font-size: 1em;
+    padding: 0 20px;
+    border: solid var(--white) 5px;
+    background: var(--purple);
+    padding: 0;
+    margin: 0 auto;
+    width: 3.5em;
+    color: var(--white);
+    border-radius: 30px;
+}
+
+.confirm {
+    background: #7ED957;
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.close {
+    background: #ff0000;
+    color: var(--white);
+    margin-top: 20px;
 }
 
 .blur {
@@ -143,5 +178,5 @@ h3 {
     width: 100%;
     height: 100%;
     z-index: 10;
-    background-color: #ffffffab;
+    background-color: #ffffffd0;
 }

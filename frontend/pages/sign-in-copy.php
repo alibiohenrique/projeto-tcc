@@ -17,52 +17,45 @@ if (!$conn) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username_input = mysqli_real_escape_string($conn, $_POST['username-input']);
     $password_input = mysqli_real_escape_string($conn, $_POST['password-input']);
+    $password_input_validation = mysqli_real_escape_string($conn, $_POST['password-input-validation']);
+    $email_input = mysqli_real_escape_string($conn, $_POST['email-input']);
 
-    // Prepare SQL statement
-    $sql = "SELECT * FROM users WHERE user_name = ?";
-    $stmt = mysqli_stmt_init($conn);
+    // Checar se as senhas são as iguais
+    if ($password_input !== $password_input_validation) {
+        echo "Erro: As senhas não coincidem.";
+    } else {
+        // Encriptografar a senha que acabou de ser recebida
+        $hashed_password = password_hash($password_input, PASSWORD_DEFAULT);
 
-    if (mysqli_stmt_prepare($stmt, $sql)) {
-        mysqli_stmt_bind_param($stmt, "s", $username_input);
+        $sql = "INSERT INTO users (user_name, user_password, user_email) VALUES (?, ?, ?)";
 
-        if (mysqli_stmt_execute($stmt)) {
-            $result = mysqli_stmt_get_result($stmt);
+        $stmt = mysqli_stmt_init($conn);
+        if (mysqli_stmt_prepare($stmt, $sql)) {
+            mysqli_stmt_bind_param($stmt, "sss", $username_input, $hashed_password, $email_input);
 
-            if (mysqli_num_rows($result) == 1) {
-                $row = mysqli_fetch_assoc($result);
-                $hashed_password = $row['user_password'];
+            if (mysqli_stmt_execute($stmt)) {
 
-                if (password_verify($password_input, $hashed_password)) {
-                    // Autenticação do usuário
-                    $_SESSION['username'] = $username_input;
-                    echo "Login foi um sucesso. Bem vindo, " . $username_input . "!";
-                    // Redirecionar para a página protegida
-                    header("Location: protected.php");
-                    exit();
-                } else {
-                    echo "Usuário ou senha inválido";
-                }
+                echo "Usuário inserido com sucesso!";
+                header("Location: login.php");
+
             } else {
-                echo "Usuário ou senha inválido";
+                echo "Erro: Não foi possível inserir a consulta desse usuário: $sql. " . mysqli_error($conn);
             }
         } else {
-            echo "ERRO: Não deu para executar a consulta SQL: $sql. " . mysqli_error($conn);
+            echo "Erro: A preparação da consulta falhou: $sql. " . mysqli_error($conn);
         }
-    } else {
-        echo "ERROR: Não foi possível preparar a consulta: $sql. " . mysqli_error($conn);
-    }
 
-    mysqli_stmt_close($stmt);
+        mysqli_stmt_close($stmt);
+    }
 }
 
 mysqli_close($conn);
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- HTML5 & page default configs -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title> KidScript | Login </title>
@@ -75,11 +68,10 @@ mysqli_close($conn);
     <!-- Page styles -->
     <link rel="stylesheet" href="../styles/components/header.css">
     <link rel="stylesheet" href="../styles/utils/utils.css">
-    <link rel="stylesheet" href="../styles/components/login.css">
+    <link rel="stylesheet" href="../styles/components/sign-in-copy.css">
 </head>
 
 <body>
-
     <header>
         <ul class="navbar">
             <li class="logo">
@@ -127,32 +119,52 @@ mysqli_close($conn);
             </li>
         </ul>
     </header>
+    <div class="section">
 
-    <div class="container">
+        <div class="pop-up sign-in">
 
-        <section class="section login">
-            <div class="pop-up">
-                <h2>FAÇA SEU LOGIN</h2>
-
-                <form action="#" method="POST" class="login-form">
-                    <label for="nome">Usuário:</label>
-                    <input type="text" id="nome" name="username-input" required><br><br>
-
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="password-input" required><br><br>
-
-                    <input type="submit" value="Entrar" class="btn btn-login">
-
-
-                </form>
-
-
-                <a href="sign-in.php">Não tenho cadastro?</a>
+            <div class="sign-in-title">
+                <h2>FAÇA SEU CADASTRO</h2>
 
             </div>
 
-        </section>
-    </div>
+            <form action="" method="POST" class="sign-in-form">
+                <div class="input">
+                    <label for="nome">Usuário:</label>
+                    <input type="text" id="username-input" name="username-input" required><br><br>
+
+                </div>
+                <div class="input">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="password-input" name="password-input" required><br><br>
+
+                </div>
+                <div class="input">
+                    <label for="senha">Confirmar senha:</label>
+                    <input type="password" id="password-input-validation" name="password-input-validation"
+                        required><br><br>
+
+                </div>
+                <div class="input">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email-input" name="email-input" required><br><br>
+
+                </div>
+
+                <div class="btn-submit input">
+                    <input type="submit" value="Cadastrar" class="btn btn-submit">
+
+                </div>
+
+            </form>
+            <div class="input login">
+                <a href="login.php">Ja tenho login?</a>
+
+            </div>
+
+        </div>
+
+
 
 </body>
 

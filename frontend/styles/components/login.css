@@ -1,3 +1,28 @@
+* {
+    text-decoration: none;
+}
+
+a {
+    font-weight: 500;
+    color: var(--gray);
+    font-size: var(--base);
+}
+
+label {
+    color: var(--darker-purple);
+    font-weight: 600;
+    font-size: var(--lg);
+}
+
+h2 {
+    color: var(--dark-purple);
+    margin-top: 1.5rem;
+    font-size: var(--3xl);
+    font-weight: 1000;
+    letter-spacing: -0.1rem;
+    font-family: roboto;
+}
+
 
 .container .section {
     padding: 0;
@@ -8,12 +33,6 @@
     position: relative;
 }
 
-
-.sign-in h2 {
-    margin-top: 1rem;
-    font-weight: 1000;
-    font-family: roboto;
-}
 
 .login-form {
     display: flex;
@@ -49,7 +68,7 @@
 
     .container .section .pop-up {
         height: 100vh;
-        width: 35vw;
+        width: 27.5vw;
     }
 
 }

@@ -61,7 +61,7 @@ header {
 
 .material-symbols-outlined {
     overflow-y: hidden;
-    color: #6104a8;
+    color: var(--purple);
 }
 
 @media screen and (max-width: 768px) {
@@ -70,7 +70,7 @@ header {
         bottom: 0;
         width: 99%;
         margin: 0.1em;
-        background: #6104a8;
+        background: var(--purple);
         border-radius: 30px;
         padding: 0.2em 0 0.2em 0;
     }
@@ -88,6 +88,6 @@ header {
     }
 
     .material-symbols-outlined {
-        color: #000;
+        color: var(--white);
     }
 }
