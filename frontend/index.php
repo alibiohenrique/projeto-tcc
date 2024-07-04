@@ -84,7 +84,11 @@
                     PROGRAMADORES!
                 </h2>
             </div>
+            <div class="center-asset">
+                <img src="assets/computer1.png" alt="">
+            </div>
             <div class="bottom-texts">
+                <img src="assets/control.png" alt="">
                 <h3>
                     Onde as crianças criam tecnologia! <br><br>
                     <button class="btn">Entrar</button>
@@ -119,26 +123,32 @@
         <div class="avaliations">
             <div class="avaliation">
                 <div class="specialist">
-                    <img src="https://i.pinimg.com/736x/de/59/4e/de594ec09881da3fa66d98384a3c72ff.jpg" alt="" width="80px">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHU5JIkqfD2z1KMc4c1nW4zdArnxBM3cCcQ&s" alt="" width="90px">
                 </div>
-                <div class="comment">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus commodi rerum natus, odit placeat harum dolorem sunt ducimus earum. Dolor mollitia assumenda nesciunt. Necessitatibus tenetur facilis iste vel nemo porro.
-                </div>
-            </div>
-            <div class="avaliation">
-                <div class="specialist">
-                    <img src="https://i.pinimg.com/736x/de/59/4e/de594ec09881da3fa66d98384a3c72ff.jpg" alt="" width="80px">
-                </div>
-                <div class="comment">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus commodi rerum natus, odit placeat harum dolorem sunt ducimus earum. Dolor mollitia assumenda nesciunt. Necessitatibus tenetur facilis iste vel nemo porro.
+                <div class="message">
+                    <p class="feedback">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque libero laborum repellendus illo dolorem, doloribus velit non magnam veritatis! Deleniti, quam. Odit sit deleniti eveniet itaque quo distinctio provident amet!
+                    </p>
                 </div>
             </div>
             <div class="avaliation">
                 <div class="specialist">
-                    <img src="https://i.pinimg.com/736x/de/59/4e/de594ec09881da3fa66d98384a3c72ff.jpg" alt="" width="80px">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHU5JIkqfD2z1KMc4c1nW4zdArnxBM3cCcQ&s" alt="" width="90px">
                 </div>
-                <div class="comment">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus commodi rerum natus, odit placeat harum dolorem sunt ducimus earum. Dolor mollitia assumenda nesciunt. Necessitatibus tenetur facilis iste vel nemo porro.
+                <div class="message reverse">
+                    <p class="feedback">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque libero laborum repellendus illo dolorem, doloribus velit non magnam veritatis! Deleniti, quam. Odit sit deleniti eveniet itaque quo distinctio provident amet!
+                    </p>
+                </div>
+            </div>
+            <div class="avaliation">
+                <div class="specialist">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHU5JIkqfD2z1KMc4c1nW4zdArnxBM3cCcQ&s" alt="" width="90px">
+                </div>
+                <div class="message">
+                    <p class="feedback">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque libero laborum repellendus illo dolorem, doloribus velit non magnam veritatis! Deleniti, quam. Odit sit deleniti eveniet itaque quo distinctio provident amet!
+                    </p>
                 </div>
             </div>
         </div>
