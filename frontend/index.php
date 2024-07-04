@@ -152,6 +152,19 @@
                 </div>
             </div>
         </div>
+        <div class="call-to-action">
+            <div class="calling-to-action">
+                <h2>
+                    Vamos começar essa jornada com a KidScript ?
+                </h2>
+                <h2>
+                    aprenda lógica de programação jogando com nós!
+                </h2>
+                <button class="btn">
+                    Começar Hoje
+                </button>
+            </div>
+        </div>
     </main>
 
 

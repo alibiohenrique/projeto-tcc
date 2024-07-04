@@ -80,8 +80,7 @@ iframe {
 }
 
 .landing-seguiment {
-    background: url(../../assets/side-wave_background.jpg);
-    mask-image: linear-gradient(to bottom, transparent 1%, black 90%);
+    background-image: linear-gradient(to bottom, var(--light-purple) 15%, transparent 75%), url(../../assets/side-wave_background.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     transform: scaleY(-1);
@@ -144,6 +143,17 @@ hr{
     border-radius: 0px 30px 0px 30px;
 }
 
+.call-to-action{
+    background-image:linear-gradient(to bottom, var(--light-purple) 20%, transparent 40%), url(../../assets/cta-background.jpg); ;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.calling-to-action{
+    
+}
+
 @media screen and (max-width: 768px) {
     .landing-page {
         background: url(../../assets/side-wave_background-to-phones.jpg);
@@ -165,6 +175,10 @@ hr{
         color: var(--dark-purple);
     }
 
+    .center-asset{
+        display: none;
+    }
+
     .bottom-texts {
         display: flex;
         height: 25%;
@@ -176,8 +190,7 @@ hr{
     }
 
     .landing-seguiment {
-        background: url(../../assets/side-wave_background-to-phones.jpg);
-        mask-image: linear-gradient(to bottom, transparent 1%, black 100%);
+        background-image: linear-gradient(to bottom, var(--light-purple) 25%, transparent 55%), url(../../assets/side-wave_background-to-phones.jpg) ;
         background-repeat: no-repeat;
         background-size: cover;
         transform: scaleY(-1);
@@ -205,8 +218,5 @@ hr{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-    .center-asset{
-        display: none;
     }
 }
