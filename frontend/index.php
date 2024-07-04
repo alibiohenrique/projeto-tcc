@@ -33,7 +33,7 @@
                     <span class="material-symbols-outlined">
                         home
                     </span>
-                    <p>Início</p>
+                    <p class="highlight-hover">Início</p>
                 </a>
             </li>
             <li class="icons">
@@ -41,7 +41,7 @@
                     <span class="material-symbols-outlined">
                         info
                     </span>
-                    <p>Sobre</p>
+                    <p class="highlight-hover">Sobre</p>
                 </a>
             </li>
             <li class="icons">
@@ -49,7 +49,7 @@
                     <span class="material-symbols-outlined">
                         play_circle
                     </span>
-                    <p>Jogue</p>
+                    <p class="highlight-hover">Jogue</p>
                 </a>
             </li>
             <li class="icons">
@@ -57,7 +57,7 @@
                     <span class="material-symbols-outlined">
                         settings
                     </span>
-                    <p>Configurações</p>
+                    <p class="highlight-hover">Configurações</p>
                 </a>
             </li>
             <li class="icons">
@@ -94,7 +94,7 @@
             </div>
         </div>
         <div class="section landing-seguiment">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/RYbI07-3HmM?si=fzACzgUH-ts8cGtJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RYbI07-3HmM?si=fzACzgUH-ts8cGtJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <h2 class="section-title">Aprenda Jogando!</h2>
         <div class="learn-playing">
@@ -114,6 +114,33 @@
             </div>
             <div class="aside-assets">
                 <img src="assets/preview-plataforms.png" alt="" width="100%">
+            </div>
+        </div>
+        <h2 class="section-title">Avaliado por <br> especialistas:</h2>
+        <div class="avaliations">
+            <div class="avaliation">
+                <div class="specialist">
+                    <img src="https://i.pinimg.com/736x/de/59/4e/de594ec09881da3fa66d98384a3c72ff.jpg" alt="" width="80px">
+                </div>
+                <div class="comment">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus commodi rerum natus, odit placeat harum dolorem sunt ducimus earum. Dolor mollitia assumenda nesciunt. Necessitatibus tenetur facilis iste vel nemo porro.
+                </div>
+            </div>
+            <div class="avaliation">
+                <div class="specialist">
+                    <img src="https://i.pinimg.com/736x/de/59/4e/de594ec09881da3fa66d98384a3c72ff.jpg" alt="" width="80px">
+                </div>
+                <div class="comment">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus commodi rerum natus, odit placeat harum dolorem sunt ducimus earum. Dolor mollitia assumenda nesciunt. Necessitatibus tenetur facilis iste vel nemo porro.
+                </div>
+            </div>
+            <div class="avaliation">
+                <div class="specialist">
+                    <img src="https://i.pinimg.com/736x/de/59/4e/de594ec09881da3fa66d98384a3c72ff.jpg" alt="" width="80px">
+                </div>
+                <div class="comment">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus commodi rerum natus, odit placeat harum dolorem sunt ducimus earum. Dolor mollitia assumenda nesciunt. Necessitatibus tenetur facilis iste vel nemo porro.
+                </div>
             </div>
         </div>
     </main>
