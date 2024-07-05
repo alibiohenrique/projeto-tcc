@@ -63,6 +63,26 @@
 
 /* ref */
 
+::-webkit-scrollbar {
+    width: 6px;
+    background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark-purple);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--black);
+}
+
+::selection{
+    background: #5e17eb71;
+    color: #fff;
+}
+
+
 /* default settings  */
 
 /* ------------------------ */
@@ -233,6 +253,12 @@
     margin: 1em auto;
     display: flex;
     justify-content: center;
+}
+
+hr{
+    border: 1px var(--black) solid;
+    width: 98%;
+    margin: auto;
 }
 
 

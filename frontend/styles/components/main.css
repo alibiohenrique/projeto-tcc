@@ -3,101 +3,220 @@
 /* default settings */
 
 * {
+    /* border: 1px solid greenyellow; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(103deg, var(--light-purple) 34%, var(--blue-sky) 36%, var(--medium-purple) 56%, var(--medium-purple) 59%, var(--dark-purple) 81%, var(--dark-purple) 84%);
+    background: var(--light-purple);
 }
 
-.section {
-    overflow-y: hidden;
+.landing-page {
+    height: 100vh;
+    width: 100%;
+    background: url(../../assets/side-wave_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    text-wrap: wrap;
+    overflow: hidden !important;
 }
 
-.btnSection {
+.top-texts {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 50vw;
-    margin: 1em;
+    justify-content: space-between;
+    margin: 2em 4em 1em 4em;
 }
 
-.textSection {
+.top-texts h2:nth-child(2) {
+    color: var(--light-purple);
+}
+
+.top-texts h2:nth-child(1) {
+    color: var(--dark-purple);
+}
+
+.center-asset{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden !important;
+}
+
+.center-asset img{
+    width: 17em;
+    height: 15em;
+    rotate: 23deg;
+}
+
+.bottom-texts {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
     text-align: center;
+    margin: 4em;
 }
 
-.textSection h2 {
-    color: black;
-    text-transform: uppercase;
+.bottom-texts img{
+    width: 9em;
 }
 
-.textSection h2 span {
-    color: var(--ciano);
+.bottom-texts .btn {
+    background: var(--medium-purple);
+    color: var(--light-purple);
 }
 
-p {
-    width: 50vw;
-    margin: 2em;
+iframe {
+    width: 90%;
+    height: 35em;
+    transform: scaleY(-1);
+    z-index: 100;
+    position: absolute;
 }
 
-.textSection p {
-    width: 50vw;
-    margin: 2em auto;
+.landing-seguiment {
+    background-image: linear-gradient(to bottom, var(--light-purple) 15%, transparent 75%), url(../../assets/side-wave_background.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scaleY(-1);
 }
 
-.card {
-    width: 100%;
+.section-title{
+    text-align: center;
+    margin: 3em;
 }
 
-.card p {
-    margin: 1em;
-    width: 100%;
-}
-
-.cHead {
+.learn-playing{
     display: flex;
-    flex-direction: row;
 }
 
-.card:nth-child(odd) .cHead {
+.aside-texts{
+    width: 50%;
+}
+
+.aside-texts p {
+    margin: 2em;
+    text-align: justify;
+}
+
+.aside-assets{
+    width: 40%;
+    margin: auto;
+}
+
+hr{
+    border: var(--dark-purple) 1px solid;
+}
+
+.avaliation{
+    display: flex;
+    width: 60%;
+    margin: 3em auto;
+}
+
+.avaliation:nth-child(2){
+    display: flex;
     flex-direction: row-reverse;
 }
 
-.card .cHead img {
-    width: 30%;
+.specialist{
+    width: 160px;
+    display: flex;
+    justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-    #LPSection {
-        flex-direction: row;
-        padding: 50px;
-    }
+.specialist img{
+    width: 7em;
+    border-radius: 100px;
+}
 
-    iframe {
-        width: 35vw;
-        height: 35vh;
-    }
+.message{
+    width: 100%;
+    margin: auto;
+    background: var(--medium-purple);
+    padding: 2em;
+    border-radius: 0px 30px 0px 30px;
+}
+
+.call-to-action{
+    background-image:linear-gradient(to bottom, var(--light-purple) 20%, transparent 40%), url(../../assets/cta-background.jpg); ;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.calling-to-action{
+    
 }
 
 @media screen and (max-width: 768px) {
-    #btnS {
-        transform: translateY(+39vh);
+    .landing-page {
+        background: url(../../assets/side-wave_background-to-phones.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
     }
 
-    .btnSection {
-        width: 100vw;
+    .top-texts {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: var(--black);
+        gap: 8em;
+        margin: 1em;
     }
 
-    iframe {
-        transform: translateY(-3vh);
+    .top-texts h2:nth-child(2) {
+        color: var(--dark-purple);
     }
 
-    p {
-        margin-left: 10vw;
-        width: 80VW;
+    .center-asset{
+        display: none;
+    }
+
+    .bottom-texts {
+        display: flex;
+        height: 25%;
+        margin: 1em;
+        justify-content: center;
+        align-items: flex-end;
         text-align: center;
+        color: var(--dark-purple);
+    }
+
+    .landing-seguiment {
+        background-image: linear-gradient(to bottom, var(--light-purple) 25%, transparent 55%), url(../../assets/side-wave_background-to-phones.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scaleY(-1);
+    }
+    .learn-playing{
+        display: flex;
+        flex-direction: column;
+    }
+    .aside-texts{
+        margin: auto;
+    }
+    .aside-texts p {
+        margin: 2em 0.5em;
+        text-align: justify;
+    }
+    .aside-assets{
+        margin: auto;
+    }
+    .avaliation{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .avaliation:nth-child(2){
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
