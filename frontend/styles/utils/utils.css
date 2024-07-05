@@ -3,7 +3,6 @@
 /* default settings  */
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,6 +30,31 @@
     --body: var(--black);
     --btn: var(--purple);
 
+}
+
+@font-face {
+    font-family: chau;
+    src: url(../../assets/fonts/Chau-Philomene/ChauPhilomeneOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: open-sans;
+    src: url(../../assets/fonts/Open-Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: gliker;
+    src: url(../../assets/fonts/Gilker/Gliker-Regular.ttf);
+}
+
+@font-face {
+    font-family: gagalin;
+    src: url(../../assets/fonts/Gagalin/Gagalin-Regular.otf);
 }
 
 /* ref */
@@ -104,6 +128,10 @@
     background: var(--purple);
     border-radius: 20px;
     padding-bottom: 4em;
+}
+
+.pop-up h2 {
+    font-family: roboto;
 }
 
 .pop-up p {

@@ -1,10 +1,13 @@
-.pop-up{
+.pop-up {
     display: none;
 }
 
-:root{
-    --btn-control-size:30px;
+:root {
+    --btn-control-size: 30px;
     --background-panel: #4d713f;
+    --color-red: #ff0000;
+    --color-blue: #0000ff;
+    --color-green: #00ff00;
 }
 
 /* body{
@@ -16,6 +19,38 @@
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
+}
+
+.ide {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    z-index: 200;
+    width: 90%;
+    height: 80%;
+    margin: 5%;
+}
+
+.openIde .ide {
+    display: flex;
+}
+
+.ideHeader {
+    background: #1c1b1b;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.ide svg {
+    color: red;
+    height: 20px;
+}
+
+.ide select {
+    background: none;
+    color: #238d1d;
 }
 
 canvas {
@@ -39,7 +74,26 @@ canvas {
     height: 100vh;
 }
 
+.landScape .game-panel {
+    flex-direction: row;
+}
+
+.panel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: row;
+}
+
+.landScape {
+    flex-direction: column;
+}
+
 .score {
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -54,11 +108,30 @@ canvas {
     margin-top: -10px;
 }
 
+#rotate {
+    overflow: hidden;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#rotate img {
+    overflow: hidden;
+    width: var(--btn-control-size);
+    display: flex;
+    float: right;
+}
+
 .menu-screen {
-    transform: translateY(10em);
     margin: 0;
     padding: 0;
     position: absolute;
+    transform: translate(-50%);
+    top: 50%;
+    left: 50%;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -91,18 +164,39 @@ canvas {
     cursor: grab;
 }
 
-body{
+body {
     color: #238d1d;
 }
 
-.control svg{
+.gameNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600;
+    overflow: hidden;
+}
+
+.gameNav svg {
+    width: var(--btn-control-size);
+    height: var(--btn-control-size);
+}
+
+.landScape .gameNav {
+    flex-direction: column;
+    width: var(--btn-control-size) * 3;
+    height: 100%;
+}
+
+.control svg {
     width: var(--btn-control-size);
     margin: 0;
 }
 
-.control{
+.control {
     width: var(--btn-control-size) * 3;
-    height:var(--btn-control-size) * 3 ;
+    height: var(--btn-control-size) * 3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,10 +226,17 @@ button svg:hover {
 }
 
 
-.sides{
+.sides {
     width: var(--btn-control-size) * 3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+}
+
+.ideBtn {
+    overflow: hidden;
+    background: none;
+    border: none;
+    cursor: pointer;
 }

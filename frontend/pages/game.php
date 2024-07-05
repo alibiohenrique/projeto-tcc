@@ -11,11 +11,167 @@
     <link rel="stylesheet" href="../styles/components/game.css">
     <title>Document</title>
 
+
 </head>
 
 <body>
+    <div class="ide">
+        <!-- comida >forma e cor ; cores da pagina; cores das linhas-->
+        <div class="ideHeader">
+            <span>snake game style</span>
+            <button onclick="openIde()" class="ideBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                </svg>
+            </button>
+        </div>
+        <form action="">
+            <select name="elemento" id="elemento">
+                <option value="">elemento</option>
+                <option selected value="cabeca">Cabeça da cobra</option>
+                <option value="corpo">Corpo da cobra</option>
+                <option value="corpo">Comida</option>
+                <option value="corpo">Pagina</option>
+                <option value="corpo">Campo do jogo</option>
+                <option value="corpo">Linhas do campo</option>                
+            </select><span>{</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option selected value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option selected value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span>
+            <p>}</p>
+            <!--  -->
+        
+            <select name="elemento" id="elemento">
+                <option value="">elemento</option>
+                <option value="cabeca">Cabeça da cobra</option>
+                <option value="corpo">Corpo da cobra</option>
+                <option value="corpo">Comida</option>
+                <option value="corpo">Pagina</option>
+                <option value="corpo">Campo do jogo</option>
+                <option value="corpo">Linhas do campo</option>                
+            </select><span>{</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span>
+            <p>}</p>
+            <!--  -->
+            
+            <select name="elemento" id="elemento">
+                <option value="">elemento</option>
+                <option value="cabeca">Cabeça da cobra</option>
+                <option value="corpo">Corpo da cobra</option>
+                <option value="corpo">Comida</option>
+                <option value="corpo">Pagina</option>
+                <option value="corpo">Campo do jogo</option>
+                <option value="corpo">Linhas do campo</option>                
+            </select><span>{</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span>
+            <p>}</p>
+            <!--  -->
+            
+            <select name="elemento" id="elemento">
+                <option value="">elemento</option>
+                <option value="cabeca">Cabeça da cobra</option>
+                <option value="corpo">Corpo da cobra</option>
+                <option value="corpo">Comida</option>
+                <option value="corpo">Pagina</option>
+                <option value="corpo">Campo do jogo</option>
+                <option value="corpo">Linhas do campo</option>                
+            </select><span>{</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span>
+            <p>}</p>
+            <!--  -->
+            
+            <select name="elemento" id="elemento">
+                <option value="">elemento</option>
+                <option value="cabeca">Cabeça da cobra</option>
+                <option value="corpo">Corpo da cobra</option>
+                <option value="corpo">Comida</option>
+                <option value="corpo">Pagina</option>
+                <option value="corpo">Campo do jogo</option>
+                <option value="corpo">Linhas do campo</option>                
+            </select><span>{</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span><br>
+            <select name="atributo" id="atributo">
+                <option value="">Atributo</option>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+            <select name="valor" id="valor">
+                <option value="">Valor</option>
+            </select><span>;</span>
+            <p>}</p>
+            <!--  -->
+        </form>
+    </div>
     <div class="game-panel">
         <div class="score"><span>Score: </span><span class="score--value">00</span>
+
             <div class="menu-screen">
                 <span class="game-over"> Game Over</span>
                 <span class="final-score"> Score <span>00</span></span>
@@ -25,40 +181,88 @@
                 </button>
             </div>
         </div>
+        <button id="rotate" onclick="landScape()">
+            <img src="../assets/rotate.png" alt="">
+        </button>
         <canvas width="600" height="600"></canvas>
-        <div class="control">
-            <button onclick="leftPressed()">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-square-fill"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1" />
-                </svg>
-            </button>
-            <div class="sides">
-                <button onclick="upPressed()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0" />
-                    </svg></button>
-                <button onclick="downPressed()">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-down-square-fill"
+        <div class="gameNav">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-bar-up"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M3.646 11.854a.5.5 0 0 0 .708 0L8 8.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708M2.4 5.2c0 .22.18.4.4.4h10.4a.4.4 0 0 0 0-.8H2.8a.4.4 0 0 0-.4.4" />
+            </svg>
+            <div class="control">
+                <button onclick="leftPressed()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-square-fill"
                         viewBox="0 0 16 16">
                         <path
-                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0" />
-                        </svg>
-                </button>
-            </div><button onclick="rightPressed()">
-                <svg id="arrowRigth" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1" />
+                            d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1" />
                     </svg>
+                </button>
+                <div class="sides">
+                    <button onclick="upPressed()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0" />
+                        </svg></button>
+                    <button onclick="downPressed()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-down-square-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0" />
+                        </svg>
+                    </button>
+                </div><button onclick="rightPressed()">
+                    <svg id="arrowRigth" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1" />
+                    </svg>
+                </button>
+            </div>
+            <button onclick="openIde()" class="ideBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-file-earmark-code"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
+                    <path
+                        d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708" />
+                </svg>
             </button>
         </div>
-        <script src="https://kit.fontawesome.com/df3d71e545.js" crossorigin="anonymous"></script>
+
     </div>
     <script>
+        document.getElementById('atributo').addEventListener('change', function () {
+            const valorSelect = document.getElementById('valor');
+            valorSelect.innerHTML = ''; // Limpar opções anteriores
+
+            if (this.value === 'cor') {
+                valorSelect.innerHTML = `
+            <option value="">--Select Color--</option>
+            <option value="var(--color-red)" style="color: var(--color-red);">Red</option>
+            <option value="var(--color-blue)" style="color: var(--color-blue);">Blue</option>
+            <option value="var(--color-green)" style="color: var(--color-green);">Green</option>
+        `;
+            } else if (this.value === 'forma') {
+                valorSelect.innerHTML = `
+            <option value="">--Select Shape--</option>
+            <option value="square">Square</option>
+            <option value="circle">Circle</option>
+        `;
+            }
+        });
+
+        const rotate = document.getElementById('rotate');
+        const body = document.body;
+
+        function landScape() {
+            body.classList.toggle("landScape");
+        };
+        function openIde() {
+            body.classList.toggle("openIde");
+        };
         const canvas = document.querySelector('canvas')
         const ctx = canvas.getContext('2d') // ctx = context (contexto)
 
@@ -271,7 +475,8 @@
 
             snake = [initalPosition]
         })
-    </script>\
+    </script>
+    <script src="https://kit.fontawesome.com/df3d71e545.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
