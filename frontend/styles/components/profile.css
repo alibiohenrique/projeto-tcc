@@ -1,57 +1,74 @@
 @charset "utf-8";
 
+:root {
+    --dark-purple: #1D152E;
+
+    --card: var(--dark-purple);
+    --span: var(--white);
+    --p: var(--purple);
+    --text: var(--white);
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FORMATAÇÃO BASICA */
+
+header {
+    z-index: 8;
+}
+
 .section {
     background: var(--background);
+    color: var(--text);
     width: 100vw;
 }
+
 
 .profile {
     padding-top: 80px;
     padding-bottom: 60px;
 }
 
-.profile {
-    background: #1D152E;
+.profile-card {
+    background: var(--dark-purple);
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 95vw;
-    padding: 5vw;
-    gap: 12px;
+    justify-content: center;
+    max-width: 500px;
+    width: 95vw;
+    padding: 30px;
+    gap: 20px;
     border-radius: 40px;
     color: #fff;
 }
 
-.profile img {
+
+.profile-card img {
     border: solid #ebdc17 8px;
 }
 
-
-.profile P {
-    color: var(--purple);
-    width: 80vw;
-    font-size: 1.4em;
+.profile-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.profile span {
-    color: #fff;
+.profile-card P {
+    color: var(--p);
+    font-size: 1.2em;
 }
 
-.profile h2,
+.profile-card span {
+    color: var(--span);
+}
+
+.profile-card h2,
 h3 {
     text-align: center;
-    font-size: 2em;
-}
-
-.unlogged {
-    position: absolute;
-    text-align: center;
-    z-index: 30;
-}
-
-.unlogged .profile {
-    color: #fff;
-    gap: 30px;
+    font-size: 1.8em;
 }
 
 .email {
@@ -64,32 +81,45 @@ h3 {
     width: 100vw;
 }
 
-.btn-primary {
-    font-size: 1.2em;
-    padding: 0 20px;
-    border: solid #fff 5px;
-    background: var(--purple);
-    padding: 0;
-    margin: 0 auto;
-    height: 1.5em;
-    width: 3.5em;
-    color: #fff;
-    border-radius: 30px;
+/* MODIFICAÇÕES CARD NÃO LOGADO */
+.unlogged {
+    max-width: 500px;
+    position: absolute;
+    text-align: center;
 }
 
-
-.confirm{
-    background: #7ED957;
-    color: #fff;
-    margin-top: 20px;
+.unlogged .profile-card {
+    gap: 30px;
 }
 
-.close {
-    background: red;
-    color: #fff;
-    margin-top: 20px;
+.login {
+    background: var(--ciano);
+}
+.unlogged .login a, .sign-in a{
+    text-decoration: none;
+    color: var(--white);
+
 }
 
+.sign-in{
+    background: none;
+    border: solid var(--cyan) 2px;
+}
+
+.sign-in:hover{
+    background: var(--cyan);
+}
+
+.login{
+    background: var(--cyan);
+    border: solid var(--cyan) 2px;
+}
+
+.login:hover{
+    background: none;
+}
+
+/* POP-UP */
 .modal {
     max-width: 90vw;
     display: none;
@@ -97,7 +127,6 @@ h3 {
     align-items: center;
     justify-content: center;
     background: #32322F;
-    color: #fff;
     font-size: 1.2em;
     padding: 20px;
     border-radius: 30px;
@@ -125,23 +154,46 @@ h3 {
 
 .modal label {
     font-size: 1.2em;
-    color: var(--purple);
+    color: var(--p);
 }
 
 .modal input {
     background: none;
     width: 30%;
     font-size: 1em;
-    color: #fff;
+    color: var(--white);
     margin-bottom: 10px;
 }
 
+.btn-primary {
+    font-size: 1em;
+    padding: 0 20px;
+    border: solid var(--white) 3px;
+    background: var(--purple);
+    padding: 0;
+    margin: 0 auto;
+    width: 3em;
+    color: var(--white);
+    border-radius: 30px;
+}
+
+.confirm {
+    background: #7ED957;
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.close {
+    background: #ff0000;
+    color: var(--white);
+    margin-top: 20px;
+}
+
 .blur {
-    display: none;
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: 10;
-    background-color: #ffffffab;
+    background-color: #ffffffd0;
 }

@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="styles/utils/utils.css">
     <link rel="stylesheet" href="styles/components/header.css">
     <link rel="stylesheet" href="styles/components/main.css">
+    
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Page styles -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -28,7 +30,7 @@
             </li>
 
             <li class="icons">
-                <a href="" class="navlink">
+                <a href="index.php" class="navlink">
                     <span class="material-symbols-outlined">
                         home
                     </span>
@@ -36,7 +38,7 @@
                 </a>
             </li>
             <li class="icons">
-                <a href="" class="navlink">
+                <a href="./pages/about.php" class="navlink">
                     <span class="material-symbols-outlined">
                         info
                     </span>
@@ -44,7 +46,7 @@
                 </a>
             </li>
             <li class="icons">
-                <a href="" class="navlink">
+                <a href="./pages/game.php" class="navlink">
                     <span class="material-symbols-outlined">
                         play_circle
                     </span>
@@ -52,7 +54,7 @@
                 </a>
             </li>
             <li class="icons">
-                <a href="" class="navlink">
+            <a href="../frontend/pages/settings.php" class="navlink">
                     <span class="material-symbols-outlined">
                         settings
                     </span>
@@ -60,7 +62,7 @@
                 </a>
             </li>
             <li class="icons">
-                <a href="" class="navlink">
+                <a href="./pages/profile.php" class="navlink">
                     <span class="material-symbols-outlined">
                         person
                     </span>
@@ -141,6 +143,15 @@
                     </p>
                 </div>
             </div>
+            <div data-aos="fade-up" class="card">
+                <div class="cHead">
+                    <div class="textSection">
+                        <h2>Nome do expeecialista</h2>
+                        <p>Expecialidades, cargos e etc aqui</p>
+                    </div>
+                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user"
+                        alt="">
+
             <div class="avaliation">
                 <div class="specialist">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHU5JIkqfD2z1KMc4c1nW4zdArnxBM3cCcQ&s" alt="" width="90px">
@@ -151,6 +162,16 @@
                     </p>
                 </div>
             </div>
+
+        </section>
+        <section class="section">
+            <div class="btnSection bottom">
+                <button class="btn">Entrar</button>
+                <button class="btn btn1">cadastre-se</button>
+
+            </div>
+
+        </section>
         </div>
         <div class="call-to-action">
             <div class="calling-to-action">
