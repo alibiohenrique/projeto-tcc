@@ -129,29 +129,33 @@ mysqli_close($conn);
     </header>
 
     <div class="container">
-
-        <section class="section login">
-            <div class="pop-up">
+        <div class="pop-up login">
+            <div class="login-in-title">
                 <h2>FAÇA SEU LOGIN</h2>
-
-                <form action="#" method="POST" class="login-form">
-                    <label for="nome">Usuário:</label>
-                    <input type="text" id="nome" name="username-input" required><br><br>
-
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="password-input" required><br><br>
-
-                    <input type="submit" value="Entrar" class="btn btn-login">
-
-
-                </form>
-
-
-                <a href="sign-in.php">Não tenho cadastro?</a>
 
             </div>
 
-        </section>
+            <form action="#" method="POST" class="login-form">
+                <label for="nome">Usuário:</label>
+                <input type="text" id="nome" name="username-input" required><br><br>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="password-input" required><br><br>
+
+                <div class="btn-login input">
+                    <input type="submit" value="Entrar" class="btn btn-login">
+
+                </div>
+
+            </form>
+
+            <div class="btn-sign-in">
+
+                <a href="sign-in.php">Não tenho cadastro?</a>
+            </div>
+
+        </div>
+
     </div>
 
 </body>

@@ -121,55 +121,50 @@ mysqli_close($conn);
     </header>
     <div class="container">
 
-        <section class="section">
 
-            <div class="pop-up sign-in">
+
+        <div class="pop-up sign-in">
+
+            <div class="sign-in-title">
                 <h2>FAÇA SEU CADASTRO</h2>
+            </div>
 
-                <form action="" method="POST" class="sign-in-form">
-                    <div class="input">
-                        <label for="nome">Usuário:</label>
-                        <input type="text" id="username-input" name="username-input" required><br><br>
+            <form action="" method="POST" class="sign-in-form">
+                <div class="input">
+                    <label for="nome">Usuário:</label>
+                    <input type="text" id="username-input" name="username-input" required><br><br>
 
-                    </div>
-                    <div class="input">
-                        <label for="senha">Senha:</label>
-                        <input type="password" id="password-input" name="password-input" required><br><br>
+                </div>
+                <div class="input">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="password-input" name="password-input" required><br><br>
 
-                    </div>
-                    <div class="input">
-                        <label for="senha">Confirmar senha:</label>
-                        <input type="password" id="password-input-validation" name="password-input-validation"
-                            required><br><br>
+                </div>
+                <div class="input">
+                    <label for="senha">Confirmar senha:</label>
+                    <input type="password" id="password-input-validation" name="password-input-validation"
+                        required><br><br>
 
-                    </div>
-                    <div class="input">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email-input" name="email-input" required><br><br>
-
-                    </div>
-
-
-
-                    <div class="submit-btn input">
-                        <input type="submit" value="Cadastrar" class="btn btn-login">
-
-                    </div>
-
-                </form>
-                <div class="input login">
-                    <a href="login.php">Ja tenho login?</a>
+                </div>
+                <div class="input">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email-input" name="email-input" required><br><br>
 
                 </div>
 
+                <div class="btn-submit input">
+                    <input type="submit" value="Cadastrar" class="btn btn-submit">
+                </div>
+
+            </form>
+            <div class="input login">
+                <a href="login.php">Ja tenho login?</a>
 
             </div>
 
-        </section>
+        </div>
+
     </div>
-
-
-
 </body>
 
 </html>

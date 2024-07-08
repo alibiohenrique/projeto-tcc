@@ -1,242 +1,242 @@
-.pop-up {
-    display: none;
-}
+ .pop-up {
+     display: none;
 
-:root {
-    --btn-control-size: 30px;
-    --background-panel: #4d713f;
-    --color-red: #ff0000;
-    --color-blue: #0000ff;
-    --color-green: #00ff00;
-}
+ }
 
-/* body{
-    background: var(--background-panel);
-} */
+ :root {
+     --btn-control-size: 30px;
+     --background-panel: #4d713f;
+     --color-red: #ff0000;
+     --color-blue: #0000ff;
+     --color-green: #00ff00;
+ }
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-sizing: border-box;
-}
+ body {
+     background: var(--background-panel);
+ }
 
-.ide {
-    display: none;
-    flex-direction: column;
-    background: #000;
-    position: absolute;
-    z-index: 200;
-    width: 90%;
-    height: 80%;
-    margin: 5%;
-}
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
 
-.openIde .ide {
-    display: flex;
-}
+ .ide {
+     display: none;
+     flex-direction: column;
+     background: #000;
+     position: absolute;
+     z-index: 200;
+     width: 90%;
+     height: 80%;
+     margin: 5%;
+ }
 
-.ideHeader {
-    background: #1c1b1b;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-}
+ .openIde .ide {
+     display: flex;
+ }
 
-.ide svg {
-    color: red;
-    height: 20px;
-}
+ .ideHeader {
+     background: #1c1b1b;
+     display: flex;
+     justify-content: space-between;
+     padding: 5px;
+ }
 
-.ide select {
-    background: none;
-    color: #238d1d;
-}
+ .ide svg {
+     color: red;
+     height: 20px;
+ }
 
-canvas {
-    margin: 0;
-    padding: 0;
-    background: #81b56e;
-    border: solid 3px #000;
-    max-width: 100vw;
-    max-height: 100vh;
-}
+ .ide select {
+     background: none;
+     color: #238d1d;
+ }
 
-.game-panel {
-    margin: 0;
-    padding: 0;
-    background: var(--background-panel);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: #fff;
-    flex-direction: column;
-    height: 100vh;
-}
+ canvas {
+     margin: 0;
+     padding: 0;
+     background: #81b56e;
+     border: solid 3px #000;
+     max-width: 100vw;
+     max-height: 100vh;
+ }
 
-.landScape .game-panel {
-    flex-direction: row;
-}
+ .game-panel {
+     margin: 0;
+     padding: 0;
+     background: var(--background-panel);
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     color: #fff;
+     flex-direction: column;
+     height: 100vh;
+ }
 
-.panel {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+ .landScape .game-panel {
+     flex-direction: row;
+ }
 
-    flex-direction: row;
-}
+ .panel {
+     display: flex;
+     overflow: hidden;
+     width: 100%;
+     align-items: center;
+     justify-content: center;
 
-.landScape {
-    flex-direction: column;
-}
+     flex-direction: row;
+ }
 
-.score {
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.8rem;
-    font-weight: 1000;
-}
+ .landScape {
+     flex-direction: column;
+ }
 
-.score--value {
-    font-weight: 700;
-    font-size: 3rem;
-    display: block;
-    margin-top: -10px;
-}
+ .score {
+     overflow: hidden;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     font-size: 1.8rem;
+     font-weight: 1000;
+ }
 
-#rotate {
-    overflow: hidden;
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
+ .score--value {
+     font-weight: 700;
+     font-size: 3rem;
+     display: block;
+     margin-top: -10px;
+ }
 
-#rotate img {
-    overflow: hidden;
-    width: var(--btn-control-size);
-    display: flex;
-    float: right;
-}
+ #rotate {
+     overflow: hidden;
+     background: none;
+     border: none;
+     cursor: pointer;
+     position: absolute;
+     right: 0;
+     top: 0;
+ }
 
-.menu-screen {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    transform: translate(-50%);
-    top: 50%;
-    left: 50%;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-}
+ #rotate img {
+     overflow: hidden;
+     width: var(--btn-control-size);
+     display: flex;
+     float: right;
+ }
 
-.game-over {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1em;
-}
+ .menu-screen {
+     margin: 0;
+     padding: 0;
+     position: absolute;
+     transform: translate(-50%);
+     top: 50%;
+     left: 50%;
+     display: none;
+     flex-direction: column;
+     align-items: center;
+     align-self: center;
+ }
 
-.final-score {
-    font-weight: 500;
-    font-size: 1em;
-}
+ .game-over {
+     text-transform: uppercase;
+     font-weight: 700;
+     font-size: 1em;
+ }
 
-.btn-play {
-    transform: scale(0.6);
-    border: none;
-    border-radius: 100px;
-    padding: 10px;
-    font-weight: 700;
-    font-size: 1em;
-    color: #238d1d;
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: grab;
-}
+ .final-score {
+     font-weight: 500;
+     font-size: 1em;
+ }
 
-body {
-    color: #238d1d;
-}
+ .btn-play {
+     transform: scale(0.6);
+     border: none;
+     border-radius: 100px;
+     padding: 10px;
+     font-weight: 700;
+     font-size: 1em;
+     color: #238d1d;
+     margin-top: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: grab;
+ }
 
-.gameNav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 600;
-    overflow: hidden;
-}
+ body {
+     color: #238d1d;
+ }
 
-.gameNav svg {
-    width: var(--btn-control-size);
-    height: var(--btn-control-size);
-}
+ .gameNav {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+     width: 100%;
+     max-width: 600;
+     overflow: hidden;
+ }
 
-.landScape .gameNav {
-    flex-direction: column;
-    width: var(--btn-control-size) * 3;
-    height: 100%;
-}
+ .gameNav svg {
+     width: var(--btn-control-size);
+     height: var(--btn-control-size);
+ }
 
-.control svg {
-    width: var(--btn-control-size);
-    margin: 0;
-}
+ .landScape .gameNav {
+     flex-direction: column;
+     width: var(--btn-control-size) * 3;
+     height: 100%;
+ }
 
-.control {
-    width: var(--btn-control-size) * 3;
-    height: var(--btn-control-size) * 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
+ .control svg {
+     width: var(--btn-control-size);
+     margin: 0;
+ }
 
-.control {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+ .control {
+     width: var(--btn-control-size) * 3;
+     height: var(--btn-control-size) * 3;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: row;
+ }
 
-.control button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
+ .control {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
 
-button svg {
-    width: var(--btn-control-size);
-    height: var(--btn-control-size);
-    color: #fff;
-}
+ .control button {
+     background: none;
+     border: none;
+     cursor: pointer;
+ }
 
-button svg:hover {
-    color: #ddd;
-}
+ button svg {
+     width: var(--btn-control-size);
+     height: var(--btn-control-size);
+     color: #fff;
+ }
+
+ button svg:hover {
+     color: #ddd;
+ }
 
 
-.sides {
-    width: var(--btn-control-size) * 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-}
+ .sides {
+     width: var(--btn-control-size) * 3;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     margin: 0;
+ }
 
-.ideBtn {
-    overflow: hidden;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
+ .ideBtn {
+     overflow: hidden;
+     background: none;
+     border: none;
+     cursor: pointer;
+ }

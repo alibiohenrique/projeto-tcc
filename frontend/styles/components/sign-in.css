@@ -1,5 +1,6 @@
 * {
     text-decoration: none;
+    border: none;
 }
 
 a {
@@ -9,11 +10,15 @@ a {
 }
 
 label {
-    border: 2px solid red;
-    max-height: 500px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     overflow-y: hidden;
     color: var(--darker-purple);
     font-weight: 600;
+    min-height: 25px;
+    max-height: 50px;
     font-size: var(--lg);
 }
 
@@ -27,39 +32,57 @@ h2 {
     font-family: roboto;
 }
 
-.input {
-    max-height: 1100px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.sign-in {
+    width: 25%;
+    margin-left: 75%;
 }
 
-.container .section {
-    max-height: 90vh;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
+.sign-in-title {
+    overflow-y: hidden;
+    min-height: 50px;
+    max-height: 60px;
+    margin: 0;
 
+}
 
 .sign-in-form {
-    border: 2PX red SOLID;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-height: 1100px;
+    min-height: 250px;
+
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .btn {
-    background-color: var(--cyan);
-    font-weight: 1000;
-    color: var(--dark-purple);
+    overflow-y: hidden;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+
     font-family: roboto;
+    font-weight: 1000;
+    background-color: var(--cyan);
+    color: var(--dark-purple);
     transition: 0.5s;
+
+}
+
+.btn-submit {
+    height: 2.5rem;
 }
 
 .btn:hover {
@@ -67,23 +90,82 @@ h2 {
     background-color: var(--dark-purple);
 }
 
-@media (min-width: 475px) {
+.btn-submit .input input {
+    overflow-y: hidden;
+}
 
-    .container .section {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        position: relative;
+.login {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 20px;
+    max-height: 50px;
+}
 
+.login a {
+    overflow-y: hidden;
+}
+
+/* xxs */
+@media (max-width: 474px) {
+
+    a,
+    label,
+    input {
+        font-size: var(--base);
     }
 
-    .container .section .pop-up {
-        padding: 0;
-        margin: 0;
-        height: 85vh;
+    input {
+        min-height: 20px;
+    }
+
+
+    h2 {
+        font-size: var(--xl);
+    }
+
+    .sign-in {
+        margin: 0 auto;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        display: flex;
+        height: 78vh;
         width: 65.5vw;
+    }
+
+    .sign-in-title {
+        transform: translateY(25px);
+    }
+
+    .btn-submit {
+        height: 2.25rem;
+    }
+}
+
+
+/* xs */
+@media (min-width: 475px) {
+
+    a,
+    label,
+    input {
+        font-size: var(--base);
+    }
+
+    input {
+        min-height: 20px;
+    }
+
+
+    h2 {
+        font-size: var(--lg);
+    }
+
+    .sign-in {
+        max-height: 80vh;
     }
 
 
@@ -91,86 +173,99 @@ h2 {
 
 /* sm */
 @media (min-width: 640px) {
-    .container .section {
-        height: 100vh;
+
+    a,
+    label,
+    input {
+        font-size: var(--lg);
+    }
+
+    input {
+        min-height: 20px;
+    }
+
+
+    h2 {
+        font-size: var(--xl);
+    }
+
+    .login a {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        position: relative;
+        min-height: 50px;
+        font-size: var(--xl);
     }
 
-    .container .section .pop-up {
-        height: 100vh;
-        width: 65.5vw;
+
+    .sign-in {
+        max-height: 80vh;
     }
+
 }
 
 /* md */
 @media (min-width: 768px) {
-    .container .section {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        position: relative;
+
+    a,
+    label,
+    input {
+        font-size: var(--xl);
     }
 
-    .container .section .pop-up {
-        height: 100vh;
-        width: 65.5vw;
-
+    input {
+        min-height: 20px;
     }
+
+
+    h2 {
+        font-size: var(--2xl);
+    }
+
+    .btn {
+        height: 5rem;
+    }
+
 }
 
 /* lg */
 @media (min-width: 1024px) {
-    .container .section {
-        height: 100vh;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        margin: 0 auto;
-        position: relative;
+
+    a,
+    label,
+    input {
+        font-size: var(--base);
     }
 
-    .container .section .pop-up {
-        height: 100vh;
-        width: 31.5vw;
+    input {
+        min-height: 20px;
     }
+
+    h2 {
+        font-size: var(--2xl);
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        
+    }
+
+    .sign-in {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        right: 0;
+    }
+
+  
+
 }
 
 /* xl */
-@media (min-width: 1280px) {
-    .container .section {
-        height: 100vh;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        margin: 0 auto;
-        position: relative;
-    }
-
-    .container .section .pop-up {
-        height: 100vh;
-        width: 31.5vw;
-    }
-}
+@media (min-width: 1280px) {}
 
 /* 2xl */
-@media (min-width: 1536px) {
-    .container .section {
-        height: 100vh;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        margin: 0 auto;
-        position: relative;
-    }
-
-    .container .section .pop-up {
-        height: 100vh;
-        width: 31.5vw;
-    }
-}
+@media (min-width: 1536px) {}

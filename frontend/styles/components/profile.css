@@ -35,9 +35,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 95vw;
-    padding: 5vw;
-    gap: 12px;
+    justify-content: center;
+    max-width: 500px;
+    width: 95vw;
+    padding: 30px;
+    gap: 20px;
     border-radius: 40px;
     color: #fff;
 }
@@ -47,10 +49,14 @@ header {
     border: solid var(--yellow) 8px;
 }
 
+.profile-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 .profile-card P {
     color: var(--p);
-    width: 80vw;
     font-size: 1.2em;
 }
 
@@ -77,9 +83,9 @@ h3 {
 /* MODIFICAÇÕES CARD NÃO LOGADO */
 
 .unlogged {
+    max-width: 500px;
     position: absolute;
     text-align: center;
-    z-index: 30;
 }
 
 .unlogged .profile-card {
@@ -89,7 +95,7 @@ h3 {
 .login {
     background: var(--cyan);
 }
-.login a, .sign-in a{
+.unlogged .login a, .sign-in a{
     text-decoration: none;
     color: var(--white);
 
@@ -97,8 +103,20 @@ h3 {
 
 .sign-in{
     background: none;
-    border: solid #ebdc17 2px;
-    
+    border: solid var(--cyan) 2px;
+}
+
+.sign-in:hover{
+    background: var(--cyan);
+}
+
+.login{
+    background: var(--cyan);
+    border: solid var(--cyan) 2px;
+}
+
+.login:hover{
+    background: none;
 }
 
 /* POP-UP */
@@ -150,11 +168,11 @@ h3 {
 .btn-primary {
     font-size: 1em;
     padding: 0 20px;
-    border: solid var(--white) 5px;
+    border: solid var(--white) 3px;
     background: var(--purple);
     padding: 0;
     margin: 0 auto;
-    width: 3.5em;
+    width: 3em;
     color: var(--white);
     border-radius: 30px;
 }
@@ -172,7 +190,6 @@ h3 {
 }
 
 .blur {
-    display: none;
     position: absolute;
     top: 0;
     width: 100%;
