@@ -44,6 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
             } else {
                 echo "Usuário ou senha inválido";
+
             }
         } else {
             echo "ERRO: Não deu para executar a consulta SQL: $sql. " . mysqli_error($conn);
@@ -65,7 +66,7 @@ mysqli_close($conn);
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title> KidScript | Login </title>
+    <title> KidScript | Entrar </title>
     <!-- HTML5 default configs -->
     <!-- icons -->
     <link rel="stylesheet"
@@ -130,7 +131,7 @@ mysqli_close($conn);
 
     <div class="container">
         <div class="pop-up login">
-            <div class="login-in-title">
+            <div class="login-title">
                 <h2>FAÇA SEU LOGIN</h2>
 
             </div>

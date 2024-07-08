@@ -3,9 +3,13 @@
     border: none;
 }
 
+body {
+    overflow-y: hidden;
+}
+
 a {
     font-weight: 500;
-    color: var(--gray);
+    color: var(--light-purple);
     font-size: var(--base);
 }
 
@@ -15,7 +19,7 @@ label {
     align-items: center;
     display: flex;
     overflow-y: hidden;
-    color: var(--darker-purple);
+    color: var(--light-purple);
     font-weight: 600;
     min-height: 25px;
     max-height: 50px;
@@ -23,8 +27,8 @@ label {
 }
 
 h2 {
+    color: var(--light-purple);
     overflow-y: hidden;
-    color: var(--dark-purple);
     margin-top: 1.5rem;
     font-size: var(--3xl);
     font-weight: 1000;
@@ -32,7 +36,21 @@ h2 {
     font-family: roboto;
 }
 
+.container {
+
+    height: 100vh;
+    width: 100%;
+    background: url(../../assets/side-wave_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    text-wrap: wrap;
+    overflow-y: hidden !important;
+
+}
+
 .sign-in {
+    background-color: var(--dark-purple);
     width: 25%;
     margin-left: 75%;
 }
@@ -66,13 +84,7 @@ h2 {
 .btn {
     overflow-y: hidden;
 
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    position: relative;
-
+    border: 2px solid var(--dark-purple);
     font-family: roboto;
     font-weight: 1000;
     background-color: var(--cyan);
@@ -82,11 +94,17 @@ h2 {
 }
 
 .btn-submit {
-    height: 2.5rem;
+    margin-top: 0.5rem;
+    height: 2.7rem;
+}
+
+.btn-submit input {
+    margin: 0 auto;
 }
 
 .btn:hover {
     color: var(--cyan);
+    border: 0.1rem solid var(--cyan);
     background-color: var(--dark-purple);
 }
 
@@ -125,6 +143,13 @@ h2 {
         font-size: var(--xl);
     }
 
+    .container {
+        background: url(../../assets/side-wave_background-to-phones.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
     .sign-in {
         margin: 0 auto;
         position: absolute;
@@ -137,7 +162,7 @@ h2 {
     }
 
     .sign-in-title {
-        transform: translateY(25px);
+        transform: translateY(35px);
     }
 
     .btn-submit {
@@ -247,11 +272,6 @@ h2 {
         font-size: var(--2xl);
     }
 
-    .container {
-        width: 100%;
-        display: flex;
-        
-    }
 
     .sign-in {
         display: flex;
@@ -260,7 +280,7 @@ h2 {
         right: 0;
     }
 
-  
+
 
 }
 
