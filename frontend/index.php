@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <!-- HTML5 & page default configs -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +15,6 @@
     <link rel="stylesheet" href="styles/utils/utils.css">
     <link rel="stylesheet" href="styles/components/header.css">
     <link rel="stylesheet" href="styles/components/main.css">
-    
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -54,7 +55,7 @@
                 </a>
             </li>
             <li class="icons">
-            <a href="../frontend/pages/settings.php" class="navlink">
+                <a href="../frontend/pages/settings.php" class="navlink">
                     <span class="material-symbols-outlined">
                         settings
                     </span>
@@ -93,8 +94,8 @@
                 <img src="assets/control.png" alt="">
                 <h3>
                     Onde as crianças criam tecnologia! <br><br>
-                    <button class="btn">Entrar</button>
-                    <button class="btn">Cadastre-se</button>
+                    <button class="btn"><a href="pages/login.php">Entrar</a></button>
+                    <button class="btn"><a href="pages/sign-in.php">Cadastre-se</a></button>
                 </h3>
             </div>
         </div>
@@ -143,15 +144,6 @@
                     </p>
                 </div>
             </div>
-            <div data-aos="fade-up" class="card">
-                <div class="cHead">
-                    <div class="textSection">
-                        <h2>Nome do expeecialista</h2>
-                        <p>Expecialidades, cargos e etc aqui</p>
-                    </div>
-                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user"
-                        alt="">
-
             <div class="avaliation">
                 <div class="specialist">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHU5JIkqfD2z1KMc4c1nW4zdArnxBM3cCcQ&s" alt="" width="90px">
@@ -163,29 +155,24 @@
                 </div>
             </div>
 
-        </section>
-        <section class="section">
-            <div class="btnSection bottom">
-                <button class="btn">Entrar</button>
-                <button class="btn btn1">cadastre-se</button>
+            <div class="call-to-action">
+                <div class="cta-asset">
+                    <img src="assets/girl.png" alt="">
+                </div>
+                <div class="calling-to-action">
+                    <h2>
+                        Junte-se à KidScript
+                    </h2>
+                    <br>
+                    <h2>
+                        Aprenda programação de forma interativa e divertida.
+                    </h2>
+                    <button class="btn">
+                        <a href="pages/sign-in.php">Começar Hoje</a>
+                    </button>
+                </div>
 
             </div>
-
-        </section>
-        </div>
-        <div class="call-to-action">
-            <div class="calling-to-action">
-                <h2>
-                    Vamos começar essa jornada com a KidScript ?
-                </h2>
-                <h2>
-                    aprenda lógica de programação jogando com nós!
-                </h2>
-                <button class="btn">
-                    Começar Hoje
-                </button>
-            </div>
-        </div>
     </main>
 
 

@@ -13,6 +13,11 @@ body {
     background: var(--light-purple);
 }
 
+a{
+    text-decoration: none;
+    color: var(--light-purple);
+}
+
 .landing-page {
     height: 100vh;
     width: 100%;
@@ -132,6 +137,7 @@ hr{
 
 .specialist img{
     width: 7em;
+    height: 7em;
     border-radius: 100px;
 }
 
@@ -148,10 +154,28 @@ hr{
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);
 }
 
 .calling-to-action{
-    
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+
+.cta-asset img{
+    width: 200px;
+}
+
+.call-to-action .btn{
+    margin-top: 2em;
+    padding: 1em;
+    background: var(--dark-purple);
+    color: var(--light-purple);
 }
 
 @media screen and (max-width: 768px) {
@@ -218,5 +242,16 @@ hr{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .call-to-action{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .calling-to-action{
+        width: 70%;
+    }
+    .cta-asset img{
+        width: 300px;
     }
 }
