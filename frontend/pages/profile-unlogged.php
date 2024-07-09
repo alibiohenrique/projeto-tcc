@@ -3,9 +3,10 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/utils/utils.css">
-    <link rel="stylesheet" href="../styles/components/header.css">
-    <link rel="stylesheet" href="../styles/components/profile.css">
+
+    <link rel="stylesheet" href="../styles/utils.css">
+    <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../styles/profile.css">
 
     <!-- icons -->
     <link rel="stylesheet"
@@ -22,55 +23,12 @@
 
 <body>
 
+    <?php include '../components/header/header.php'; ?>
+
+
     <main>
 
-        <header>
-            <ul class="navbar">
-                <li class="logo">
-                    <img src="../assets/logo.png" alt="" width="120px">
-                </li>
 
-                <li class="icons">
-                    <a href="../index.php" class="navlink">
-                        <span class="material-symbols-outlined">
-                            home
-                        </span>
-                        <p>Início</p>
-                    </a>
-                </li>
-                <li class="icons">
-                    <a href="./about.php" class="navlink">
-                        <span class="material-symbols-outlined">
-                            info
-                        </span>
-                        <p>Sobre</p>
-                    </a>
-                </li>
-                <li class="icons">
-                    <a href="./game.php" class="navlink">
-                        <span class="material-symbols-outlined">
-                            play_circle
-                        </span>
-                        <p>Jogue</p>
-                    </a>
-                </li>
-                <li class="icons">
-                    <a href="./settings.php" class="navlink">
-                        <span class="material-symbols-outlined">
-                            settings
-                        </span>
-                        <p>Configurações</p>
-                    </a>
-                </li>
-                <li class="icons">
-                    <a href="./profile-unlogged.php" class="navlink">
-                        <span class="material-symbols-outlined">
-                            person
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </header>
 
         <div class="section profile" id="section">
 
@@ -78,8 +36,8 @@
                 <div class="profile-card">
                     <h2>Ops!! Você ainda não tem cadastro</h2>
                     <p>Cadastre-se no nosso site e desbloqueie o aprendizado divertido!!</p>
-                    <div class="btnSection"><button class="btn login"><a href="./login.php">Entrar</a></button> <button
-                            class="btn sign-in"><a href="./sign-in.php">cadastre-se</a></button>
+                    <div class="btnSection"><button class="btn login"><a href="login.php">Entrar</a></button> <button
+                            class="btn sign-in"><a href="sign-in.php">cadastre-se</a></button>
                     </div>
                 </div>
             </div>

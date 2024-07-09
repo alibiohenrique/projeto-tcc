@@ -5,11 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/utils/utils.css">
-    <link rel="stylesheet" href="../styles/components/header.css">
-    <link rel="stylesheet" href="../styles/components/game.css">
-     <!-- icons -->
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="../styles/utils.css">
+    <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../styles/game.css">
+    <!-- icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
     <!-- icons -->
     <title>Document</title>
 
@@ -17,53 +18,10 @@
 </head>
 
 <body>
-    <header>
-        <ul class="navbar">
-            <li class="logo">
-                <img src="../assets/logo.png" alt="" width="120px">
-            </li>
 
-            <li class="icons">
-                <a href="index.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        home
-                    </span>
-                    <p class="highlight-hover">Início</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="pages/about.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        info
-                    </span>
-                    <p class="highlight-hover">Sobre</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="pages/game.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        play_circle
-                    </span>
-                    <p class="highlight-hover">Jogue</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="pages/settings.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        settings
-                    </span>
-                    <p class="highlight-hover">Configurações</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="pages/profile.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        person
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </header>
+     <?php include '../components/header/header.php'; ?>     
+
+
     <div class="ide">
         <!-- comida >forma e cor ; cores da pagina; cores das linhas-->
         <div class="ideHeader">
@@ -231,7 +189,7 @@
             </div>
         </div>
         <button id="rotate" onclick="landScape()">
-            <img src="../assets/rotate.png" alt="">
+            <img src="../assets/images/rotate.png" alt="">
         </button>
         <canvas width="600" height="600"></canvas>
         <div class="gameNav">

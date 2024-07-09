@@ -1,17 +1,13 @@
 * {
     text-decoration: none;
-    border: none;
-}
-
-body {
-    overflow-y: hidden;
 }
 
 a {
     font-weight: 500;
-    color: var(--light-purple);
+    color: var(--gray);
     font-size: var(--base);
 }
+
 
 label {
     text-align: center;
@@ -27,9 +23,14 @@ label {
 }
 
 h2 {
-    color: var(--light-purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     overflow-y: hidden;
-    margin-top: 1.5rem;
+    color: var(--light-purple);
+
+    height: 5rem;
     font-size: var(--3xl);
     font-weight: 1000;
     letter-spacing: -0.1rem;
@@ -40,36 +41,39 @@ h2 {
 
     height: 100vh;
     width: 100%;
-    background: url(../../assets/side-wave_background.jpg);
+    background: url(../assets/images/side-wave_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: var(--white);
+    color: var(--white);    
     text-wrap: wrap;
     overflow-y: hidden !important;
 
 }
 
-.sign-in {
+.login {
+    color: var(--light-purple);
     background-color: var(--dark-purple);
+    height: 100vh;
     width: 25%;
     margin-left: 75%;
 }
 
-.sign-in-title {
+.login-title {
     overflow-y: hidden;
-    min-height: 50px;
-    max-height: 60px;
+    height: 3.5rem;
     margin: 0;
 
 }
 
-.sign-in-form {
+.login-form {
+    padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 250px;
+    height: 25rem;
+
 
 }
 
@@ -82,46 +86,35 @@ h2 {
 }
 
 .btn {
-    overflow-y: hidden;
 
-    border: 2px solid var(--dark-purple);
     font-family: roboto;
     font-weight: 1000;
     background-color: var(--cyan);
+    border: 0.1rem var(--cyan) solid;
     color: var(--dark-purple);
     transition: 0.5s;
 
 }
 
-.btn-submit {
-    margin-top: 0.5rem;
-    height: 2.7rem;
-}
-
-.btn-submit input {
-    margin: 0 auto;
-}
-
 .btn:hover {
     color: var(--cyan);
-    border: 0.1rem solid var(--cyan);
     background-color: var(--dark-purple);
 }
 
-.btn-submit .input input {
-    overflow-y: hidden;
+.btn-login input {
+    margin-top: 2.5rem;
 }
 
-.login {
+
+.sign-in {
     margin: 0 auto;
     justify-content: center;
     display: flex;
     align-items: center;
-    min-height: 20px;
-    max-height: 50px;
+
 }
 
-.login a {
+.sign-in a {
     overflow-y: hidden;
 }
 
@@ -138,41 +131,52 @@ h2 {
         min-height: 20px;
     }
 
-
     h2 {
+        height: 50px;
         font-size: var(--xl);
     }
 
     .container {
-        background: url(../../assets/side-wave_background-to-phones.jpg);
+
+        background: url(../assets/images/side-wave_background-to-phones.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        margin: 0 auto;
+        justify-content: center;
+        display: flex;
         height: 100vh;
+
     }
 
-    .sign-in {
+    .login {
+        padding: 0;
         margin: 0 auto;
-        position: absolute;
-        justify-content: center;
         align-items: center;
-        position: relative;
         display: flex;
-        height: 78vh;
+        height: 85.5vh;
         width: 65.5vw;
     }
 
-    .sign-in-title {
-        transform: translateY(35px);
+    .login-form {
+        height: 10rem;
+        padding: 0;
     }
 
-    .btn-submit {
-        height: 2.25rem;
+    .btn-login {
+        height: 2.9rem;
+    }
+
+    .btn-login input {
+        margin-top: 0.5rem;
     }
 }
 
 
+
 /* xs */
 @media (min-width: 475px) {
+
+ 
 
     a,
     label,
@@ -188,6 +192,7 @@ h2 {
     h2 {
         font-size: var(--lg);
     }
+
 
     .sign-in {
         max-height: 80vh;
@@ -224,7 +229,6 @@ h2 {
         font-size: var(--xl);
     }
 
-
     .sign-in {
         max-height: 80vh;
     }
@@ -250,8 +254,12 @@ h2 {
     }
 
     .btn {
-        height: 5rem;
+        margin-top: 0.5rem;
+        height: 2.7rem;
     }
+
+
+
 
 }
 
@@ -271,15 +279,6 @@ h2 {
     h2 {
         font-size: var(--2xl);
     }
-
-
-    .sign-in {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        right: 0;
-    }
-
 
 
 }

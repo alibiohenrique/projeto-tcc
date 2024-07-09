@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $_SESSION['username'] = $username_input;
                     echo "Login foi um sucesso. Bem vindo, " . $username_input . "!";
                     // Redirecionar para a página protegida
-                    header("Location: protected.php");
+                    header("Location: profile.php");
                     exit();
                 } else {
                     echo "Usuário ou senha inválido";
@@ -74,60 +74,14 @@ mysqli_close($conn);
     <!-- icons -->
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="../styles/components/header.css">
-    <link rel="stylesheet" href="../styles/utils/utils.css">
-    <link rel="stylesheet" href="../styles/components/login.css">
+    <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../styles/utils.css">
+    <link rel="stylesheet" href="../styles/login.css">
 </head>
 
 <body>
 
-    <header>
-        <ul class="navbar">
-            <li class="logo">
-                <img src="../assets/logo.png" alt="" width="120px">
-            </li>
-
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        home
-                    </span>
-                    <p>Início</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        info
-                    </span>
-                    <p>Sobre</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        play_circle
-                    </span>
-                    <p>Jogue</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        settings
-                    </span>
-                    <p>Configurações</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        person
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </header>
+    <?php include '../components/header/header.php'; ?>
 
     <div class="container">
         <div class="pop-up login">

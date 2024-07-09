@@ -66,59 +66,15 @@ mysqli_close($conn);
     <!-- icons -->
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="../styles/components/header.css">
-    <link rel="stylesheet" href="../styles/utils/utils.css">
-    <link rel="stylesheet" href="../styles/components/sign-in.css">
+    <link rel="stylesheet" href="../styles/utils.css">
+    <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../styles/sign-in.css">
 </head>
 
 <body>
-    <header>
-        <ul class="navbar">
-            <li class="logo">
-                <img src="../assets/logo.png" alt="" width="120px">
-            </li>
+    
+    <?php include '../components/header/header.php'; ?>
 
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        home
-                    </span>
-                    <p>Início</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        info
-                    </span>
-                    <p>Sobre</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        play_circle
-                    </span>
-                    <p>Jogue</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        settings
-                    </span>
-                    <p>Configurações</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        person
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </header>
     <div class="container">
 
         <div class="pop-up sign-in">

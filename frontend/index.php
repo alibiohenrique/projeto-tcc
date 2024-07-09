@@ -14,9 +14,9 @@
     <!-- HTML5 default configs -->
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="styles/utils/utils.css">
-    <link rel="stylesheet" href="styles/components/header.css">
-    <link rel="stylesheet" href="styles/components/main.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <link rel="stylesheet" href="components/header/header.css">
+    <link rel="stylesheet" href="styles/main.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -29,7 +29,7 @@
     <header>
         <ul class="navbar">
             <li class="logo">
-                <img src="assets/logo.png" alt="" width="120px">
+                <img src="assets/images/logo.png" alt="" width="120px">
             </li>
 
             <li class="icons">
@@ -65,7 +65,7 @@
                 </a>
             </li>
             <li class="icons">
-                <a href="pages/profile.php" class="navlink">
+                <a href="pages/profile-unlogged.php" class="navlink">
                     <span class="material-symbols-outlined">
                         person
                     </span>
@@ -90,10 +90,10 @@
                 </h2>
             </div>
             <div class="center-asset">
-                <img src="assets/computer1.png" alt="">
+                <img src="assets/images/computer1.png" alt="">
             </div>
             <div class="bottom-texts">
-                <img src="assets/control.png" alt="">
+                <img src="assets/images/control.png" alt="">
                 <h3>
                     Onde as crianças criam tecnologia! <br><br>
                     <button class="btn"><a href="pages/login.php">Entrar</a></button>
@@ -130,7 +130,7 @@
                 <hr>
             </div>
             <div class="aside-assets">
-                <img src="assets/preview-plataforms.png" alt="" width="100%">
+                <img src="assets/images/preview-plataforms.png" alt="" width="100%">
             </div>
         </div>
         <h2 class="section-title">Avaliado por <br> especialistas:</h2>
@@ -177,7 +177,7 @@
 
             <div class="call-to-action">
                 <div class="cta-asset">
-                    <img src="assets/girl.png" alt="">
+                    <img src="assets/images/girl.png" alt="">
                 </div>
                 <div class="calling-to-action">
                     <h2>
