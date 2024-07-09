@@ -58,7 +58,7 @@ mysqli_close($conn);
     <!-- HTML5 & page default configs -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title> KidScript | Login </title>
+    <title> KidScript | Cadastre </title>
     <!-- HTML5 default configs -->
     <!-- icons -->
     <link rel="stylesheet"
@@ -66,93 +66,59 @@ mysqli_close($conn);
     <!-- icons -->
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="../styles/components/header.css">
-    <link rel="stylesheet" href="../styles/utils/utils.css">
-    <link rel="stylesheet" href="../styles/components/sign-in.css">
+    <link rel="stylesheet" href="../styles/utils.css">
+    <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../styles/sign-in.css">
 </head>
 
 <body>
-    <header>
-        <ul class="navbar">
-            <li class="logo">
-                <img src="../assets/logo.png" alt="" width="120px">
-            </li>
+    
+    <?php include '../components/header/header.php'; ?>
 
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        home
-                    </span>
-                    <p>Início</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        info
-                    </span>
-                    <p>Sobre</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        play_circle
-                    </span>
-                    <p>Jogue</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        settings
-                    </span>
-                    <p>Configurações</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        person
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </header>
     <div class="container">
 
-        <section class="section">
+        <div class="pop-up sign-in">
 
-            <div class="pop-up sign-in">
+            <div class="sign-in-title">
                 <h2>FAÇA SEU CADASTRO</h2>
+            </div>
 
-                <form action="" method="POST" class="sign-in-form">
+            <form action="" method="POST" class="sign-in-form">
+                <div class="input">
                     <label for="nome">Usuário:</label>
                     <input type="text" id="username-input" name="username-input" required><br><br>
 
+                </div>
+                <div class="input">
                     <label for="senha">Senha:</label>
                     <input type="password" id="password-input" name="password-input" required><br><br>
 
+                </div>
+                <div class="input">
                     <label for="senha">Confirmar senha:</label>
                     <input type="password" id="password-input-validation" name="password-input-validation"
                         required><br><br>
 
+                </div>
+                <div class="input">
                     <label for="email">E-mail:</label>
                     <input type="email" id="email-input" name="email-input" required><br><br>
 
-                    <input type="submit" value="Cadastrar" class="btn btn-login">
-                </form>
-                <a href="#">Ou entre com o Google</a>
+                </div>
 
+                <div class="btn-submit input">
+                    <input type="submit" value="Cadastrar" class="btn btn-submit">
+                </div>
+
+            </form>
+            <div class="input login">
+                <a href="login.php">Ja tenho login?</a>
 
             </div>
 
+        </div>
 
-        </section>
     </div>
-
-
-
 </body>
 
 </html>

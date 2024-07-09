@@ -1,17 +1,16 @@
 @charset "utf-8";
 
-:root {
-    --dark-purple: #1D152E;
+ :root {
 
     --card: var(--dark-purple);
     --span: var(--white);
     --p: var(--purple);
     --text: var(--white);
-}
-
-*{
-    font-family: Arial, Helvetica, sans-serif;
-}
+    --background: ;
+    --background-profile: var(--darker-purple);
+    --background-change-password:var(--dark-gray);
+ 
+ }
 
 /* FORMATAÇÃO BASICA */
 
@@ -32,7 +31,7 @@ header {
 }
 
 .profile-card {
-    background: var(--dark-purple);
+    background: var(--background-profile);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +46,7 @@ header {
 
 
 .profile-card img {
-    border: solid #ebdc17 8px;
+    border: solid var(--yellow) 8px;
 }
 
 .profile-text{
@@ -82,6 +81,7 @@ h3 {
 }
 
 /* MODIFICAÇÕES CARD NÃO LOGADO */
+
 .unlogged {
     max-width: 500px;
     position: absolute;
@@ -93,7 +93,7 @@ h3 {
 }
 
 .login {
-    background: var(--ciano);
+    background: var(--cyan);
 }
 .unlogged .login a, .sign-in a{
     text-decoration: none;
@@ -126,7 +126,7 @@ h3 {
     position: absolute;
     align-items: center;
     justify-content: center;
-    background: #32322F;
+    background: var(--background-change-password);
     font-size: 1.2em;
     padding: 20px;
     border-radius: 30px;

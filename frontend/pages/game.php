@@ -5,16 +5,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/utils/utils.css">
-    <link rel="stylesheet" href="../styles/components/header.css">
-    <link rel="stylesheet" href="../styles/utils/navbar.css">
-    <link rel="stylesheet" href="../styles/components/game.css">
+    <link rel="stylesheet" href="../styles/utils.css">
+    <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../styles/game.css">
+    <!-- icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <!-- icons -->
     <title>Document</title>
 
 
 </head>
 
 <body>
+
+     <?php include '../components/header/header.php'; ?>     
+
+
     <div class="ide">
         <!-- comida >forma e cor ; cores da pagina; cores das linhas-->
         <div class="ideHeader">
@@ -35,7 +42,7 @@
                 <option value="corpo">Comida</option>
                 <option value="corpo">Pagina</option>
                 <option value="corpo">Campo do jogo</option>
-                <option value="corpo">Linhas do campo</option>                
+                <option value="corpo">Linhas do campo</option>
             </select><span>{</span><br>
             <select name="atributo" id="atributo">
                 <option value="">Atributo</option>
@@ -55,7 +62,7 @@
             </select><span>;</span>
             <p>}</p>
             <!--  -->
-        
+
             <select name="elemento" id="elemento">
                 <option value="">elemento</option>
                 <option value="cabeca">Cabeça da cobra</option>
@@ -63,7 +70,7 @@
                 <option value="corpo">Comida</option>
                 <option value="corpo">Pagina</option>
                 <option value="corpo">Campo do jogo</option>
-                <option value="corpo">Linhas do campo</option>                
+                <option value="corpo">Linhas do campo</option>
             </select><span>{</span><br>
             <select name="atributo" id="atributo">
                 <option value="">Atributo</option>
@@ -83,7 +90,7 @@
             </select><span>;</span>
             <p>}</p>
             <!--  -->
-            
+
             <select name="elemento" id="elemento">
                 <option value="">elemento</option>
                 <option value="cabeca">Cabeça da cobra</option>
@@ -91,7 +98,7 @@
                 <option value="corpo">Comida</option>
                 <option value="corpo">Pagina</option>
                 <option value="corpo">Campo do jogo</option>
-                <option value="corpo">Linhas do campo</option>                
+                <option value="corpo">Linhas do campo</option>
             </select><span>{</span><br>
             <select name="atributo" id="atributo">
                 <option value="">Atributo</option>
@@ -111,7 +118,7 @@
             </select><span>;</span>
             <p>}</p>
             <!--  -->
-            
+
             <select name="elemento" id="elemento">
                 <option value="">elemento</option>
                 <option value="cabeca">Cabeça da cobra</option>
@@ -119,7 +126,7 @@
                 <option value="corpo">Comida</option>
                 <option value="corpo">Pagina</option>
                 <option value="corpo">Campo do jogo</option>
-                <option value="corpo">Linhas do campo</option>                
+                <option value="corpo">Linhas do campo</option>
             </select><span>{</span><br>
             <select name="atributo" id="atributo">
                 <option value="">Atributo</option>
@@ -139,7 +146,7 @@
             </select><span>;</span>
             <p>}</p>
             <!--  -->
-            
+
             <select name="elemento" id="elemento">
                 <option value="">elemento</option>
                 <option value="cabeca">Cabeça da cobra</option>
@@ -147,7 +154,7 @@
                 <option value="corpo">Comida</option>
                 <option value="corpo">Pagina</option>
                 <option value="corpo">Campo do jogo</option>
-                <option value="corpo">Linhas do campo</option>                
+                <option value="corpo">Linhas do campo</option>
             </select><span>{</span><br>
             <select name="atributo" id="atributo">
                 <option value="">Atributo</option>
@@ -182,7 +189,7 @@
             </div>
         </div>
         <button id="rotate" onclick="landScape()">
-            <img src="../assets/rotate.png" alt="">
+            <img src="../assets/images/rotate.png" alt="">
         </button>
         <canvas width="600" height="600"></canvas>
         <div class="gameNav">
