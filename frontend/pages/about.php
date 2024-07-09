@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header>
+<header>
         <ul class="navbar">
             <li class="logo">
                 <img src="../assets/logo.png" alt="" width="120px">
@@ -28,7 +28,7 @@
                     <span class="material-symbols-outlined">
                         home
                     </span>
-                    <p>Início</p>
+                    <p class="highlight-hover">Início</p>
                 </a>
             </li>
             <li class="icons">
@@ -36,7 +36,7 @@
                     <span class="material-symbols-outlined">
                         info
                     </span>
-                    <p>Sobre</p>
+                    <p class="highlight-hover">Sobre</p>
                 </a>
             </li>
             <li class="icons">
@@ -44,15 +44,15 @@
                     <span class="material-symbols-outlined">
                         play_circle
                     </span>
-                    <p>Jogue</p>
+                    <p class="highlight-hover">Jogue</p>
                 </a>
             </li>
             <li class="icons">
-                <a href="./settings.php" class="navlink">
+            <a href="./settings.php" class="navlink">
                     <span class="material-symbols-outlined">
                         settings
                     </span>
-                    <p>Configurações</p>
+                    <p class="highlight-hover">Configurações</p>
                 </a>
             </li>
             <li class="icons">
@@ -65,6 +65,7 @@
         </ul>
     </header>
 
+
     <main>
 
         <div class="section" id="CDSection">
@@ -74,7 +75,7 @@
                     <h2>Missão</h2>
                     <p>Nosso propósito é transformar a forma como as crianças interagem com a tecnologia, oferecendo uma abordagem lúdica e educativa para o aprendizado de programação. Buscamos otimizar o tempo dedicado a dispositivos eletrônicos, transformando-o em uma experiência de aprendizado significativa e estimulante.</p>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#fff" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" class="bi bi-chevron-down" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                     </svg>
 
@@ -86,7 +87,7 @@
                     <p>Nossa visão é inspirar uma nova geração de jovens programadores, capacitando-os para um futuro digital brilhante e promovendo uma abordagem inovadora e divertida no aprendizado de habilidades tecnológicas essenciais.
                     </p>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#fff" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" class="bi bi-chevron-down" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                     </svg>
                 </div>
@@ -95,7 +96,7 @@
                     <h2>Valores</h2>
                     <p>Em nosso projeto, temos como valores fundamentais a educação de qualidade, a responsabilidade digital, a inclusão e a diversão no aprendizado.</p>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#fff" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" class="bi bi-chevron-down" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                     </svg>
                 </div>
@@ -106,7 +107,7 @@
                         <h2>Sobre nós</h2>
                         <iframe src="https://www.youtube.com/embed/wMTnjSJGWCs?si=ZkHGBrhkyhx6DwqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             
-                            <div class="btnSection"><button class="btn login">Entrar</button> <button class="btn sign-in">cadastre-se</button>
+                            <div class="btnSection"><button class="btn login"><strong><a href="./login.php">Entrar</a></strong></button> <button class="btn sign-in"><strong><a href="./sign-in.php">cadastre-se</a></strong></button>
                         </div>
                     </div>
                 </div>

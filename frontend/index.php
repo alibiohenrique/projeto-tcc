@@ -105,15 +105,15 @@
         <div class="learn-playing">
             <div class="aside-texts">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rem quidem inventore nihil et. Eaque placeat expedita ab ratione recusandae aspernatur, animi inventore, laboriosam repellat quidem in corporis quasi suscipit.
+                A Kidscript é uma plataforma gratuita de ensino de programação voltada para crianças e jovens de 6 a 12 anos. Nosso objetivo é ensinar programação de maneira divertida e acessível, utilizando jogos intuitivos que tornam o aprendizado lúdico e envolvente.
                 </p>
                 <hr>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rem quidem inventore nihil et. Eaque placeat expedita ab ratione recusandae aspernatur, animi inventore, laboriosam repellat quidem in corporis quasi suscipit.
+                As crianças aprendem programação, lógica, algoritmos e resolução de problemas por meio de jogos interativos. Utilizamos uma linguagem básica e exercícios práticos para garantir que o aprendizado seja simples e eficaz. Além disso, promovemos o desenvolvimento do pensamento computacional e habilidades para lidar com frustrações.
                 </p>
                 <hr>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rem quidem inventore nihil et. Eaque placeat expedita ab ratione recusandae aspernatur, animi inventore, laboriosam repellat quidem in corporis quasi suscipit.
+                Estamos comprometidos em fornecer suporte contínuo e garantir o uso saudável da tecnologia. Limitamos o tempo de uso das crianças na plataforma para evitar que fiquem online por períodos prolongados. Na Kidscript, acreditamos que aprender programação pode ser divertido e acessível para todas as crianças.
                 </p>
                 <hr>
             </div>
