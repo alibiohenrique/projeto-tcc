@@ -7,12 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/utils/utils.css">
     <link rel="stylesheet" href="../styles/components/header.css">
-    <link rel="stylesheet" href="../styles/utils/navbar.css">
+    <!-- icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <!-- icons -->
     <link rel="stylesheet" href="../styles/components/game.css">
-    <title>Document</title>
+    <title>Jogo da Cobrinha | KidScript</title>
 
 
 </head>
+
+<header>
+    <ul class="navbar">
+        <li class="logo">
+            <img src="../assets/logo.png" alt="" width="120px">
+        </li>
+
+        <li class="icons">
+            <a href="index.php" class="navlink">
+                <span class="material-symbols-outlined">
+                    home
+                </span>
+                <p class="highlight-hover">Início</p>
+            </a>
+        </li>
+        <li class="icons">
+            <a href="./pages/about.php" class="navlink">
+                <span class="material-symbols-outlined">
+                    info
+                </span>
+                <p class="highlight-hover">Sobre</p>
+            </a>
+        </li>
+        <li class="icons">
+            <a href="./pages/game.php" class="navlink">
+                <span class="material-symbols-outlined">
+                    play_circle
+                </span>
+                <p class="highlight-hover">Jogue</p>
+            </a>
+        </li>
+        <li class="icons">
+            <a href="../frontend/pages/settings.php" class="navlink">
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+                <p class="highlight-hover">Configurações</p>
+            </a>
+        </li>
+        <li class="icons">
+            <a href="./pages/profile.php" class="navlink">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+            </a>
+        </li>
+    </ul>
+</header>
 
 <body>
     <div class="ide">
@@ -27,149 +78,35 @@
                 </svg>
             </button>
         </div>
-        <form action="">
-            <select name="elemento" id="elemento">
-                <option value="">elemento</option>
-                <option selected value="cabeca">Cabeça da cobra</option>
-                <option value="corpo">Corpo da cobra</option>
-                <option value="corpo">Comida</option>
-                <option value="corpo">Pagina</option>
-                <option value="corpo">Campo do jogo</option>
-                <option value="corpo">Linhas do campo</option>                
-            </select><span>{</span><br>
-            <select name="atributo" id="atributo">
-                <option value="">Atributo</option>
-                <option selected value="cor">Cor</option>
-                <option value="forma">Forma</option>
-            </select><span>:</span>
-            <select name="valor" id="valor">
-                <option value="">Valor</option>
-            </select><span>;</span><br>
-            <select name="atributo" id="atributo">
-                <option value="">Atributo</option>
-                <option value="cor">Cor</option>
-                <option selected value="forma">Forma</option>
-            </select><span>:</span>
-            <select name="valor" id="valor">
-                <option value="">Valor</option>
-            </select><span>;</span>
-            <p>}</p>
-            <!--  -->
-        
+        <form id="elementForm">
             <select name="elemento" id="elemento">
                 <option value="">elemento</option>
                 <option value="cabeca">Cabeça da cobra</option>
                 <option value="corpo">Corpo da cobra</option>
-                <option value="corpo">Comida</option>
-                <option value="corpo">Pagina</option>
-                <option value="corpo">Campo do jogo</option>
-                <option value="corpo">Linhas do campo</option>                
+                <option value="comida">Comida</option>
+                <option value="pagina">Pagina</option>
+                <option value="campo">Campo do jogo</option>
+                <option value="linhas">Linhas do campo</option>
             </select><span>{</span><br>
             <select name="atributo" id="atributo">
                 <option value="">Atributo</option>
                 <option value="cor">Cor</option>
                 <option value="forma">Forma</option>
             </select><span>:</span>
-            <select name="valor" id="valor">
+            <select class="valor" name="valor" id="valor">
                 <option value="">Valor</option>
+                <option value="vermelho">vermelho</option>
+                <option value="verde">verde</option>
+                <option value="#0000ff">azul</option>
+                <option value="redondo">Redondo</option>
+                <option value="quadrado">quadrado</option>
             </select><span>;</span><br>
-            <select name="atributo" id="atributo">
-                <option value="">Atributo</option>
-                <option value="cor">Cor</option>
-                <option value="forma">Forma</option>
-            </select><span>:</span>
-            <select name="valor" id="valor">
-                <option value="">Valor</option>
-            </select><span>;</span>
             <p>}</p>
-            <!--  -->
-            
-            <select name="elemento" id="elemento">
-                <option value="">elemento</option>
-                <option value="cabeca">Cabeça da cobra</option>
-                <option value="corpo">Corpo da cobra</option>
-                <option value="corpo">Comida</option>
-                <option value="corpo">Pagina</option>
-                <option value="corpo">Campo do jogo</option>
-                <option value="corpo">Linhas do campo</option>                
-            </select><span>{</span><br>
-            <select name="atributo" id="atributo">
-                <option value="">Atributo</option>
-                <option value="cor">Cor</option>
-                <option value="forma">Forma</option>
-            </select><span>:</span>
-            <select name="valor" id="valor">
-                <option value="">Valor</option>
-            </select><span>;</span><br>
-            <select name="atributo" id="atributo">
-                <option value="">Atributo</option>
-                <option value="cor">Cor</option>
-                <option value="forma">Forma</option>
-            </select><span>:</span>
-            <select name="valor" id="valor">
-                <option value="">Valor</option>
-            </select><span>;</span>
-            <p>}</p>
-            <!--  -->
-            
-            <select name="elemento" id="elemento">
-                <option value="">elemento</option>
-                <option value="cabeca">Cabeça da cobra</option>
-                <option value="corpo">Corpo da cobra</option>
-                <option value="corpo">Comida</option>
-                <option value="corpo">Pagina</option>
-                <option value="corpo">Campo do jogo</option>
-                <option value="corpo">Linhas do campo</option>                
-            </select><span>{</span><br>
-            <select name="atributo" id="atributo">
-                <option value="">Atributo</option>
-                <option value="cor">Cor</option>
-                <option value="forma">Forma</option>
-            </select><span>:</span>
-            <select name="valor" id="valor">
-                <option value="">Valor</option>
-            </select><span>;</span><br>
-            <select name="atributo" id="atributo">
-                <option value="">Atributo</option>
-                <option value="cor">Cor</option>
-                <option value="forma">Forma</option>
-            </select><span>:</span>
-            <select name="valor" id="valor">
-                <option value="">Valor</option>
-            </select><span>;</span>
-            <p>}</p>
-            <!--  -->
-            
-            <select name="elemento" id="elemento">
-                <option value="">elemento</option>
-                <option value="cabeca">Cabeça da cobra</option>
-                <option value="corpo">Corpo da cobra</option>
-                <option value="corpo">Comida</option>
-                <option value="corpo">Pagina</option>
-                <option value="corpo">Campo do jogo</option>
-                <option value="corpo">Linhas do campo</option>                
-            </select><span>{</span><br>
-            <select name="atributo" id="atributo">
-                <option value="">Atributo</option>
-                <option value="cor">Cor</option>
-                <option value="forma">Forma</option>
-            </select><span>:</span>
-            <select name="valor" id="valor">
-                <option value="">Valor</option>
-            </select><span>;</span><br>
-            <select name="atributo" id="atributo">
-                <option value="">Atributo</option>
-                <option value="cor">Cor</option>
-                <option value="forma">Forma</option>
-            </select><span>:</span>
-            <select name="valor" id="valor">
-                <option value="">Valor</option>
-            </select><span>;</span>
-            <p>}</p>
-            <!--  -->
+            <button type="button" onclick="updateElement()">Atualizar Elemento</button>
         </form>
+        <div id="output"></div>
     </div>
-    <div class="game-panel">
+    <div class="game-panel ">
         <div class="score"><span>Score: </span><span class="score--value">00</span>
 
             <div class="menu-screen">
@@ -184,13 +121,23 @@
         <button id="rotate" onclick="landScape()">
             <img src="../assets/rotate.png" alt="">
         </button>
+        <button id="toggleNav" onclick="toggleNav()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-bar-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M3.646 4.146a.5.5 0 0 1 .708 0L8 7.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708M1 11.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </button>
         <canvas width="600" height="600"></canvas>
         <div class="gameNav">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-bar-up"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M3.646 11.854a.5.5 0 0 0 .708 0L8 8.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708M2.4 5.2c0 .22.18.4.4.4h10.4a.4.4 0 0 0 0-.8H2.8a.4.4 0 0 0-.4.4" />
-            </svg>
+            <button id="toggleNav1" onclick="toggleNav()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-bar-up"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M3.646 11.854a.5.5 0 0 0 .708 0L8 8.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708M2.4 5.2c0 .22.18.4.4.4h10.4a.4.4 0 0 0 0-.8H2.8a.4.4 0 0 0-.4.4" />
+                </svg>
+            </button>
+
             <div class="control">
                 <button onclick="leftPressed()">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-square-fill"
@@ -232,27 +179,11 @@
             </button>
         </div>
 
+        <div class="gap"></div>
+
+
     </div>
     <script>
-        document.getElementById('atributo').addEventListener('change', function () {
-            const valorSelect = document.getElementById('valor');
-            valorSelect.innerHTML = ''; // Limpar opções anteriores
-
-            if (this.value === 'cor') {
-                valorSelect.innerHTML = `
-            <option value="">--Select Color--</option>
-            <option value="var(--color-red)" style="color: var(--color-red);">Red</option>
-            <option value="var(--color-blue)" style="color: var(--color-blue);">Blue</option>
-            <option value="var(--color-green)" style="color: var(--color-green);">Green</option>
-        `;
-            } else if (this.value === 'forma') {
-                valorSelect.innerHTML = `
-            <option value="">--Select Shape--</option>
-            <option value="square">Square</option>
-            <option value="circle">Circle</option>
-        `;
-            }
-        });
 
         const rotate = document.getElementById('rotate');
         const body = document.body;
@@ -263,8 +194,12 @@
         function openIde() {
             body.classList.toggle("openIde");
         };
-        const canvas = document.querySelector('canvas')
-        const ctx = canvas.getContext('2d') // ctx = context (contexto)
+        function toggleNav() {
+            body.classList.toggle("navDisplay");
+        }
+
+        const canvas = document.querySelector('canvas');
+        const ctx = canvas.getContext('2d'); // ctx = context (contexto)
 
         const score = document.querySelector(".score--value")
         const finalScore = document.querySelector(".final-score > span") // pegando o span de dentro do "final-score"
@@ -294,7 +229,7 @@
         const food = {
             x: randomPosition(0, 570),
             y: randomPosition(0, 570),
-            color: 'red'
+            color: `${this.color}`
         }
 
         let direction, loopId; // loopId fica aqui para poder se chamada mais tarde antes da declaração do que ela faz, para que o loop anterior possa ser limpo antes de executar ele novamente
@@ -475,6 +410,83 @@
 
             snake = [initalPosition]
         })
+
+        // Definindo um enum com os tipos e suas propriedades padrão
+        const Type = {
+            BODY: { color: 'red', shape: 'circle' },
+            FOOD: { color: 'green', shape: 'square' }
+        };
+
+        // Classe Elements para tipos BODY e FOOD
+        class Elements {
+            constructor(type) {
+                if (!Type[type.toUpperCase()]) {
+                    throw new Error('Invalid type');
+                }
+                this.type = type;
+                this.color = Type[type.toUpperCase()].color;
+                this.shape = Type[type.toUpperCase()].shape;
+            }
+
+            describe() {
+                return `Type: ${this.type}, Color: ${this.color}, Shape: ${this.shape}`;
+            }
+
+            setColor(newColor) {
+                this.color = newColor;
+            }
+
+            setShape(newShape) {
+                this.shape = newShape;
+            }
+        }
+
+        // Classe SimpleElement para outros tipos
+        class SimpleElement {
+            constructor(type) {
+                this.type = type;
+                this.color = '';
+            }
+
+            describe() {
+                return `Type: ${this.type}, Color: ${this.color}`;
+            }
+
+            setColor(newColor) {
+                this.color = newColor;
+            }
+        }
+
+        // Função para atualizar o elemento com base nos valores do formulário
+        function updateElement() {
+            const type = document.getElementById('elemento').value;
+            const attribute = document.getElementById('atributo').value;
+            const value = document.getElementById('valor').value;
+
+            let currentElement;
+
+            // Determina a classe a ser usada com base no tipo selecionado
+            if (type === 'corpo' || type === 'comida') {
+                currentElement = new Elements(type);
+            } else {
+                currentElement = new SimpleElement(type);
+            }
+
+            // Atualiza os atributos do elemento com base na seleção
+            if (attribute === 'cor') {
+                currentElement.setColor(value);
+            } else if (attribute === 'forma' && currentElement instanceof Elements) {
+                currentElement.setShape(value);
+            }
+
+            displayElement(currentElement);
+        }
+
+        // Função para exibir o elemento
+        function displayElement(element) {
+            document.getElementById('output').innerText = element.describe();
+        }
+
     </script>
     <script src="https://kit.fontawesome.com/df3d71e545.js" crossorigin="anonymous"></script>
 </body>

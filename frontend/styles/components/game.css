@@ -1,3 +1,20 @@
+/* header{
+    display: none;
+}
+
+.navbar {
+} */
+
+.navDisplay header{
+    display: none;
+}
+
+.navDisplay .navbar{
+    display: none;
+}
+
+
+
 .pop-up {
     display: none;
 }
@@ -40,6 +57,9 @@
     background: #1c1b1b;
     display: flex;
     justify-content: space-between;
+    padding: 5px;
+}
+.ide form{
     padding: 5px;
 }
 
@@ -114,8 +134,8 @@ canvas {
     border: none;
     cursor: pointer;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 5px;
+    top: 5px;
 }
 
 #rotate img {
@@ -123,6 +143,30 @@ canvas {
     width: var(--btn-control-size);
     display: flex;
     float: right;
+}
+
+#toggleNav{
+    color: #000;
+    overflow: hidden;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 10000;
+}
+
+.navDisplay #toggleNav {
+    display: none;
+}
+
+#toggleNav svg { 
+    color: #000;
+}
+
+#toggleNav1{
+    background: none;
+    border: none;   
 }
 
 .menu-screen {
