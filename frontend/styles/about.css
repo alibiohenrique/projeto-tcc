@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+header{
+    z-index: 5;
+}
+
+.cardSection {
+    background: var(--background);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100vw;
+}
+
+.card-inform {
+    background: var(--purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin: 7vw;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 30px;
+}
+
+.card-inform iframe{
+    width: 100%;
+}
+
+.card-inform h2,
+.card-inform P{
+    color: #fff;
+}
+
+.card-inform h2 {
+    text-align: center;
+        font-family: "League Spartan", sans-serif;
+}
+
+.card-inform p {
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+}
+
+.login a, .sign-in a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+}
+
+.btnSection{
+    display: flex;
+    gap: 10px;
+}
+
+.sign-in{
+    background: var(--dark-purple);
+}
+
+.sign-in a{
+    color: var(--cyan);
+}
+
+.sign-in:hover{
+    background: var(--cyan);
+}
+.sign-in a:hover{
+   color: var(--dark-purple);
+}
+
+.login{
+    background: var(--cyan);
+}
+
+.login a{
+    color: var(--dark-purple);
+}
+.login:hover{
+    background: var(--dark-purple);
+    color: var(--cyan);
+}
+
+.login a:hover{
+    color: var(--cyan);
+}
+
+@media screen and (width > 768px) {
+
+    .card-inform{
+        margin: 2vw;
+        padding-bottom: 40px;
+    }
+
+    .card-inform:nth-child(even){
+        margin-left: auto;
+     }
+
+     .card-inform svg{
+        display: none;
+    }
+
+    .us{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .us .card-inform{
+        width: 100%;
+    }
+    
+    .us .card-inform iframe{
+        height: 300px;
+    }
+    
+}
+
+@media screen and (width > 657px){
+    .us .card-inform iframe{
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 565px) and (max-width: 657px) {
+    .us .card-inform iframe{
+        height: 250px;
+    }
+}

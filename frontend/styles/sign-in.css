@@ -1,0 +1,291 @@
+* {
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+a {
+    font-weight: 500;
+    color: var(--light-purple);
+    font-size: var(--base);
+}
+
+label {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow-y: hidden;
+    color: var(--light-purple);
+    font-weight: 600;
+    min-height: 25px;
+    max-height: 50px;
+    font-size: var(--lg);
+}
+
+h2 {
+    color: var(--light-purple);
+    overflow-y: hidden;
+    margin-top: 1.5rem;
+    font-size: var(--3xl);
+    font-weight: 1000;
+    letter-spacing: -0.1rem;
+    font-family: roboto;
+}
+
+.container {
+
+    height: 100vh;
+    width: 100%;
+    background: url(../assets/images/side-wave_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    text-wrap: wrap;
+    overflow-y: hidden !important;
+
+}
+
+.sign-in {
+    background-color: var(--dark-purple);
+    width: 25%;
+    margin-left: 75%;
+}
+
+.sign-in-title {
+    overflow-y: hidden;
+    min-height: 50px;
+    max-height: 60px;
+    margin: 0;
+
+}
+
+.sign-in-form {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.btn {
+    overflow-y: hidden;
+
+    border: 2px solid var(--dark-purple);
+    font-family: roboto;
+    font-weight: 1000;
+    background-color: var(--cyan);
+    color: var(--dark-purple);
+    transition: 0.5s;
+
+}
+
+.btn-submit {
+    margin-top: 0.5rem;
+    height: 2.7rem;
+}
+
+.btn-submit input {
+    margin: 0 auto;
+}
+
+.btn:hover {
+    color: var(--cyan);
+    border: 0.1rem solid var(--cyan);
+    background-color: var(--dark-purple);
+}
+
+.btn-submit .input input {
+    overflow-y: hidden;
+}
+
+.login {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 20px;
+    max-height: 50px;
+}
+
+.login a {
+    overflow-y: hidden;
+}
+
+/* xxs */
+@media (max-width: 474px) {
+
+    a,
+    label,
+    input {
+        font-size: var(--base);
+    }
+
+    input {
+        min-height: 20px;
+    }
+
+
+    h2 {
+        font-size: var(--xl);
+    }
+
+    .container {
+        background: url(../assets/images/side-wave_background-to-phones.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .sign-in {
+        margin: 0 auto;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        display: flex;
+        height: 78vh;
+        width: 65.5vw;
+    }
+
+    .sign-in-title {
+        transform: translateY(35px);
+    }
+
+    .btn-submit {
+        height: 2.25rem;
+    }
+}
+
+
+/* xs */
+@media (min-width: 475px) {
+
+    a,
+    label,
+    input {
+        font-size: var(--base);
+    }
+
+    input {
+        min-height: 20px;
+    }
+
+
+    h2 {
+        font-size: var(--lg);
+    }
+
+    .sign-in {
+        max-height: 80vh;
+    }
+
+
+}
+
+/* sm */
+@media (min-width: 640px) {
+
+    a,
+    label,
+    input {
+        font-size: var(--lg);
+    }
+
+    input {
+        min-height: 20px;
+    }
+
+
+    h2 {
+        font-size: var(--xl);
+    }
+
+    .login a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        min-height: 50px;
+        font-size: var(--xl);
+    }
+
+
+    .sign-in {
+        max-height: 80vh;
+    }
+
+}
+
+/* md */
+@media (min-width: 768px) {
+
+    a,
+    label,
+    input {
+        font-size: var(--xl);
+    }
+
+    input {
+        min-height: 20px;
+    }
+
+
+    h2 {
+        font-size: var(--2xl);
+    }
+
+    .btn {
+        height: 5rem;
+    }
+
+}
+
+/* lg */
+@media (min-width: 1024px) {
+
+    a,
+    label,
+    input {
+        font-size: var(--base);
+    }
+
+    input {
+        min-height: 20px;
+    }
+
+    h2 {
+        font-size: var(--2xl);
+    }
+
+
+    .sign-in {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        right: 0;
+    }
+
+
+
+}
+
+/* xl */
+@media (min-width: 1280px) {}
+
+/* 2xl */
+@media (min-width: 1536px) {}

@@ -9,12 +9,13 @@
     <!-- HTML5 default configs -->
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="../styles/components/header.css">
-    <link rel="stylesheet" href="../styles/utils/utils.css">
-    <link rel="stylesheet" href="../styles/components/main.css">
-    <link rel="stylesheet" href="../styles/components/settings.css">
+    <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../styles/utils.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/settings.css">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
     <script defer src="../script/settings.js"></script>
 
 
@@ -23,53 +24,8 @@
 
 <body>
 
-<header>
-        <ul class="navbar">
-            <li class="logo">
-                <img src="../assets/logo.png" alt="" width="120px">
-            </li>
+    <?php include '../components/header/header.php'; ?>
 
-            <li class="icons">
-                <a href="../index.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        home
-                    </span>
-                    <p class="highlight-hover">Início</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="./about.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        info
-                    </span>
-                    <p class="highlight-hover">Sobre</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="./game.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        play_circle
-                    </span>
-                    <p class="highlight-hover">Jogue</p>
-                </a>
-            </li>
-            <li class="icons">
-            <a href="./settings.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        settings
-                    </span>
-                    <p class="highlight-hover">Configurações</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="./profile.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        person
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </header>
 
     <div class="section">
 
@@ -84,8 +40,8 @@
                 <div class="option">
                     <p>Modo escuro:</p>
                     <label class="switch">
-                    <input type="checkbox" id="toggle">
-                    <span class="slider"></span>
+                        <input type="checkbox" id="toggle">
+                        <span class="slider"></span>
                     </label>
                 </div>
                 <div class="option">

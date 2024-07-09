@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+/* default settings */
+
+* {
+    /* border: 1px solid greenyellow; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--light-purple);
+}
+
+a{
+    text-decoration: none;
+    color: var(--light-purple);
+}
+
+.landing-page {
+    height: 100vh;
+    width: 100%;
+    background: url(../assets/images/side-wave_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    text-wrap: wrap;
+    overflow: hidden !important;
+}
+
+.top-texts {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 4em 1em 4em;
+}
+
+.top-texts h2:nth-child(2) {
+    color: var(--light-purple);
+}
+
+.top-texts h2:nth-child(1) {
+    color: var(--dark-purple);
+}
+
+.center-asset{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden !important;
+}
+
+.center-asset img{
+    width: 17em;
+    height: 15em;
+    rotate: 23deg;
+}
+
+.bottom-texts {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    text-align: center;
+    margin: 4em;
+}
+
+.bottom-texts img{
+    width: 9em;
+}
+
+.bottom-texts .btn {
+    background: var(--medium-purple);
+    color: var(--light-purple);
+}
+
+iframe {
+    width: 90%;
+    height: 35em;
+    transform: scaleY(-1);
+    z-index: 100;
+    position: absolute;
+}
+
+.landing-seguiment {
+    background-image: linear-gradient(to bottom, var(--light-purple) 15%, transparent 75%), url(../assets/images/side-wave_background.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scaleY(-1);
+}
+
+.section-title{
+    text-align: center;
+    margin: 3em;
+}
+
+.learn-playing{
+    display: flex;
+}
+
+.aside-texts{
+    width: 50%;
+}
+
+.aside-texts p {
+    margin: 2em;
+    text-align: justify;
+}
+
+.aside-assets{
+    width: 40%;
+    margin: auto;
+}
+
+hr{
+    border: var(--dark-purple) 1px solid;
+}
+
+.avaliation{
+    display: flex;
+    width: 60%;
+    margin: 3em auto;
+}
+
+.avaliation:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.specialist{
+    width: 160px;
+    display: flex;
+    justify-content: center;
+}
+
+.specialist img{
+    width: 7em;
+    height: 7em;
+    border-radius: 100px;
+}
+
+.message{
+    width: 100%;
+    margin: auto;
+    background: var(--medium-purple);
+    padding: 2em;
+    border-radius: 0px 30px 0px 30px;
+}
+
+.call-to-action{
+    background-image:linear-gradient(to bottom, var(--light-purple) 20%, transparent 40%), url(../assets/images/cta-background.jpg); ;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);
+}
+
+.calling-to-action{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+
+.cta-asset img{
+    width: 200px;
+}
+
+.call-to-action .btn{
+    margin-top: 2em;
+    padding: 1em;
+    background: var(--dark-purple);
+    color: var(--light-purple);
+}
+
+@media screen and (max-width: 768px) {
+    .landing-page {
+        background: url(../assets/images/side-wave_background-to-phones.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .top-texts {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: var(--black);
+        gap: 8em;
+        margin: 1em;
+    }
+
+    .top-texts h2:nth-child(2) {
+        color: var(--dark-purple);
+    }
+
+    .center-asset{
+        display: none;
+    }
+
+    .bottom-texts {
+        display: flex;
+        height: 25%;
+        margin: 1em;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: center;
+        color: var(--dark-purple);
+    }
+
+    .landing-seguiment {
+        background-image: linear-gradient(to bottom, var(--light-purple) 25%, transparent 55%), url(../assets/images/side-wave_background-to-phones.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scaleY(-1);
+    }
+    .learn-playing{
+        display: flex;
+        flex-direction: column;
+    }
+    .aside-texts{
+        margin: auto;
+    }
+    .aside-texts p {
+        margin: 2em 0.5em;
+        text-align: justify;
+    }
+    .aside-assets{
+        margin: auto;
+    }
+    .avaliation{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .avaliation:nth-child(2){
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .call-to-action{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .calling-to-action{
+        width: 70%;
+    }
+    .cta-asset img{
+        width: 300px;
+    }
+}
