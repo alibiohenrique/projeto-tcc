@@ -39,10 +39,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 header("Location: login.php");
 
             } else {
-                echo "Erro: Não foi possível inserir a consulta desse usuário: $sql. " . mysqli_error($conn);
+                echo "Erro: O nome de usuário ou e-mail utilizado já possui cadastro";
             }
         } else {
-            echo "Erro: A preparação da consulta falhou: $sql. " . mysqli_error($conn);
+            echo "Erro: A conexão com o banco de dados não foi possível";
         }
 
         mysqli_stmt_close($stmt);

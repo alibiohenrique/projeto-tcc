@@ -30,14 +30,23 @@
                 <h1>Vamos Jogar?</h1>
             </div>
             <div class="select-game">
-
+                
                 <div class="pop-up snake-game">
-
+                    
                     <h2>Snake Game</h2>
                     <img src="../assets/images/snake-transparent.png" alt="">
                     <a href="../pages/game.php"><button class="btn btn-exp">
-                            Experimente
-                        </button></a>
+                        Experimente
+                    </button></a>
+                    <button class="accordion btn">Conteúdos</button>
+                    <div class="panel">
+                        <p>
+                            No Snake Game você irá aprender :<br>
+                            1. <br>
+                            2. <br>
+                        </p>
+                    </div>
+                    <script src="../assets/script/select-game.js"></script>
                 </div>
 
                 <div class="pop-up monkey-game">

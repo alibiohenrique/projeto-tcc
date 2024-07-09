@@ -47,10 +47,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             }
         } else {
-            echo "ERRO: Não deu para executar a consulta SQL: $sql. " . mysqli_error($conn);
+            echo "Erro: A conexão com o banco de dados não foi possível";
         }
     } else {
-        echo "ERROR: Não foi possível preparar a consulta: $sql. " . mysqli_error($conn);
+        echo "Erro: A conexão com o banco de dados não foi possível";
     }
 
     mysqli_stmt_close($stmt);
