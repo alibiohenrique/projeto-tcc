@@ -68,7 +68,9 @@
                         <h2>Sobre nós</h2>
                         <iframe src="https://www.youtube.com/embed/wMTnjSJGWCs?si=ZkHGBrhkyhx6DwqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             
-                            <div class="btnSection"><button class="btn login"><strong><a href="./login.php">Entrar</a></strong></button> <button class="btn sign-in"><strong><a href="./sign-in.php">cadastre-se</a></strong></button>
+                            <div class="btnSection"><a href="./login.php"></a><button class="btn login"><strong>Entrar</strong></button></a>
+                    <a href="./sign-in.php"><button class="btn sign-in"><strong>Cadastre-se</strong></button></a>
+                    </div>
                         </div>
                     </div>
                 </div>

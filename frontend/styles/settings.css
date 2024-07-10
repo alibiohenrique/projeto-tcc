@@ -1,7 +1,12 @@
+body{
+    background: url(../assets/images/wave_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .settings {
     background: var(--purple);
-    max-width: 580px;
+    max-width: 480px;
     width: 90vw;
     padding-bottom: 30px;
     gap: 18px;
@@ -43,4 +48,10 @@
     font-weight: 100;
     display: flex;
     justify-content: center;
+}
+
+
+@media screen and (width > 768px) {
+
+    
 }

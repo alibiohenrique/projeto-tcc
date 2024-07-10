@@ -1,11 +1,19 @@
 @charset "utf-8";
 
+/* body{
+    background: url(../assets/images/wave_background_test.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
 header{
     z-index: 5;
 }
 
 .cardSection {
-    background: var(--background);
+    background: url(../assets/images/wave_background_about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 80px;
     padding-bottom: 80px;
     width: 100vw;
@@ -42,46 +50,12 @@ header{
     font-family: "Roboto", sans-serif;
 }
 
-.login a, .sign-in a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: "Open Sans", sans-serif;
+.sign-in:hover {
+    color: var(--darker-purple);
 }
 
-.btnSection{
-    display: flex;
-    gap: 10px;
-}
-
-.sign-in{
-    background: var(--dark-purple);
-}
-
-.sign-in a{
-    color: var(--cyan);
-}
-
-.sign-in:hover{
-    background: var(--cyan);
-}
-.sign-in a:hover{
-   color: var(--dark-purple);
-}
-
-.login{
-    background: var(--cyan);
-}
-
-.login a{
-    color: var(--dark-purple);
-}
-.login:hover{
-    background: var(--dark-purple);
-    color: var(--cyan);
-}
-
-.login a:hover{
-    color: var(--cyan);
+.login {
+    color: var(--darker-purple);
 }
 
 @media screen and (width > 768px) {

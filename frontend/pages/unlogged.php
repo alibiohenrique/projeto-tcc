@@ -20,61 +20,14 @@
 <body>
 
     <main>
-
-    <header>
-        <ul class="navbar">
-            <li class="logo">
-                <img src="../assets/logo.png" alt="" width="120px">
-            </li>
-
-            <li class="icons">
-                <a href="../index.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        home
-                    </span>
-                    <p class="highlight-hover">Início</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="./about.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        info
-                    </span>
-                    <p class="highlight-hover">Sobre</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="./game.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        play_circle
-                    </span>
-                    <p class="highlight-hover">Jogue</p>
-                </a>
-            </li>
-            <li class="icons">
-            <a href="./settings.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        settings
-                    </span>
-                    <p class="highlight-hover">Configurações</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="./profile.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        person
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </header>
         <div class="section profile" id="section">
 
             <div class="unlogged">
                 <div class="profile-card">
                     <h2>Ops!! Você ainda não tem cadastro</h2>
                     <p>Cadastre-se no nosso site e desbloqueie o aprendizado divertido!!</p>
-                    <div class="btnSection"><button class="btn login"><a href="./login.php"><strong>Entrar</strong></a></button> <button class="btn sign-in"><a href="./sign-in.php"><strong>cadastre-se</strong></a></button>
+                    <div class="btnSection"><a href="./login.php"></a><button class="btn login"><strong>Entrar</strong></button></a>
+                    <a href="./sign-in.php"><button class="btn sign-in"><strong>cadastre-se</strong></button></a>
                     </div>
                 </div>
             </div>
