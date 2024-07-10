@@ -6,20 +6,23 @@
     --span: var(--white);
     --p: var(--purple);
     --text: var(--white);
-    --background: ;
     --background-profile: var(--darker-purple);
     --background-change-password:var(--dark-gray);
  
  }
 
 /* FORMATAÇÃO BASICA */
+body{
+    background: url(../assets/images/wave_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 header {
     z-index: 8;
 }
 
 .section {
-    background: var(--background);
     color: var(--text);
     width: 100vw;
 }
@@ -88,35 +91,16 @@ h3 {
     text-align: center;
 }
 
+.unlogged p{
+    color: var(--span);
+}
+
+.unlogged h2{
+    color: var(--light-purple);
+}
+
 .unlogged .profile-card {
     gap: 30px;
-}
-
-.login {
-    background: var(--cyan);
-}
-.unlogged .login a, .sign-in a{
-    text-decoration: none;
-    color: var(--white);
-
-}
-
-.sign-in{
-    background: none;
-    border: solid var(--cyan) 2px;
-}
-
-.sign-in:hover{
-    background: var(--cyan);
-}
-
-.login{
-    background: var(--cyan);
-    border: solid var(--cyan) 2px;
-}
-
-.login:hover{
-    background: none;
 }
 
 /* POP-UP */
@@ -175,6 +159,7 @@ h3 {
     width: 3em;
     color: var(--white);
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .confirm {
@@ -187,13 +172,4 @@ h3 {
     background: #ff0000;
     color: var(--white);
     margin-top: 20px;
-}
-
-.blur {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    background-color: #ffffffd0;
 }

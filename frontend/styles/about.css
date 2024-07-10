@@ -1,7 +1,19 @@
 @charset "utf-8";
 
+/* body{
+    background: url(../assets/images/wave_background_test.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+header{
+    z-index: 5;
+}
+
 .cardSection {
-    background: var(--background);
+    background: url(../assets/images/wave_background_about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 80px;
     padding-bottom: 80px;
     width: 100vw;
@@ -21,8 +33,6 @@
 
 .card-inform iframe{
     width: 100%;
-    /* height: 300px; */
-
 }
 
 .card-inform h2,
@@ -32,35 +42,21 @@
 
 .card-inform h2 {
     text-align: center;
-    font-size: 2em;
+        font-family: "League Spartan", sans-serif;
 }
 
 .card-inform p {
-    font-size: 1.2em;
     text-align: justify;
+    font-family: "Roboto", sans-serif;
 }
 
-
-.sign-in{
-    background: none;
-    border: solid var(--cyan) 2px;
-    color: var(--cyan);
+.sign-in:hover {
+    color: var(--darker-purple);
 }
 
-.sign-in:hover{
-    background: var(--cyan);
+.login {
+    color: var(--darker-purple);
 }
-
-.login{
-    background: var(--cyan);
-    border: solid var(--cyan) 2px;
-    color: var(--purple);
-}
-
-.login:hover{
-    background: none;
-}
-
 
 @media screen and (width > 768px) {
 

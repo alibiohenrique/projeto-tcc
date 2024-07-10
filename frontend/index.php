@@ -8,8 +8,7 @@
     <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
     <title> KidScript | Início </title>
     <!-- icons -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
     <!-- icons -->
     <!-- HTML5 default configs -->
 
@@ -96,36 +95,30 @@
                 <img src="assets/images/control.png" alt="">
                 <h3>
                     Onde as crianças criam tecnologia! <br><br>
-                    <button class="btn"><a href="pages/login.php">Entrar</a></button>
-                    <button class="btn"><a href="pages/sign-in.php">Cadastre-se</a></button>
+                    <div class="btnSection"><a href="./login.php"></a><button class="btn login"><strong>Entrar</strong></button></a>
+                        <a href="./sign-in.php"><button class="btn sign-in"><strong>Cadastre-se</strong></button></a>
+                    </div>
                 </h3>
             </div>
         </div>
         <div class="section landing-seguiment">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/RYbI07-3HmM?si=fzACzgUH-ts8cGtJ"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RYbI07-3HmM?si=fzACzgUH-ts8cGtJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <h2 class="section-title">Aprenda Jogando!</h2>
+        <h2 class="section-title ">Aprenda Jogando!</h2>
         <div class="learn-playing">
             <div class="aside-texts">
-                <p data-aos="fade-left"> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rem quidem inventore nihil et. Eaque
-                    placeat expedita ab ratione recusandae aspernatur, animi inventore, laboriosam repellat quidem in
-                    corporis quasi suscipit.
-                </p>
-                <hr>
-                <p data-aos="fade-right">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rem quidem inventore nihil et. Eaque
-                    placeat expedita ab ratione recusandae aspernatur, animi inventore, laboriosam repellat quidem in
-                    corporis quasi suscipit.
-                </p>
-                <hr>
+                <h3 data-aos="fade-left">O que somos</h3>
                 <p data-aos="fade-left">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rem quidem inventore nihil et. Eaque
-                    placeat expedita ab ratione recusandae aspernatur, animi inventore, laboriosam repellat quidem in
-                    corporis quasi suscipit.
+                    A Kidscript é uma plataforma gratuita de ensino de programação voltada para crianças e jovens de 6 a 12 anos. Nosso objetivo é ensinar programação de maneira divertida e acessível, utilizando jogos intuitivos que tornam o aprendizado lúdico e envolvente.
+                </p>
+                <hr>
+                <h3 data-aos="fade-left">Como Ensinamos</h3>
+                <p data-aos="fade-left">
+                    As crianças aprendem programação, lógica, algoritmos e resolução de problemas por meio de jogos interativos. Utilizamos uma linguagem básica e exercícios práticos para garantir que o aprendizado seja simples e eficaz. Além disso, promovemos o desenvolvimento do pensamento computacional e habilidades para lidar com frustrações. </p>
+                <hr>
+                <h3 data-aos="fade-left">Nosso Compromisso</h3>
+                <p data-aos="fade-left">
+                    Estamos comprometidos em fornecer suporte contínuo e garantir o uso saudável da tecnologia. Limitamos o tempo de uso das crianças na plataforma para evitar que fiquem online por períodos prolongados. Na Kidscript, acreditamos que aprender programação pode ser divertido e acessível para todas as crianças.
                 </p>
                 <hr>
             </div>
@@ -137,8 +130,7 @@
         <div class="avaliations " data-aos="fade-up">
             <div class="avaliation">
                 <div class="specialist">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHU5JIkqfD2z1KMc4c1nW4zdArnxBM3cCcQ&s"
-                        alt="" width="90px">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHU5JIkqfD2z1KMc4c1nW4zdArnxBM3cCcQ&s" alt="" width="90px">
                 </div>
                 <div class="message">
                     <p class="feedback">
@@ -150,8 +142,7 @@
             </div>
             <div class="avaliation">
                 <div class="specialist">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHU5JIkqfD2z1KMc4c1nW4zdArnxBM3cCcQ&s"
-                        alt="" width="90px">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHU5JIkqfD2z1KMc4c1nW4zdArnxBM3cCcQ&s" alt="" width="90px">
                 </div>
                 <div class="message reverse">
                     <p class="feedback">
@@ -163,8 +154,7 @@
             </div>
             <div class="avaliation">
                 <div class="specialist">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHU5JIkqfD2z1KMc4c1nW4zdArnxBM3cCcQ&s"
-                        alt="" width="90px">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHU5JIkqfD2z1KMc4c1nW4zdArnxBM3cCcQ&s" alt="" width="90px">
                 </div>
                 <div class="message">
                     <p class="feedback">
@@ -187,9 +177,11 @@
                     <h2>
                         Aprenda programação de forma interativa e divertida.
                     </h2>
-                    <button class="btn">
-                        <a href="pages/sign-in.php">Começar Hoje</a>
-                    </button>
+                    <a href="pages/sign-in.php">
+                        <button class="btn login">
+                            <strong>Comece Hoje</strong>
+                        </button>
+                    </a>
                 </div>
 
             </div>

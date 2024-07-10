@@ -1,7 +1,12 @@
+body{
+    background: url(../assets/images/wave_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .settings {
     background: var(--purple);
-    max-width: 580px;
+    max-width: 480px;
     width: 90vw;
     padding-bottom: 30px;
     gap: 18px;
@@ -13,12 +18,12 @@
     display: flex;
     justify-content: center;
     margin: 1em;
-    font-size: 2.4em;
+    /* font-size: clamp(1.75rem, 1.7rem + 0.2667vw, 2rem); */
 }
 
 .settings p {
     padding: 0.2em;
-    font-size: 1.5em;
+    /* font-size: clamp(1.125rem, 1.1rem + 0.1333vw, 1.25rem); */
 }
 
 .settings .option {
@@ -43,4 +48,10 @@
     font-weight: 100;
     display: flex;
     justify-content: center;
+}
+
+
+@media screen and (width > 768px) {
+
+    
 }
