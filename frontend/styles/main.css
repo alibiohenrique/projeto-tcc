@@ -40,6 +40,7 @@ main{
 
 .top-texts h2:nth-child(2) {
     color: var(--light-purple);
+    /* font-size: clamp(1.75rem, 1.7188rem + 0.25vw, 2rem); */
 }
 
 .top-texts h2:nth-child(1) {
@@ -78,8 +79,6 @@ iframe {
     width: 90%;
     height: 35em;
     transform: scaleY(-1);
-    z-index: 100;
-    position: absolute;
 }
 
 .landing-seguiment {
@@ -92,6 +91,7 @@ iframe {
 .section-title {
     text-align: center;
     margin: 3em;
+    margin-bottom: calc(3em - 48px);
 }
 
 .learn-playing {
@@ -178,10 +178,6 @@ hr {
     width: 80%;
     margin-top: 2em;
     padding: 1em;
-}
-
-.btn:hover{
-    /* background: var(--dark-purple); */
 }
 
 

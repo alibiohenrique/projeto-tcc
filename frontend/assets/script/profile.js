@@ -1,7 +1,6 @@
 
 function activeBlur(){
     const element = document.getElementById("blur");
-    const element = document.get
     element?.classList.add("blur");
 }
 
