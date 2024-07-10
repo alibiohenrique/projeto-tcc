@@ -78,7 +78,7 @@
                 </svg>
             </button>
         </div>
-        <form id="elementForm">
+        <form id="elementForm" method="get" action="#">
             <select name="elemento" id="elemento">
                 <option value="">elemento</option>
                 <option value="cabeca">Cabeça da cobra</option>
@@ -88,24 +88,82 @@
                 <option value="campo">Campo do jogo</option>
                 <option value="linhas">Linhas do campo</option>
             </select><span>{</span><br>
-            <select name="atributo" id="atributo">
-                <option value="">Atributo</option>
+
+            <select name="atributo1" id="atributo1" required>
                 <option value="cor">Cor</option>
                 <option value="forma">Forma</option>
             </select><span>:</span>
-            <select class="valor" name="valor" id="valor">
+
+
+            <select class="valor" name="valor1" id="valor1">
+                <option value="">Valor</option>
+                <option value="red">vermelho</option>
+                <option value="green">verde</option>
+                <option value="darkgreen">verde</option>
+                <option value="blue">azul</option>
+                <option value="daekblue">azul</option>
+                <option value="redondo">Redondo</option>
+                <option value="quadrado">quadrado</option>
+            </select><br>
+
+
+            <select name="atributo2" id="atributo2" required>
+                <option value="cor">Cor</option>
+                <option value="forma">Forma</option>
+            </select><span>:</span>
+
+
+            <select class="valor" name="valor2" id="valor2">
                 <option value="">Valor</option>
                 <option value="vermelho">vermelho</option>
                 <option value="verde">verde</option>
                 <option value="#0000ff">azul</option>
                 <option value="redondo">Redondo</option>
                 <option value="quadrado">quadrado</option>
-            </select><span>;</span><br>
+            </select>
+
+
+            <span>;</span><br>
             <p>}</p>
-            <button type="button" onclick="updateElement()">Atualizar Elemento</button>
+
+            <input type="submit" value="Enviar">
         </form>
-        <div id="output"></div>
+
+
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "GET") {
+            $elemento = isset($_GET['elemento']) ? $_GET['elemento'] : '';
+            $atributo1 = isset($_GET['atributo1']) ? $_GET['atributo1'] : '';
+            $valor1 = isset($_GET['valor1']) ? $_GET['valor1'] : '';
+            $atributo2 = isset($_GET['atributo2']) ? $_GET['atributo2'] : '';
+            $valor2 = isset($_GET['valor2']) ? $_GET['valor2'] : '';
+
+            // Inicializa as variáveis de cor e forma
+            $cor = $atributo1 == 'cor' ? $valor1 : $valor2;
+            $forma = $atributo1 == 'forma' ? $valor1 : $valor2;
+
+            // Verifica os atributos e atribui os valores correspondentes
+            // if ($atributo1 == 'cor') {
+            //     $cor = $valor1;
+            // } elseif ($atributo1 == 'forma') {
+            //     $forma = $valor1;
+            // }
+
+            // if ($atributo2 == 'cor') {
+            //     $cor = $valor2;
+            // } elseif ($atributo2 == 'forma') {
+            //     $forma = $valor2;
+            // }
+
+            echo "Elemento: " . htmlspecialchars($elemento) . "<br>";
+            echo "Cor: " . htmlspecialchars($cor) . "<br>";
+            echo "Forma: " . htmlspecialchars($forma) . "<br>";
+        }
+        ?>
+
+
     </div>
+
     <div class="game-panel ">
         <div class="score"><span>Score: </span><span class="score--value">00</span>
 
@@ -229,7 +287,7 @@
         const food = {
             x: randomPosition(0, 570),
             y: randomPosition(0, 570),
-            color: `${this.color}`
+            color: '<?php echo $cor ?>'
         }
 
         let direction, loopId; // loopId fica aqui para poder se chamada mais tarde antes da declaração do que ela faz, para que o loop anterior possa ser limpo antes de executar ele novamente
@@ -410,83 +468,6 @@
 
             snake = [initalPosition]
         })
-
-        // Definindo um enum com os tipos e suas propriedades padrão
-        const Type = {
-            BODY: { color: 'red', shape: 'circle' },
-            FOOD: { color: 'green', shape: 'square' }
-        };
-
-        // Classe Elements para tipos BODY e FOOD
-        class Elements {
-            constructor(type) {
-                if (!Type[type.toUpperCase()]) {
-                    throw new Error('Invalid type');
-                }
-                this.type = type;
-                this.color = Type[type.toUpperCase()].color;
-                this.shape = Type[type.toUpperCase()].shape;
-            }
-
-            describe() {
-                return `Type: ${this.type}, Color: ${this.color}, Shape: ${this.shape}`;
-            }
-
-            setColor(newColor) {
-                this.color = newColor;
-            }
-
-            setShape(newShape) {
-                this.shape = newShape;
-            }
-        }
-
-        // Classe SimpleElement para outros tipos
-        class SimpleElement {
-            constructor(type) {
-                this.type = type;
-                this.color = '';
-            }
-
-            describe() {
-                return `Type: ${this.type}, Color: ${this.color}`;
-            }
-
-            setColor(newColor) {
-                this.color = newColor;
-            }
-        }
-
-        // Função para atualizar o elemento com base nos valores do formulário
-        function updateElement() {
-            const type = document.getElementById('elemento').value;
-            const attribute = document.getElementById('atributo').value;
-            const value = document.getElementById('valor').value;
-
-            let currentElement;
-
-            // Determina a classe a ser usada com base no tipo selecionado
-            if (type === 'corpo' || type === 'comida') {
-                currentElement = new Elements(type);
-            } else {
-                currentElement = new SimpleElement(type);
-            }
-
-            // Atualiza os atributos do elemento com base na seleção
-            if (attribute === 'cor') {
-                currentElement.setColor(value);
-            } else if (attribute === 'forma' && currentElement instanceof Elements) {
-                currentElement.setShape(value);
-            }
-
-            displayElement(currentElement);
-        }
-
-        // Função para exibir o elemento
-        function displayElement(element) {
-            document.getElementById('output').innerText = element.describe();
-        }
-
     </script>
     <script src="https://kit.fontawesome.com/df3d71e545.js" crossorigin="anonymous"></script>
 </body>
