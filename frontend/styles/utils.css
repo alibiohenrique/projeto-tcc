@@ -152,7 +152,7 @@
 /* pop-ups */
 
 .pop-up {
-    display: none;
+    display: flex;
     width: 65%;
     text-align: center;
     display: flex;
@@ -166,6 +166,7 @@
 
 .pop-up h2 {
     font-family: roboto;
+    margin: 1em;
 }
 
 .pop-up p {
@@ -264,14 +265,13 @@ hr {
     width: 100%;
 }
 
-.panel p{
+.panel p {
     text-align: center;
     color: var(--white);
 }
 
 /* accordion */
 
-/* limit-exceed */
 .time-limit{
     background: var(--purple);
     border-radius: 20px;
@@ -296,6 +296,7 @@ hr {
 /* limit-exceed */
 
 /* background blur effect */
+
 .blur {
     position: fixed;
     top: 0;
@@ -305,3 +306,4 @@ hr {
     backdrop-filter: blur(5px);
 }
 /* background blur effect */
+
