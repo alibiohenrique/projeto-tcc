@@ -56,7 +56,7 @@
                     </button>
                 </div>
             </div>
-            <div class="time-limit">
+            <!-- <div class="time-limit">
                 <h3>
                     Você excedeu o limite de tempo
                 </h3>
@@ -67,11 +67,12 @@
                     Encerrar
                 </button>
                 </h3>
-            </div>
+            </div> -->
+ 
         </section>
     </main>
-    <div id="blur" class="blur"></div>
-    <script src="../assets/script/profile.js"></script>
+    <!-- <div id="blur" class="blur"></div>
+    <script src="../assets/script/profile.js"></script> -->
 </body>
 
 </html>
