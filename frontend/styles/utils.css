@@ -270,3 +270,38 @@ hr {
 }
 
 /* accordion */
+
+/* limit-exceed */
+.time-limit{
+    background: var(--purple);
+    border-radius: 20px;
+    color: var(--white);
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    margin: 1em auto;
+    padding: 2em;
+}
+
+.time-limit .btn{
+    margin: 2em;
+    background: var(--red);
+    color: var(--white);
+}
+
+/* limit-exceed */
+
+/* background blur effect */
+.blur {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 1000%;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+}
+/* background blur effect */
