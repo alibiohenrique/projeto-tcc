@@ -15,7 +15,6 @@
     <!-- Page styles -->
     <link rel="stylesheet" href="../components/header/header.css">
     <link rel="stylesheet" href="../styles/utils.css">
-    <!-- <link rel="stylesheet" href="../styles/components/main.css"> -->
     <link rel="stylesheet" href="../styles/select-game.css">
     <!-- Page styles -->
 </head>
@@ -30,14 +29,14 @@
                 <h1>Vamos Jogar?</h1>
             </div>
             <div class="select-game">
-                
+
                 <div class="pop-up snake-game">
-                    
+
                     <h2>Snake Game</h2>
                     <img src="../assets/images/snake-transparent.png" alt="">
                     <a href="../pages/game.php"><button class="btn btn-exp">
-                        Experimente
-                    </button></a>
+                            Experimente
+                        </button></a>
                     <button class="accordion btn">Conteúdos</button>
                     <div class="panel">
                         <p>
@@ -57,8 +56,22 @@
                     </button>
                 </div>
             </div>
+            <div class="time-limit">
+                <h3>
+                    Você excedeu o limite de tempo
+                </h3>
+                <br>
+                Volte amanhã para seguir aprendendo
+                <br>
+                <button class="btn">
+                    Encerrar
+                </button>
+                </h3>
+            </div>
         </section>
     </main>
+    <div id="blur" class="blur"></div>
+    <script src="../assets/script/profile.js"></script>
 </body>
 
 </html>
