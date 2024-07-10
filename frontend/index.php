@@ -49,7 +49,7 @@
                 </a>
             </li>
             <li class="icons">
-                <a href="pages/game.php" class="navlink">
+                <a href="pages/select-game.php" class="navlink">
                     <span class="material-symbols-outlined">
                         play_circle
                     </span>

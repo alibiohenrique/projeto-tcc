@@ -80,8 +80,6 @@ iframe {
     width: 90%;
     height: 35em;
     transform: scaleY(-1);
-    z-index: 100;
-    position: absolute;
 }
 
 .landing-seguiment {
