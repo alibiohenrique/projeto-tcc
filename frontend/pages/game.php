@@ -78,7 +78,7 @@
                 </svg>
             </button>
         </div>
-        <form id="elementForm" method="get" action="#">
+        <form id="elementForm" method="get" action="">
             <select name="elemento" id="elemento">
                 <option value="">elemento</option>
                 <option value="cabeca">Cabeça da cobra</option>
@@ -98,12 +98,12 @@
             <select class="valor" name="valor1" id="valor1">
                 <option value="">Valor</option>
                 <option value="red">vermelho</option>
-                <option value="green">verde</option>
-                <option value="darkgreen">verde</option>
-                <option value="blue">azul</option>
-                <option value="daekblue">azul</option>
+                <option value="green">Verde</option>
+                <option value="darkgreen">Verde escuro</option>
+                <option value="blue">Azul</option>
+                <option value="darkblue">Azul escuro</option>
                 <option value="redondo">Redondo</option>
-                <option value="quadrado">quadrado</option>
+                <option value="quadrado">Quadrado</option>
             </select><br>
 
 
@@ -115,11 +115,13 @@
 
             <select class="valor" name="valor2" id="valor2">
                 <option value="">Valor</option>
-                <option value="vermelho">vermelho</option>
-                <option value="verde">verde</option>
-                <option value="#0000ff">azul</option>
+                <option value="red">vermelho</option>
+                <option value="green">Verde</option>
+                <option value="darkgreen">Verde escuro</option>
+                <option value="blue">Azul</option>
+                <option value="darkblue">Azul escuro</option>
                 <option value="redondo">Redondo</option>
-                <option value="quadrado">quadrado</option>
+                <option value="quadrado">Quadrado</option>
             </select>
 
 
@@ -138,26 +140,20 @@
             $atributo2 = isset($_GET['atributo2']) ? $_GET['atributo2'] : '';
             $valor2 = isset($_GET['valor2']) ? $_GET['valor2'] : '';
 
-            // Inicializa as variáveis de cor e forma
+            // if ($atributo1 == $atributo2){
+            //     echo  "<script>alert('Se você atribuir um atributo 2 veses pra um mesmo elemento ele asumira o valor da ultima linha pois as linguagens de estilo vão ler linha por linha.');</script>";
+            // }
+        
             $cor = $atributo1 == 'cor' ? $valor1 : $valor2;
             $forma = $atributo1 == 'forma' ? $valor1 : $valor2;
-
-            // Verifica os atributos e atribui os valores correspondentes
-            // if ($atributo1 == 'cor') {
-            //     $cor = $valor1;
-            // } elseif ($atributo1 == 'forma') {
-            //     $forma = $valor1;
-            // }
-
-            // if ($atributo2 == 'cor') {
-            //     $cor = $valor2;
-            // } elseif ($atributo2 == 'forma') {
-            //     $forma = $valor2;
-            // }
 
             echo "Elemento: " . htmlspecialchars($elemento) . "<br>";
             echo "Cor: " . htmlspecialchars($cor) . "<br>";
             echo "Forma: " . htmlspecialchars($forma) . "<br>";
+        }
+
+        if ($elemento == 'campo'){
+            $canvasDefaultColor = '#81b56e';
         }
         ?>
 
@@ -287,7 +283,13 @@
         const food = {
             x: randomPosition(0, 570),
             y: randomPosition(0, 570),
-            color: '<?php echo $cor ?>'
+            color: '<?php
+            $foodDefaultColor = "red";
+            if ($elemento == "comida") {
+                $foodDefaultColor = $cor;
+            }
+            echo $foodDefaultColor;
+            ?>'
         }
 
         let direction, loopId; // loopId fica aqui para poder se chamada mais tarde antes da declaração do que ela faz, para que o loop anterior possa ser limpo antes de executar ele novamente
@@ -306,19 +308,32 @@
         }
 
         const drawSnake = () => {
-            ctx.fillStyle = '#0e420b'
+            ctx.fillStyle = '<?php
+            $snakeDefaultColor = "#0e420b";
+            if ($elemento == "corpo") {
+                $snakeDefaultColor = $cor;
+            }
+            echo $snakeDefaultColor;
+            ?>'
 
-            snake.forEach((position, index) => {
+        snake.forEach((position, index) => {
 
-                if (index == snake.length - 1) {
-                    ctx.fillStyle = '#238d1d' // colore o ultimo elemento, que é a cabeça da cobra
+            if (index == snake.length - 1) {
+                ctx.fillStyle = '<?php
+                $snakeHeadDefaultColor = "#238d1d";
+                if ($elemento == "cabeca") {
+                    $snakeHeadDefaultColor = $cor;
                 }
+                echo $snakeHeadDefaultColor;
+                ?>'
+                // colore o ultimo elemento, que é a cabeça da cobra
+            }
 
-                ctx.beginPath();
-                ctx.arc(position.x + 15, position.y + 15, size / 2, size / 2, Math.PI * 2, true) // posição x, posição y (vertical e horizontal, "size, size" = tamanho declarado na variável fixa de nome size)
-                ctx.fill()
-                ctx.stroke()
-            })
+            ctx.beginPath();
+            ctx.arc(position.x + 15, position.y + 15, size / 2, size / 2, Math.PI * 2, true) // posição x, posição y (vertical e horizontal, "size, size" = tamanho declarado na variável fixa de nome size)
+            ctx.fill()
+            ctx.stroke()
+        })
         }
 
         const moveSnake = () => {
@@ -345,7 +360,13 @@
 
         const drawGrid = () => {
             ctx.lineWidth = 1
-            ctx.strokeStyle = '#19191'
+            ctx.strokeStyle = '<?php
+                $lineDefaultColor = "#19191";
+                if ($elemento == "linhas") {
+                    $lineDefaultColor = $cor;
+                }
+                echo $lineDefaultColor;
+                ?>'
 
             for (let i = 30; i < canvas.width; i += 30) {
                 ctx.beginPath()
