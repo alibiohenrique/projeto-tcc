@@ -3,9 +3,10 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/components/profile.css">
-    <link rel="stylesheet" href="../styles/components/header.css">
-    <link rel="stylesheet" href="../styles/utils/utils.css">
+
+    <link rel="stylesheet" href="../styles/utils.css">
+    <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../styles/profile.css">
 
     <!-- icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
@@ -13,61 +14,15 @@
 
     <meta charset="UTF-8">
     <title>kidscript</title>
-    <script src="../script/profile.js"></script>
+    <script src="../assets/script/profile.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+    <?php include '../components/header/header.php'; ?>
+
     <main>
-
-        <header>
-            <ul class="navbar">
-                <li class="logo">
-                    <img src="../assets/logo.png" alt="" width="120px">
-                </li>
-
-                <li class="icons">
-                    <a href="../index.php" class="navlink">
-                        <span class="material-symbols-outlined">
-                            home
-                        </span>
-                        <p>Início</p>
-                    </a>
-                </li>
-                <li class="icons">
-                    <a href="./about.php" class="navlink">
-                        <span class="material-symbols-outlined">
-                            info
-                        </span>
-                        <p>Sobre</p>
-                    </a>
-                </li>
-                <li class="icons">
-                    <a href="./game.php" class="navlink">
-                        <span class="material-symbols-outlined">
-                            play_circle
-                        </span>
-                        <p>Jogue</p>
-                    </a>
-                </li>
-                <li class="icons">
-                    <a href="./settings.php" class="navlink">
-                        <span class="material-symbols-outlined">
-                            settings
-                        </span>
-                        <p>Configurações</p>
-                    </a>
-                </li>
-                <li class="icons">
-                    <a href="./profile.php" class="navlink">
-                        <span class="material-symbols-outlined">
-                            person
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </header>
 
         <div class="section profile" id="section">
 
@@ -118,9 +73,9 @@
                     </div>
                 </div>
             </div>
+
             <div id="blur">
             </div>
-
     </main>
 
 </body>

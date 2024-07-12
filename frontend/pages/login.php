@@ -37,19 +37,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $_SESSION['username'] = $username_input;
                     echo "Login foi um sucesso. Bem vindo, " . $username_input . "!";
                     // Redirecionar para a página protegida
-                    header("Location: protected.php");
+                    header("Location: profile.php");
                     exit();
                 } else {
                     echo "Usuário ou senha inválido";
                 }
             } else {
                 echo "Usuário ou senha inválido";
+
             }
         } else {
-            echo "ERRO: Não deu para executar a consulta SQL: $sql. " . mysqli_error($conn);
+            echo "Erro: A conexão com o banco de dados não foi possível";
         }
     } else {
-        echo "ERROR: Não foi possível preparar a consulta: $sql. " . mysqli_error($conn);
+        echo "Erro: A conexão com o banco de dados não foi possível";
     }
 
     mysqli_stmt_close($stmt);
@@ -60,12 +61,12 @@ mysqli_close($conn);
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title> KidScript | Login </title>
+    <title> KidScript | Entrar </title>
     <!-- HTML5 default configs -->
     <!-- icons -->
     <link rel="stylesheet"
@@ -73,87 +74,43 @@ mysqli_close($conn);
     <!-- icons -->
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="../styles/components/header.css">
-    <link rel="stylesheet" href="../styles/utils/utils.css">
-    <link rel="stylesheet" href="../styles/components/login.css">
+    <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../styles/utils.css">
+    <link rel="stylesheet" href="../styles/login.css">
 </head>
 
 <body>
 
-    <header>
-        <ul class="navbar">
-            <li class="logo">
-                <img src="../assets/logo.png" alt="" width="120px">
-            </li>
-
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        home
-                    </span>
-                    <p>Início</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        info
-                    </span>
-                    <p>Sobre</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        play_circle
-                    </span>
-                    <p>Jogue</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        settings
-                    </span>
-                    <p>Configurações</p>
-                </a>
-            </li>
-            <li class="icons">
-                <a href="" class="navlink">
-                    <span class="material-symbols-outlined">
-                        person
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </header>
+    <?php include '../components/header/header.php'; ?>
 
     <div class="container">
-
-
-        <section class="section login">
-            <div class="pop-up">
+        <div class="pop-up login">
+            <div class="login-title">
                 <h2>FAÇA SEU LOGIN</h2>
-
-                <form action="#" method="POST" class="login-form">
-                    <label for="nome">Usuário:</label>
-                    <input type="text" id="nome" name="username-input" required><br><br>
-
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="password-input" required><br><br>
-
-                    <input type="submit" value="Entrar" class="btn btn-login">
-
-
-                </form>
-
-                <a href="#">Esqueci minha senha?</a>
-
-                <a href="#">Não tenho cadastro?</a>
 
             </div>
 
-        </section>
+            <form action="#" method="POST" class="login-form">
+                <label for="nome">Usuário:</label>
+                <input type="text" id="nome" name="username-input" required><br><br>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="password-input" required><br><br>
+
+                <div class="btn-login input">
+                    <input type="submit" value="Entrar" class="btn btn-login">
+
+                </div>
+
+            </form>
+
+            <div class="btn-sign-in">
+
+                <a href="sign-in.php">Não tenho cadastro?</a>
+            </div>
+
+        </div>
+
     </div>
 
 </body>

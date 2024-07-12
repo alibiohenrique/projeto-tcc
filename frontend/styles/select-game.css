@@ -1,0 +1,114 @@
+:root {
+    --btn-exp: var(--yellow);
+    --background-select-game: var(--dark-gray);
+}
+
+.section:nth-child(1) {
+    background-color: var(--background-select-game);
+}
+
+.select-game-title {
+    font-size: 150%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 3 auto;
+    color: aliceblue;
+}
+
+
+.select-game {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.snake-game,
+.monkey-game {
+    display: flex;
+    align-items: center;
+    background-color: #191919;
+    margin-bottom: 5%;
+}
+
+.monkey-game{
+    filter: opacity(40%);
+}
+
+.monkey-game:hover{
+    filter: opacity(100%);
+    transition: 0.5s;
+}
+
+.snake-game img {
+    width: 20%;
+}
+
+.monkey-game img {
+    width: 32%;
+    margin-top: -5%;
+    margin-bottom: -5%;
+}
+
+.snake-game h2,
+.monkey-game {
+    padding-top: 5%;
+    color: azure;
+    font-weight: 700;
+}
+
+.btn-exp {
+    background-color: var(--btn-exp);
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.845);
+    border-radius: 8px;
+}
+
+.btn-exp:hover {
+    box-shadow: 0px 4px 30px rgba(122, 255, 126, 0.882);
+}
+
+.btn-blocked {
+    background-color: var(--dark-gray);
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.845);
+    border-radius: 8px;
+}
+
+.btn-blocked:hover {
+    box-shadow: 0px 4px 30px rgba(189, 24, 24, 0.882);
+    transition: 0.3s;
+}
+
+.time-limit{
+    padding: 2em;
+    background: var(--purple);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+    margin: 2em;
+    position: fixed;
+    top: 30%;
+    z-index: 100;
+}
+
+.time-limit .btn{
+    margin: 2em;
+    background: var(--red);
+    color: var(--white);
+}
