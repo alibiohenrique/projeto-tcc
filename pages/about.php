@@ -33,8 +33,10 @@
                         dedicado a dispositivos eletrônicos, transformando-o em uma experiência de aprendizado
                         significativa e estimulante.</p>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                     </svg>
 
                 </div>
@@ -47,8 +49,10 @@
                         tecnológicas essenciais.
                     </p>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                     </svg>
                 </div>
                 <div class="card-inform" data-aos="flip-left">
@@ -57,8 +61,10 @@
                     <p>Em nosso projeto, temos como valores fundamentais a educação de qualidade, a responsabilidade
                         digital, a inclusão e a diversão no aprendizado.</p>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                     </svg>
                 </div>
 
@@ -66,15 +72,19 @@
                     <div class="card-inform">
 
                         <h2>Sobre nós</h2>
-                        <iframe src="https://www.youtube.com/embed/wMTnjSJGWCs?si=ZkHGBrhkyhx6DwqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            
-                            <div class="btnSection"><a href="./login.php"></a><button class="btn login"><strong>Entrar</strong></button></a>
-                    <a href="./sign-in.php"><button class="btn sign-in"><strong>Cadastre-se</strong></button></a>
-                    </div>
+                        <iframe src="https://www.youtube.com/embed/wMTnjSJGWCs?si=ZkHGBrhkyhx6DwqY"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <div class="btnSection">
+                            <a href="login.php"><button class="btn login"><strong>Entrar</strong></button></a>
+                            <a href="sign-in.php"><button class="btn sign-in"><strong>Cadastre-se</strong></button></a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>

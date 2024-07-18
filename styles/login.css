@@ -4,7 +4,15 @@
 }
 
 body {
+    margin: 0 auto;
+    top: 0;
     overflow-y: hidden;
+    height: 100vh;
+    width: 100%;
+    background: url(../assets/images/background-sign-login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 a {
@@ -13,24 +21,21 @@ a {
     font-size: var(--base);
 }
 
-label {
-    text-align: center;
-    justify-content: center;
+input {
+    margin: 0 auto;
+    position: relative;
     align-items: center;
-    display: flex;
-    overflow-y: hidden;
-    color: var(--light-purple);
-    font-weight: 600;
-    min-height: 25px;
-    max-height: 50px;
-    font-size: var(--lg);
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.7rem;
+    padding: 0.35rem;
 }
 
 h2 {
     color: var(--light-purple);
     overflow-y: hidden;
-    margin-top: 1.5rem;
-    font-size: var(--3xl);
+    font-size: var(--4xl);
     font-weight: 1000;
     letter-spacing: -0.1rem;
     font-family: roboto;
@@ -38,38 +43,38 @@ h2 {
 
 .container {
 
-    height: 100vh;
-    width: 100%;
-    background: url(../assets/images/side-wave_background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     color: var(--white);
     text-wrap: wrap;
     overflow-y: hidden !important;
+    justify-content: center;
 
 }
 
-.sign-in {
-    background-color: var(--dark-purple);
-    width: 25%;
-    margin-left: 75%;
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: transparent;
+    width: 35%;
+    margin-left: 65%;
 }
 
-.sign-in-title {
+.login-title {
     overflow-y: hidden;
     min-height: 50px;
-    max-height: 60px;
-    margin: 0;
-
 }
 
-.sign-in-form {
-    margin: 0;
+.login-form {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    min-height: 250px;
+    gap: 1rem;
+    width: 100%;
 
 }
 
@@ -79,16 +84,17 @@ h2 {
     justify-self: center;
     flex-direction: column;
     overflow: hidden;
+    width: 80%;
 }
 
 .btn {
     overflow-y: hidden;
-
-    border: 2px solid var(--dark-purple);
+    width: 50%;
+    border: 2px solid var(--purple);
     font-family: roboto;
     font-weight: 1000;
     background-color: var(--cyan);
-    color: var(--dark-purple);
+    color: var(--purple);
     transition: 0.5s;
 
 }
@@ -112,7 +118,7 @@ h2 {
     overflow-y: hidden;
 }
 
-.login {
+.login-page-btn {
     margin: 0 auto;
     justify-content: center;
     display: flex;
@@ -121,26 +127,37 @@ h2 {
     max-height: 50px;
 }
 
-.login a {
+.login-page-btn a {
+    transition: 0.5s;
     overflow-y: hidden;
 }
+
+.login-page-btn a:hover {
+    color: var(--cyan);
+}
+
+
 
 /* xxs */
 @media (max-width: 474px) {
 
     a,
-    label,
     input {
-        font-size: var(--base);
+        font-size: var(--sm);
     }
-
-    input {
-        min-height: 20px;
-    }
-
 
     h2 {
-        font-size: var(--xl);
+        color: var(--dark-purple);
+        text-shadow: 2px 2px 2px var(--whi);
+        font-size: var(--lg);
+    }
+
+    input {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
     }
 
     .container {
@@ -150,23 +167,37 @@ h2 {
         height: 100vh;
     }
 
-    .sign-in {
+    .login-page {
         margin: 0 auto;
         position: absolute;
         justify-content: center;
         align-items: center;
         position: relative;
         display: flex;
-        height: 78vh;
-        width: 65.5vw;
+        height: 100vh;
+        width: 80vw;
     }
 
-    .sign-in-title {
-        transform: translateY(35px);
+    .btn {
+        color: var(--light-purple);
+        background-color: var(--dark-purple);
+        border: 0.15rem solid var(--dark-purple);
+    }
+
+    .btn:hover {
+        color: var(--dark-purple);
+        border: 0.15rem solid var(--dark-purple);
+        background-color: var(--light-purple);
     }
 
     .btn-submit {
-        height: 2.25rem;
+        height: 2.45rem;
+    }
+
+    .sign-in-page-btn {
+        transform?
+        (50vw);
+    }
     }
 }
 
@@ -175,7 +206,6 @@ h2 {
 @media (min-width: 475px) {
 
     a,
-    label,
     input {
         font-size: var(--base);
     }
@@ -189,9 +219,6 @@ h2 {
         font-size: var(--lg);
     }
 
-    .sign-in {
-        max-height: 80vh;
-    }
 
 
 }
@@ -200,7 +227,6 @@ h2 {
 @media (min-width: 640px) {
 
     a,
-    label,
     input {
         font-size: var(--lg);
     }
@@ -235,7 +261,6 @@ h2 {
 @media (min-width: 768px) {
 
     a,
-    label,
     input {
         font-size: var(--xl);
     }
@@ -259,7 +284,6 @@ h2 {
 @media (min-width: 1024px) {
 
     a,
-    label,
     input {
         font-size: var(--base);
     }

@@ -3,14 +3,13 @@
 /* default settings */
 
 * {
-    /* border: 1px solid greenyellow; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background: var(--light-purple);
+    background: var(--background);
 }
 
 a {
@@ -18,50 +17,60 @@ a {
     color: var(--light-purple);
 }
 
-main{
+main {
     overflow: hidden !important;
 }
 
 .landing-page {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
     width: 100%;
-    background: url(../assets/images/side-wave_background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #5100A2;
     color: var(--white);
     text-wrap: wrap;
 }
 
 .top-texts {
+
     display: flex;
     justify-content: space-between;
     margin: 2em 4em 1em 4em;
 }
 
-.top-texts h2:nth-child(2) {
-    color: var(--light-purple);
-    /* font-size: clamp(1.75rem, 1.7188rem + 0.25vw, 2rem); */
+.top-texts h2,
+span {
+    font-family: "Knewave", system-ui;
+    font-size: 1.8em;
 }
 
-.top-texts h2:nth-child(1) {
-    text-transform: uppercase;
-    color: var(--white);
+.top-texts span {
+    color: #FBA2B0;
+    font-size: 1.2em;
 }
 
-.center-asset {
-    width: 80%;
-    margin: auto;
+.top-texts h2 {
+    color: #5CE1E6;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 3em;
+}
+
+.btnSection{
+    text-align: center;
+}
+
+.images{
+    padding: 0 180px;
+    position: absolute;
+    top: 45vh;
     display: flex;
-    justify-content: center;
-    overflow: hidden !important;
-}
-
-.center-asset img {
-    width: 17em;
-    height: 15em;
-    rotate: 23deg;
-}
-
+    justify-content: space-between;
+    width: 100vw;
+}   
 .bottom-texts {
     display: flex;
     justify-content: space-between;
@@ -71,18 +80,18 @@ main{
     margin: 4em;
 }
 
-.bottom-texts img{
+.bottom-texts img {
     width: 9em;
 }
 
 iframe {
+    max-width: 900px;
     width: 90%;
-    height: 35em;
+    height: 30em;
     transform: scaleY(-1);
 }
 
 .landing-seguiment {
-    background-image: linear-gradient(to bottom, var(--light-purple) 15%, transparent 75%), url(../assets/images/side-wave_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     transform: scaleY(-1);
@@ -90,21 +99,31 @@ iframe {
 
 .section-title {
     text-align: center;
-    margin: 3em;
-    margin-bottom: calc(3em - 48px);
+    margin-top: 3em;
+    margin-bottom:0;
+    font-family: Gliker;
+    color: #5100A2;
+}
+
+.section-title hr{
+    margin: 5px auto;
+    width: 300px;
 }
 
 .learn-playing {
     display: flex;
+    justify-content: center;
 }
 
 .aside-texts {
+    padding-left: 50px;
     width: 50%;
 }
 
-.aside-texts h3{
-    margin: 2em;
+.aside-texts h3 {
+    margin: 1em;
     text-align: justify;
+    color: #5CE1E6;
 }
 
 .aside-texts p {
@@ -118,38 +137,11 @@ iframe {
 }
 
 hr {
+   display: flex;
+   justify-content: center;
+   align-items: center;
     border: var(--dark-purple) 1px solid;
-}
-
-.avaliation {
-    display: flex;
-    width: 60%;
-    margin: 3em auto;
-}
-
-.avaliation:nth-child(2) {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.specialist {
-    width: 160px;
-    display: flex;
-    justify-content: center;
-}
-
-.specialist img {
-    width: 7em;
-    height: 7em;
-    border-radius: 100px;
-}
-
-.message {
-    width: 100%;
-    margin: auto;
-    background: var(--medium-purple);
-    padding: 2em;
-    border-radius: 0px 30px 0px 30px;
+  
 }
 
 .call-to-action {
@@ -183,7 +175,7 @@ hr {
 
 @media screen and (max-width: 768px) {
     .landing-page {
-        background: url(../assets/images/side-wave_background-to-phones.jpg);
+        /* background: url(../assets/images/side-wave_background-to-phones.jpg); */
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
@@ -233,7 +225,7 @@ hr {
 
 
     .landing-seguiment {
-        background-image: linear-gradient(to bottom, var(--light-purple) 25%, transparent 55%), url(../assets/images/side-wave_background-to-phones.jpg);
+        /* background-image: linear-gradient(to bottom, var(--light-purple) 25%, transparent 55%), url(../assets/images/side-wave_background-to-phones.jpg); */
         background-repeat: no-repeat;
         background-size: cover;
         transform: scaleY(-1);
@@ -247,10 +239,12 @@ hr {
     .aside-texts {
         width: 80%;
         margin: auto;
+        padding-left: 0;
     }
 
     .aside-texts p {
-        margin: 2em 0.5em;
+        /* margin: 2em 0.5em; */
+        margin: 0;
         text-align: justify;
     }
 
@@ -282,5 +276,33 @@ hr {
 
     .cta-asset img {
         width: 300px;
+    }
+}
+
+@media screen and (width < 768px) {
+
+    iframe {
+        height: 25em;
+    }
+}
+
+@media screen and (width < 560px) {
+
+    iframe {
+        height: 20em;
+    }
+}
+
+@media screen and (width < 470px) {
+
+    iframe {
+        height: 15em;
+    }
+}
+
+@media screen and (width < 350px) {
+
+    iframe {
+        height: 10em;
     }
 }

@@ -16,6 +16,9 @@ body {
 
 /* default settings */
 
+img{
+    width: 180px;
+}
 
 header {
     font-family: roboto;
@@ -107,6 +110,7 @@ header {
         background: var(--purple);
         border-radius: 30px;
         padding: 0.8em 0 0.8em 0;
+        z-index: 1000 !important;
     }
 
     .logo {

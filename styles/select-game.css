@@ -3,43 +3,79 @@
     --background-select-game: var(--dark-gray);
 }
 
-.section:nth-child(1) {
-    background-color: var(--background-select-game);
+body {
+    color: #fff;
+    background: #000;
+}
+
+.card {
+    background: #272727;
+    width: 80vw;
+    height: 70vh;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card .game{
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content * {
+    margin: 10px;
+
+}
+
+.card .content{
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button{
+    margin: 20px
+}
+
+@media screen and (max-width:768px) {
+    .card{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .card .game {
+        width: 100%;
+        height: 40%;
+    }
+    .card .content {
+        width: 100%;
+        height: 60%;
+    }
 }
 
 .select-game-title {
     font-size: 150%;
-    margin-top: 5%;
-    margin-bottom: 5%;
     padding: 3 auto;
     color: aliceblue;
+    text-align: center;
 }
 
-
-.select-game {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-}
-
-.snake-game,
 .monkey-game {
-    display: flex;
-    align-items: center;
-    background-color: #191919;
-    margin-bottom: 5%;
-}
-
-.monkey-game{
     filter: opacity(40%);
 }
 
-.monkey-game:hover{
+.monkey-game:hover {
     filter: opacity(100%);
     transition: 0.5s;
 }
@@ -90,25 +126,4 @@
 .btn-blocked:hover {
     box-shadow: 0px 4px 30px rgba(189, 24, 24, 0.882);
     transition: 0.3s;
-}
-
-.time-limit{
-    padding: 2em;
-    background: var(--purple);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--white);
-    text-align: center;
-    margin: 2em;
-    position: fixed;
-    top: 30%;
-    z-index: 100;
-}
-
-.time-limit .btn{
-    margin: 2em;
-    background: var(--red);
-    color: var(--white);
 }

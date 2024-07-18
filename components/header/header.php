@@ -29,14 +29,6 @@
                 </a>
             </li>
             <li class="icons">
-                <a href="../pages/settings.php" class="navlink">
-                    <span class="material-symbols-outlined">
-                        settings
-                    </span>
-                    <p class="highlight-hover">Configurações</p>
-                </a>
-            </li>
-            <li class="icons">
                 <a href="../pages/profile-unlogged.php" class="navlink">
                     <span class="material-symbols-outlined">
                         person
