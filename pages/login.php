@@ -1,7 +1,18 @@
-<?php include '../components/configs/config.php'; ?>
-
 <?php
 session_start();
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "kidscript_db";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username_input = mysqli_real_escape_string($conn, $_POST['username-input']);
@@ -23,10 +34,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 header("Location: profile.php");
                 exit();
             } else {
-                echo "Invalid password.";
+                echo "Senha incorreta.";
             }
         } else {
-            echo "No user found.";
+            echo "Nenhum usuário encontrado";
         }
     } else {
         echo "Error: " . mysqli_error($conn);
@@ -45,7 +56,7 @@ mysqli_close($conn);
     <!-- HTML5 & page default configs -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title> KidScript | Login </title>
+    <title>KidScript | Login</title>
     <!-- HTML5 default configs -->
     <!-- icons -->
     <link rel="stylesheet"
@@ -62,6 +73,9 @@ mysqli_close($conn);
     <?php include '../components/header/header.php'; ?>
     <div class="container">
         <div class="pop-up login-page">
+            <div class="logo-login">
+                <img src="../assets/images/logo.png" alt="" width="250px">
+            </div>
             <div class="login-title">
                 <h2>LOGIN</h2>
             </div>

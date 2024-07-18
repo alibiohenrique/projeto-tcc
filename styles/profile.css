@@ -13,9 +13,8 @@
 
 /* FORMATAÇÃO BASICA */
 body{
-    background: url(../assets/images/wave_background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--light-purple);
+
 }
 
 header {

@@ -9,7 +9,7 @@
 }
 
 body {
-    background: var(--background);
+    background: #f2deff;
 }
 
 a {
@@ -21,6 +21,10 @@ main {
     overflow: hidden !important;
 }
 
+.section{
+    height: 60vh;
+}
+
 .landing-page {
     display: flex;
     flex-direction: column;
@@ -29,7 +33,7 @@ main {
     text-align: center;
     height: 50vh;
     width: 100%;
-    background: #5100A2;
+    background: var(--purple);
     color: var(--white);
     text-wrap: wrap;
 }
@@ -43,19 +47,17 @@ main {
 
 .top-texts h2,
 span {
-    font-family: "Knewave", system-ui;
     font-size: 1.8em;
 }
 
 .top-texts span {
-    color: #FBA2B0;
+    font-family: gliker;
+    color: var(--pink);
     font-size: 1.2em;
 }
 
 .top-texts h2 {
-    color: #5CE1E6;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    color: var(--blue-sky);
     font-size: 3em;
 }
 
@@ -66,12 +68,17 @@ span {
 .images{
     padding: 0 180px;
     position: absolute;
-    top: 45vh;
+    top: 38vh;
     display: flex;
     justify-content: space-between;
     width: 100vw;
-}   
-.bottom-texts {
+}
+
+.images img {
+    width: 200px;
+}
+
+bottom-texts {
     display: flex;
     justify-content: space-between;
     height: fit-content;
@@ -102,7 +109,7 @@ iframe {
     margin-top: 3em;
     margin-bottom:0;
     font-family: Gliker;
-    color: #5100A2;
+    color: var(--purple);
 }
 
 .section-title hr{
@@ -111,29 +118,37 @@ iframe {
 }
 
 .learn-playing {
-    display: flex;
-    justify-content: center;
-}
-
-.aside-texts {
     padding-left: 50px;
-    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
-.aside-texts h3 {
+.card{
+    width: 32%;
+}
+
+.card p{
+    min-height: 16em;
+}
+
+.learn-playing h3 {
     margin: 1em;
     text-align: justify;
-    color: #5CE1E6;
 }
 
-.aside-texts p {
+.learn-playing p {
     margin: 2em;
     text-align: justify;
 }
 
-.aside-assets {
-    width: 40%;
-    margin: auto;
+.learn-playing-asset{
+    display: flex;
+    justify-content: center;
+}
+
+.learn-playing-asset img {
+    width: 50%;
 }
 
 hr {
@@ -141,19 +156,32 @@ hr {
    justify-content: center;
    align-items: center;
     border: var(--dark-purple) 1px solid;
-  
+
+}
+
+.journey {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3em;
+    gap: 20px;
+}
+
+.journey-card {
+    max-width: 300px;
 }
 
 .call-to-action {
-    background-image: linear-gradient(to bottom, var(--light-purple) 20%, transparent 40%), url(../assets/images/cta-background.jpg);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
+    background: var(--purple);
+    height: 70vh;
+     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     color: var(--white);
+    text-align: center;
 }
 
 .calling-to-action {
@@ -163,7 +191,7 @@ hr {
 }
 
 .cta-asset img {
-    width: 200px;
+    width: 250px;
 }
 
 .call-to-action .btn {
@@ -172,10 +200,25 @@ hr {
     padding: 1em;
 }
 
+.call-to-action h3 {
+    font-size: 1.2em;
+    color: var(--white);
+}
+
+.call-to-action h2 {
+    font-size: 2em;
+    color: #5CE1E6;
+}
+
+.call-to-action span {
+    font-family: gliker;
+    font-size: 1.2em;
+    color: #FBA2B0;
+}
+
 
 @media screen and (max-width: 768px) {
     .landing-page {
-        /* background: url(../assets/images/side-wave_background-to-phones.jpg); */
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
@@ -225,9 +268,6 @@ hr {
 
 
     .landing-seguiment {
-        /* background-image: linear-gradient(to bottom, var(--light-purple) 25%, transparent 55%), url(../assets/images/side-wave_background-to-phones.jpg); */
-        background-repeat: no-repeat;
-        background-size: cover;
         transform: scaleY(-1);
     }
 
@@ -236,21 +276,22 @@ hr {
         flex-direction: column;
     }
 
-    .aside-texts {
+    .card{
+        width: 100%;
+    }
+
+    .learn-playing {
         width: 80%;
         margin: auto;
         padding-left: 0;
     }
 
-    .aside-texts p {
+    .learn-playing p {
         /* margin: 2em 0.5em; */
         margin: 0;
         text-align: justify;
     }
 
-    .aside-assets {
-        margin: auto;
-    }
 
     .avaliation {
         flex-direction: column;

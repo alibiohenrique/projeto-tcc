@@ -7,7 +7,7 @@ body {
     margin: 0 auto;
     top: 0;
     overflow-y: hidden;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: url(../assets/images/background-sign-login.png);
     background-repeat: no-repeat;
@@ -56,10 +56,14 @@ h2 {
     justify-content: center;
     position: relative;
     margin: 0 auto;
-    height: 100vh;
     background-color: transparent;
     width: 35%;
     margin-left: 65%;
+}
+
+
+.logo-login {
+    display: none;
 }
 
 .login-title {
@@ -100,7 +104,7 @@ h2 {
 }
 
 .btn-submit {
-    margin-top: 0.5rem;
+    width: 150px;
     height: 2.7rem;
 }
 
@@ -141,6 +145,16 @@ h2 {
 /* xxs */
 @media (max-width: 474px) {
 
+
+
+    body{
+        background: url(../assets/images/side-wave_background-to-phones.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
     a,
     input {
         font-size: var(--sm);
@@ -160,11 +174,8 @@ h2 {
         position: relative;
     }
 
-    .container {
-        background: url(../assets/images/side-wave_background-to-phones.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
+    .logo-login {
+        display: block;
     }
 
     .login-page {
@@ -174,7 +185,6 @@ h2 {
         align-items: center;
         position: relative;
         display: flex;
-        height: 100vh;
         width: 80vw;
     }
 
@@ -191,14 +201,30 @@ h2 {
     }
 
     .btn-submit {
-        height: 2.45rem;
+        height: 2.55rem;
     }
 
     .sign-in-page-btn {
-        transform?
-        (50vw);
+        margin: 0 auto;
+        position: relative;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
+    .sign-in-page-btn a{
+        margin: 0 auto;
+        position: relative;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--dark-purple);
+        font-weight: 1000;
+        height: 50px;
     }
+    
 }
 
 
@@ -250,9 +276,8 @@ h2 {
         font-size: var(--xl);
     }
 
-
-    .sign-in {
-        max-height: 80vh;
+    .logo-login {
+        display: none;
     }
 
 }
@@ -274,6 +299,11 @@ h2 {
         font-size: var(--2xl);
     }
 
+    
+    .logo-login {
+        display: none;
+    }
+
     .btn {
         height: 5rem;
     }
@@ -288,20 +318,14 @@ h2 {
         font-size: var(--base);
     }
 
-    input {
-        min-height: 20px;
-    }
 
     h2 {
         font-size: var(--2xl);
     }
 
 
-    .sign-in {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        right: 0;
+    .logo-login {
+        display: none;
     }
 
 
@@ -309,7 +333,18 @@ h2 {
 }
 
 /* xl */
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+
+    
+    .logo-login {
+        display: none;
+    }
+}
 
 /* 2xl */
-@media (min-width: 1536px) {}
+@media (min-width: 1536px) {
+
+    .logo-login {
+        display: none;
+    }
+}

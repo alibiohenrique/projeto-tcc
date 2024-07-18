@@ -2,6 +2,8 @@
 
 <?php
 
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username_input = mysqli_real_escape_string($conn, $_POST['username-input']);
     $password_input = mysqli_real_escape_string($conn, $_POST['password-input']);
@@ -49,7 +51,7 @@ mysqli_close($conn);
     <!-- HTML5 & page default configs -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title> KidScript | Cadastre </title>
+    <title>KidScript | Cadastre</title>
     <!-- HTML5 default configs -->
     <!-- icons -->
     <link rel="stylesheet"
@@ -69,11 +71,12 @@ mysqli_close($conn);
     <div class="container">
 
         <div class="pop-up sign-in-page">
-
+            <div class="logo-sign-in">
+                <img src="../assets/images/logo.png" alt="">
+            </div>
             <div class="sign-in-title">
                 <h2>FAÇA SEU CADASTRO</h2>
             </div>
-
             <form action="" method="POST" class="sign-in-form">
                 <div class="input">
                     <input type="text" id="username-input" name="username-input" placeholder="Digite seu usuário"

@@ -9,6 +9,7 @@ if (!isset($_SESSION['username'])) {
 $username = $_SESSION['username'];
 $email = isset($_SESSION['user_email']) ? $_SESSION['user_email'] : 'Email não disponível';
 $age = isset($_SESSION['user_age']) ? $_SESSION['user_age'] : 'Idade não disponível';
+$name = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "Nome não disponível";
 
 ?>
 
@@ -73,19 +74,20 @@ $age = isset($_SESSION['user_age']) ? $_SESSION['user_age'] : 'Idade não dispon
             <div class="logged">
                 <div class="profile-card">
 
-                    <h2><?php echo htmlspecialchars($username); ?></h2>
+                    <h2><?php echo htmlspecialchars($name); ?></h2>
                     <h3><?php echo htmlspecialchars($age); ?> anos</h3>
+                    <h4><?php echo htmlspecialchars($username); ?></h4>
+
                     <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user"
                         alt="" width="100px">
 
                     <div class="profile-text">
 
-                        <p><strong>E-mail: </strong><?php echo htmlspecialchars($email); ?></span></p>
+                        <p><strong>E-mail: </strong><span><?php echo htmlspecialchars($email); ?></span></p>
                         <p><strong>Senha: </strong><span>********</span></p>
-                        <p><strong>Mudar Senha: </strong><button type="button" class="btn-primary"
+                        <!-- <p><strong>Mudar Senha: </strong><button type="button" class="btn-primary"
                                 data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                                onclick="activeBlur()">></button></p>
-                        <p><strong>Sessão Atual: </strong><span>1h 26min 04s</span></p>
+                                onclick="activeBlur()">></button></p> -->
                     </div>
 
 
