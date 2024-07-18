@@ -84,7 +84,7 @@
         <div class="score"><span>Score: </span><span class="score--value">00</span>
 
             <div class="menu-screen">
-                <span class="game-over"> Game Over</span>
+                <span class="game-over"> Game Over </span>
                 <span class="final-score"> Score <span>00</span></span>
 
                 <button class="btn-play">

@@ -1,7 +1,7 @@
 <header>
         <ul class="navbar">
             <li class="logo">
-                <img src="../assets/images/logo.png" alt="" width="120px">
+                <img src="../assets/images/logo.png" alt="" width="180px">
             </li>
 
             <li class="icons">
@@ -28,6 +28,7 @@
                     <p class="highlight-hover">Jogue</p>
                 </a>
             </li>
+            
             <li class="icons">
                 <a href="../pages/unlogged.php" class="navlink">
                     <span class="material-symbols-outlined">
