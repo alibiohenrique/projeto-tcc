@@ -26,7 +26,7 @@
             <p>Cadastre-se no nosso site e desbloqueie o aprendizado divertido!!</p>
             <div class="btnSection">
                 <a href="login.php"><button class="btn login"><strong>Entrar</strong></button></a>
-                <a href="sign-in.php"><button class="btn sign-in"><strong>cadastre-se</strong></button></a>
+                <a href="sign-in.php"><button class="btn sign-in"><strong>Cadastre-se</strong></button></a>
             </div>
         </div>
 </body>

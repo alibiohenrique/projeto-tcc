@@ -22,7 +22,7 @@ main {
 }
 
 .section{
-    height: 60vh;
+    min-height: 50%;
 }
 
 .landing-page {
@@ -39,7 +39,6 @@ main {
 }
 
 .top-texts {
-
     display: flex;
     justify-content: space-between;
     margin: 2em 4em 1em 4em;
@@ -65,17 +64,11 @@ span {
     text-align: center;
 }
 
-.images{
-    padding: 0 180px;
+.images img {
+    padding-left: 180px;
     position: absolute;
     top: 38vh;
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-}
-
-.images img {
-    width: 200px;
+    width: 400px;
 }
 
 bottom-texts {
@@ -92,6 +85,7 @@ bottom-texts {
 }
 
 iframe {
+    margin: 80px;
     max-width: 900px;
     width: 90%;
     height: 30em;
@@ -106,16 +100,16 @@ iframe {
 
 .section-title {
     text-align: center;
-    margin-top: 3em;
-    margin-bottom:0;
+    margin-bottom: 2em;
     font-family: Gliker;
     color: var(--purple);
 }
 
 .section-title hr{
     margin: 5px auto;
-    width: 300px;
+    width: 30vw;
 }
+
 
 .learn-playing {
     padding-left: 50px;
@@ -126,6 +120,7 @@ iframe {
 
 .card{
     width: 32%;
+    text-align: center;
 }
 
 .card p{
@@ -134,12 +129,10 @@ iframe {
 
 .learn-playing h3 {
     margin: 1em;
-    text-align: justify;
 }
 
 .learn-playing p {
     margin: 2em;
-    text-align: justify;
 }
 
 .learn-playing-asset{
@@ -189,6 +182,9 @@ hr {
     width: 30%;
     flex-direction: column;
 }
+.cta-asset{
+    display: flex;
+}
 
 .cta-asset img {
     width: 250px;
@@ -216,6 +212,11 @@ hr {
     color: #FBA2B0;
 }
 
+@media screen and (width < 1015px){
+    .images img{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .landing-page {
@@ -250,22 +251,6 @@ hr {
         text-align: center;
         color: var(--dark-purple);
     }
-
-    .sign-in {
-        background: var(--dark-purple);
-        border: solid var(--cyan) 1px;
-    }
-
-    .login {
-
-        border: solid var(--cyan) 1px;
-    }
-
-    .login:hover {
-        background: var(--dark-purple);
-        border: solid var(--cyan) 1px;
-    }
-
 
     .landing-seguiment {
         transform: scaleY(-1);

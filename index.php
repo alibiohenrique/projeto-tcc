@@ -86,10 +86,11 @@
 
             </div>
         </div>
-        <div class="images">
 
-            <img src="../assets/images/mascoteInvert.png" alt="">
+        <div class="images">
+            <img src="./assets/images/mascoteInvert.png" alt="">
         </div>
+
         <div class="section landing-seguiment">
             <iframe src="https://www.youtube.com/embed/eIEPOiuk-Gs?si=wSboZT3AJj4EQNFs" title="YouTube video player"
                 frameborder="0"
@@ -103,38 +104,32 @@
             <div class="card">
 
                 <h3 data-aos="fade-left">Quem somos</h3>
-            <hr>
+                <hr>
                 <p data-aos="fade-left">
                     A Kidscript é uma plataforma gratuita de ensino de programação voltada para crianças e jovens de 8 a
                     12 anos. Nosso objetivo é ensinar programação de maneira divertida e acessível, utilizando jogos
                     intuitivos que tornam o aprendizado lúdico e envolvente.
                 </p>
-                <hr>
             </div>
             <div class="card">
 
                 <h3 data-aos="fade-left">Como Ensinamos</h3>
-            <hr>
-
+                <hr>
                 <p data-aos="fade-left">
                     As crianças aprendem programação, lógica, algoritmos e resolução de problemas por meio de jogos
                     interativos. Utilizamos uma linguagem básica e exercícios práticos para garantir que o aprendizado
                     seja simples e eficaz. Além disso, promovemos o desenvolvimento do pensamento computacional e
                     habilidades para lidar com frustrações. </p>
-            <hr>
             </div>
-
             <div class="card">
-            <h3 data-aos="fade-left">Nosso Compromisso</h3>
-            <hr>
-
-            <p data-aos="fade-left">
-                Estamos comprometidos em fornecer suporte contínuo e garantir o uso saudável da tecnologia.
-                Limitamos o tempo de uso das crianças na plataforma para evitar que fiquem online por períodos
-                prolongados. Na Kidscript, acreditamos que aprender programação pode ser divertido e acessível para
-                todas as crianças.
-            </p>
-            <hr>
+                <h3 data-aos="fade-left">Nosso Compromisso</h3>
+                <hr>
+                <p data-aos="fade-left">
+                    Estamos comprometidos em fornecer suporte contínuo e garantir o uso saudável da tecnologia.
+                    Limitamos o tempo de uso das crianças na plataforma para evitar que fiquem online por períodos
+                    prolongados. Na Kidscript, acreditamos que aprender programação pode ser divertido e acessível para
+                    todas as crianças.
+                </p>
             </div>
         </div>
 
@@ -170,7 +165,8 @@
 
         <div class="call-to-action">
             <div class="cta-asset">
-                <img src="assets/images/mascoteInvert.png" alt="" width="500px">
+                <img src="assets/images/misael.png" alt="" width="500px">
+                <img src="assets/images/misael.png" alt="" width="500px">
             </div>
             <div class="calling-to-action">
                 <h2>
@@ -186,7 +182,6 @@
                     </button>
                 </a>
             </div>
-
         </div>
     </main>
 
