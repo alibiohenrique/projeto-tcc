@@ -260,9 +260,11 @@ hr {
     }
 
     .call-to-action {
+        height: 100vh !important;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 5rem;
     }
 
     .calling-to-action {

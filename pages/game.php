@@ -57,7 +57,7 @@
             </select><span> ;</span><br>
             <p>}</p>
 
-            <input class="btn" type="submit" value="Enviar">
+            <input id="ideBtn" class="btn" type="submit" value="Enviar">
         </form>
 
 
@@ -410,7 +410,14 @@
             snake = [initalPosition]
         })
     </script>
-    <!-- <script src="https://kit.fontawesome.com/df3d71e545.js" crossorigin="anonymous"></script> -->
+    <!--
+    *** Referencias utilizadas nessa pagina ***
+    https://www.youtube.com/watch?v=LyWSsZktVOg&t=959s
+    https://www.youtube.com/watch?v=Je0B3nHhKmM&t=1257s
+    https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+    https://chatgpt.com/
+        Esta pagina contem diversos trexos de codigo que utilizaram
+    ia como ferramenta de desenvolvimento e Referencias de codigo.
+    -->
 </body>
-
 </html>

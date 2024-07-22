@@ -169,3 +169,7 @@ h3 {
     color: var(--white);
     margin-top: 20px;
 }
+
+*, span, h2, h3{
+    color: #fff;
+}
