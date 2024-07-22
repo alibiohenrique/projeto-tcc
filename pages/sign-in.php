@@ -1,4 +1,3 @@
-<!-- <?php include '../components/configs/config.php'; ?> -->
 
 <?php
 

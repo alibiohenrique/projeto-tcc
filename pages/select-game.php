@@ -49,13 +49,6 @@
             <script src="../assets/script/select-game.js"></script>
         </div>
 
-        <div class="card monkey-game">
-            <h2>Monkey Script</h2>
-            <img src="../assets/images/funny-brown-monkey.png" alt="">
-            <button class="btn btn-blocked">
-                Em Breve
-            </button>
-        </div>
     </main>
 </body>
 
