@@ -71,15 +71,6 @@ span {
     width: 400px;
 }
 
-bottom-texts {
-    display: flex;
-    justify-content: space-between;
-    height: fit-content;
-    align-items: flex-end;
-    text-align: center;
-    margin: 4em;
-}
-
 .bottom-texts img {
     width: 9em;
 }
@@ -112,7 +103,6 @@ iframe {
 
 
 .learn-playing {
-    padding-left: 50px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -135,14 +125,6 @@ iframe {
     margin: 2em;
 }
 
-.learn-playing-asset{
-    display: flex;
-    justify-content: center;
-}
-
-.learn-playing-asset img {
-    width: 50%;
-}
 
 hr {
    display: flex;
@@ -275,19 +257,6 @@ hr {
         /* margin: 2em 0.5em; */
         margin: 0;
         text-align: justify;
-    }
-
-
-    .avaliation {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .avaliation:nth-child(2) {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     .call-to-action {
