@@ -16,6 +16,8 @@
     <!-- Page styles -->
     <link rel="stylesheet" href="styles/utils.css">
     <link rel="stylesheet" href="components/header/header.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
+
     <link rel="stylesheet" href="styles/main.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -189,5 +191,29 @@
         AOS.init();
     </script>
 </body>
+<footer class="footer">
+<div class="footer-map">
+        <a href="https://linktr.ee/kidscript.org">Fale conosco</a>
+        <a href="pages/about.php">Sobre nós</a>
+        <a href="pages/select-game.php">Aprenda agora</a>
+        <a href="pages/unlogged.php">Meu usuário</a>
+       
+        <a href="https://ios.org.br/">Instituto da Oportunidade Social</a>
+
+    </div>
+
+    <div class="footer-text">
+
+        <p> Todos os direitos reservados.
+            <br>
+            Desenvolvido por KidScript™ &reg &copy</p>
+
+    </div>
+   
+    <div class="btn-back">
+        <a href="#"><button href="" class="btn">Voltar ao topo</button></a>
+    </div>
+    
+</footer>
 
 </html>
