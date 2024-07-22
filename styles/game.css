@@ -299,4 +299,10 @@ button svg:hover {
     background: #238d1d;
     border: none;
     font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.btn:hover{
+    color: #fff;
+    box-shadow: 0px 4px 30px rgba(122, 255, 126, 0.882);
 }
