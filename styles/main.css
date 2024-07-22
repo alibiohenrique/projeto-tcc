@@ -184,10 +184,17 @@ hr {
 }
 .cta-asset{
     display: flex;
+    align-items: end;
+    /* flex-wrap: wrap; */
 }
 
-.cta-asset img {
-    width: 250px;
+.cta-asset  {
+    width: 400px;
+}
+
+.cta-asset .marlon{
+    width: 350px;
+    max-height: 185px;
 }
 
 .call-to-action .btn {
@@ -299,11 +306,8 @@ hr {
     .calling-to-action {
         width: 70%;
     }
-
-    .cta-asset img {
-        width: 300px;
-    }
 }
+
 
 @media screen and (width < 768px) {
 

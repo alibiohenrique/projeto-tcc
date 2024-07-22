@@ -106,7 +106,7 @@
                 <h3 data-aos="fade-left">Quem somos</h3>
                 <hr>
                 <p data-aos="fade-left">
-                    A Kidscript é uma plataforma gratuita de ensino de programação voltada para crianças e jovens de 8 a
+                    A Kidscript é uma plataforma gratuita de ensino de programação voltada para crianças de 8 a
                     12 anos. Nosso objetivo é ensinar programação de maneira divertida e acessível, utilizando jogos
                     intuitivos que tornam o aprendizado lúdico e envolvente.
                 </p>
@@ -165,8 +165,8 @@
 
         <div class="call-to-action">
             <div class="cta-asset">
-                <img src="assets/images/misael.png" alt="" width="500px">
-                <img src="assets/images/misael.png" alt="" width="500px">
+                <img src="assets/images/misael.png" alt="" width="500px" class="misael">
+                <img src="assets/images/marlon.png" alt="" width="500px" class="marlon">
             </div>
             <div class="calling-to-action">
                 <h2>
