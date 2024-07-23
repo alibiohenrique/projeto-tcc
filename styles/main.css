@@ -164,11 +164,10 @@ hr {
 .cta-asset{
     display: flex;
     align-items: end;
-    /* flex-wrap: wrap; */
 }
 
 .cta-asset  {
-    width: 400px;
+    width: 300px;
 }
 
 .cta-asset .marlon{
@@ -258,7 +257,6 @@ hr {
     }
 
     .learn-playing p {
-        /* margin: 2em 0.5em; */
         margin: 0;
         text-align: justify;
     }

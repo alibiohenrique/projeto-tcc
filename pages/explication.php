@@ -35,49 +35,33 @@
                         <iframe src="https://www.youtube.com/embed/eIEPOiuk-Gs?si=wSboZT3AJj4EQNFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
 
-                    <div id="modulo" class="text-content program_module">
 
+                    <div id="modulo" class="text-content">
                         <h2>O que é programação?</h2>
-                        <p>Programação é como aprender um novo idioma para comunicar-se com máquinas e computadores. Ao programar, você dá instruções específicas sobre o que as máquinas devem fazer. Com isso, é possível criar aplicativos, jogos, sites e controlar robôs, ensinando as máquinas a realizar tarefas de acordo com suas necessidades e desejos.</p>
+                        <!-- <p>Programação é como aprender um novo idioma para se comunicar com máquinas e computadores. Quando programamos, damos instruções especificas sobre o que as máquinas devem fazer. Com isso, é possível criar aplicativos, jogos, sites e controlar robôs, ensinando as máquinas a realizar tarefas de acordo com suas necessidades e desejos.</p> -->
+
+                        <p>A programação é como falar com máquinas e computadores e foi criada para dizer o que queremos que as máquinas façam. Com a programação, é possível criar aplicativos, jogos, sites e controlar robôs, ensinando as máquinas a realizar tarefas de acordo com nossas necessidades</p>
 
                         <h2>Linguagens de Programação</h2>
-                        <p>Assim como há diferentes idiomas no mundo, há várias linguagens de programação, cada uma com seu próprio modo de escrever comandos. Linguagens como Python e Scratch são mais fáceis para iniciantes, enquanto C++ e Java são mais complexas. A escolha da linguagem depende do que você deseja criar e do seu nível de habilidade.</p>
+
+                        <p>A programação tem diferentes linguagens, que são maneiras de falar com as máquinas e usamos essas linguagens para escrever comandos com palavras e símbolos. </p>
 
                         <h2>Comandos</h2>
-                        <p>Na programação, damos comandos à máquina para orientá-la, como se estivéssemos seguindo uma receita. Esses comandos são escritos de forma que a máquina possa entender e executar. Seguir a ordem correta é essencial para garantir que o resultado final seja o esperado e funcione corretamente.</p>
+                        <p>Os comandos são escritos com palavras e simbolos que dizem as máquinas o que elas devem fazer passo a passo e seguirem a ordem correta .</p>
+
 
                         <h2>Algoritmos</h2>
-                        <p>Um algoritmo é uma lista de comandos que a máquina segue para alcançar um objetivo, como mover um personagem ou atualizar a pontuação em um jogo. Entender e criar algoritmos é crucial na programação para orientar a execução de tarefas específicas.</p>
+                        <p>Quando juntamos vários comandos, formamos um algoritmo, que é como uma lista de tarefas para as máquinas fazerem.</p>
 
-                        <button class="btn login">
-                            Próximo módulo
-                        </button>
-                    </div>
-                    
-                    <div id="modulo" class="text-content style_module">
-                        
-                        <h2>Oque é programação?</h2>
-                        <p>Programação é como aprender um novo idioma para comunicar-se com máquinas e computadores. Ao programar, você dá instruções específicas sobre o que as máquinas devem fazer. Com isso, é possível criar aplicativos, jogos, sites e controlar robôs, ensinando as máquinas a realizar tarefas de acordo com suas necessidades e desejos.</p>
-                        
-                        <h2>Linguagens de Programação</h2>
-                        <p>Assim como há diferentes idiomas no mundo, há várias linguagens de programação, cada uma com seu próprio modo de escrever comandos. Linguagens como Python e Scratch são mais fáceis para iniciantes, enquanto C++ e Java são mais complexas. A escolha da linguagem depende do que você deseja criar e do seu nível de habilidade.</p>
-                        
-                        <h2>Comandos</h2>
-                        <p>Na programação, damos comandos à máquina para orientá-la, como se estivéssemos seguindo uma receita. Esses comandos são escritos de forma que a máquina possa entender e executar. Seguir a ordem correta é essencial para garantir que o resultado final seja o esperado e funcione corretamente.</p>
-                        
-                        <h2>Algoritmos</h2>
-                        <p>Um algoritmo é uma lista de comandos que a máquina segue para alcançar um objetivo, como mover um personagem ou atualizar a pontuação em um jogo. Entender e criar algoritmos é crucial na programação para orientar a execução de tarefas específicas.</p>
-                        
-                        <!-- <button class="btn login" onclick="trocaModulo()">
-                            Próximo módulo
-                        </button> -->
+                        <a href="./explication_copy.php"><button class="btn login">
+                                Próximo módulo
+                            </button></a>
                     </div>
                 </div>
             </div>
-        </main>
-        
-        <script src="../assets/script/light-mode.js"></script>
-        <script src="../assets/script/switch-module.js"></script>
+    </main>
+
+    <script src="../assets/script/explication.js"></script>
 </body>
 
 </html>
