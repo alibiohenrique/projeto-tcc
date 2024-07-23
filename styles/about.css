@@ -59,6 +59,12 @@ iframe{
     iframe {
         height: 25em;
     }
+    .mvv{
+        flex-direction: column;
+    }
+    .card{
+        width: 80%;
+    }
 }
 
 @media screen and (width < 560px) {

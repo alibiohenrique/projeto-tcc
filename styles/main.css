@@ -68,11 +68,8 @@ span {
     padding-left: 180px;
     position: absolute;
     top: 38vh;
+    left: -7em;
     width: 400px;
-}
-
-.bottom-texts img {
-    width: 9em;
 }
 
 iframe {
