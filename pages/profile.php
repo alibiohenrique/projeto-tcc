@@ -29,7 +29,7 @@ $name = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "Nome não disp
     <!-- icons -->
 
     <meta charset="UTF-8">
-    <title>kidscript</title>
+    <title>KidScript | Meu perfil</title>
     <script src="../assets/script/profile.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -78,8 +78,7 @@ $name = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "Nome não disp
                     <h3><?php echo htmlspecialchars($age); ?> anos</h3>
                     <h4><?php echo htmlspecialchars($username); ?></h4>
 
-                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user"
-                        alt="" width="100px">
+                 
 
                     <div class="profile-text">
 
