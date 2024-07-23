@@ -89,7 +89,7 @@
             </div>
         </div>
         <button id="rotate" onclick="landScape()">
-            <img src="../assets/rotate.png" alt="">
+            <img src="../assets/images/rotate.png" alt="">
         </button>
         <button id="toggleNav" onclick="toggleNav()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-bar-down" viewBox="0 0 16 16">
@@ -416,6 +416,17 @@
 
             snake = [initalPosition]
         })
+
+        // for(var i = 0; i < 1; i++){
+        //     setTimeout(5)
+        //     body.innerHTML = '<div class="time-limit"><h3>Você excedeu o limite de tempo</h3><br>Volte amanhã para seguir aprendendo<br><button class="btn"><a href="select-game.php">Encerrar</a></button></h3></div>'
+
+        // }
+
+        setTimeout(function() {
+            document.body.innerHTML = '<div class="time-limit"><h3>Você excedeu o limite de tempo</h3><br>Volte amanhã para seguir aprendendo<br><button class="btn"><a href="select-game.php">Encerrar</a></button></h3></div>';
+        }, 3600000);
+
     </script>
     <!--
     *** Referencias utilizadas nessa pagina ***
