@@ -165,8 +165,8 @@
 
         <div class="call-to-action">
             <div class="cta-asset">
-                <img src="assets/images/misael.png" alt="" width="500px" class="misael">
-                <img src="assets/images/marlon.png" alt="" width="500px" class="marlon">
+                <img src="assets/images/misael_marlon.png" alt="" width="400px" class="misael">
+               
             </div>
             <div class="calling-to-action">
                 <h2>
