@@ -75,6 +75,7 @@
 
     <main>
         <div class="landing-page">
+        <img id="mobileLogo" src="assets/images/logo.png" alt="logo" width="250px">
             <div class="top-texts">
                 <h2>
                     Aprenda programação
@@ -180,7 +181,7 @@
                     Aprenda programação de forma interativa e divertida.
                 </h3>
                 <a href="pages/sign-in.php">
-                    <button class="btn login">
+                    <button class="btn login" id="cta-btn">
                         <strong>Comece Hoje</strong>
                     </button>
                 </a>
@@ -193,12 +194,12 @@
     </script>
 </body>
 <footer class="footer">
-<div class="footer-map">
+    <div class="footer-map">
         <a href="https://linktr.ee/kidscript.org">Fale conosco</a>
         <a href="pages/about.php">Sobre nós</a>
         <a href="pages/select-game.php">Aprenda agora</a>
         <a href="pages/unlogged.php">Meu usuário</a>
-       
+
         <a href="https://ios.org.br/">Instituto da Oportunidade Social</a>
 
     </div>
@@ -207,14 +208,15 @@
 
         <p> Todos os direitos reservados.
             <br>
-            Desenvolvido por KidScript™ &reg &copy</p>
+            Desenvolvido por KidScript™ &reg &copy
+        </p>
 
     </div>
-   
+
     <div class="btn-back">
         <a href="#"><button href="" class="btn">Voltar ao topo</button></a>
     </div>
-    
+
 </footer>
 
 </html>
