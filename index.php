@@ -138,28 +138,28 @@
         </div>
 
 
-        <h2 class="section-title">Mais sobre esta jornada
+        <h2 class="section-title" data-aos="fade-left">Mais sobre esta jornada
             <hr>
         </h2>
 
         <div class="journey">
 
-            <div class="journey-card">
+            <div class="journey-card" data-aos="fade-left">
                 <img src="./assets/images/nestor.png" alt="" width="180px">
                 <h3>Plataforma Gamificada</h3>
 
             </div>
-            <div class="journey-card">
+            <div class="journey-card" data-aos="fade-left">
                 <img src="./assets/images/carol.png" alt="" width="180px">
                 <h3>2ª a 8ª série</h3>
 
             </div>
-            <div class="journey-card">
+            <div class="journey-card" data-aos="fade-left">
                 <img src="./assets/images/gabriel.png" alt="" width="180px">
                 <h3>Texto baseado em programação</h3>
 
             </div>
-            <div class="journey-card">
+            <div class="journey-card" data-aos="fade-left">
                 <img src="./assets/images/alibio.png" alt="" width="180px">
                 <h3>Controle de Tempo</h3>
 
@@ -167,20 +167,20 @@
 
         </div>
 
-        <div class="call-to-action">
+        <div class="call-to-action" >
             <div class="cta-asset">
-                <img src="assets/images/misael.png" alt="" width="500px" class="misael">
-                <img src="assets/images/marlon.png" alt="" width="500px" class="marlon">
+                <img src="assets/images/misael_marlon.png" alt="" width="400px" class="misael"data-aos="fade-left">
+               
             </div>
             <div class="calling-to-action">
-                <h2>
+                <h2 data-aos="fade-left">
                     Junte-se à <span>KidScript</span>
                 </h2>
                 <br>
-                <h3>
+                <h3 data-aos="fade-left">
                     Aprenda programação de forma interativa e divertida.
                 </h3>
-                <a href="pages/sign-in.php">
+                <a href="pages/sign-in.php" data-aos="fade-left">
                     <button class="btn login" id="cta-btn">
                         <strong>Comece Hoje</strong>
                     </button>
