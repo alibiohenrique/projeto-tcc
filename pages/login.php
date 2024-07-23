@@ -1,18 +1,6 @@
+
 <?php
-session_start();
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "kidscript_db";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
-
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+include '../components/configs/config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username_input = mysqli_real_escape_string($conn, $_POST['username-input']);
