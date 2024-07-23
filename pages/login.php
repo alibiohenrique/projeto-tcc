@@ -1,18 +1,6 @@
+
 <?php
-session_start();
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "kidscript_db";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
-
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+include '../components/configs/config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username_input = mysqli_real_escape_string($conn, $_POST['username-input']);
@@ -50,10 +38,11 @@ mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <!-- HTML5 & page default configs -->
+    <link rel="icon" href="../assets/images/kidscript-shortcut-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>KidScript | Login</title>

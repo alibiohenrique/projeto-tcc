@@ -1,8 +1,7 @@
-<?php include '../components/configs/config.php'; ?>
 
 <?php
 
-
+include '../components/configs/config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username_input = mysqli_real_escape_string($conn, $_POST['username-input']);
@@ -42,20 +41,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-mysqli_close($conn);
+// mysqli_close($conn);
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <!-- HTML5 & page default configs -->
+    <link rel="icon" href="../assets/images/kidscript-shortcut-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>KidScript | Cadastre</title>
     <!-- HTML5 default configs -->
     <!-- icons -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
     <!-- icons -->
 
     <!-- Page styles -->
@@ -71,42 +70,38 @@ mysqli_close($conn);
     <div class="container">
 
         <div class="pop-up sign-in-page">
-            <div class="logo-sign-in">
-                <img src="../assets/images/logo.png" alt="">
+            <div class="logo-login">
+                <img src="../assets/images/logo.png" alt="" width="250px">
             </div>
             <div class="sign-in-title">
                 <h2>FAÇA SEU CADASTRO</h2>
             </div>
             <form action="" method="POST" class="sign-in-form">
                 <div class="input">
-                    <input type="text" id="username-input" name="username-input" placeholder="Digite seu usuário"
-                        required>
+                    <input type="text" id="username-input" name="username-input" placeholder="Nome de usuário" required>
 
                 </div>
                 <div class="input">
-                    <input type="text" id="username-name" name="username-name" placeholder="Digite seu nome" required>
+                    <input type="text" id="username-name" name="username-name" placeholder="Nome" required>
 
                 </div>
                 <div class="input">
-                    <input type="number" id="username-age" name="username-age" placeholder="Digite sua idade" required>
+                    <input type="number" id="username-age" name="username-age" placeholder="Idade" required>
 
                 </div>
                 <div class="input">
-                    <input type="password" id="password-input" name="password-input" placeholder="Digite sua senha"
-                        required>
+                    <input type="password" id="password-input" name="password-input" placeholder="Senha" required>
                 </div>
                 <div class="input">
-                    <input type="password" id="password-input-validation" name="password-input-validation"
-                        placeholder="Digite novamente sua senha" required>
+                    <input type="password" id="password-input-validation" name="password-input-validation" placeholder="Repita a senha" required>
 
                 </div>
                 <div class="input">
-                    <input type="email" id="email-input" name="email-input" placeholder="Digite seu e-mail" required>
+                    <input type="email" id="email-input" name="email-input" placeholder="E-mail" required>
 
                 </div>
                 <div class="input">
-                    <input type="email" id="email-input" name="email-input-validation"
-                        placeholder="Digite novamente seu e-mail" required>
+                    <input type="email" id="email-input" name="email-input-validation" placeholder="Repita o e-mail" required>
 
                 </div>
 

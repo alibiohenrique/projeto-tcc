@@ -2,9 +2,12 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="icon" href="../assets/images/kidscript-shortcut-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../components/footer/footer.css">
+
     <link rel="stylesheet" href="../styles/utils.css">
     <link rel="stylesheet" href="../styles/about.css">
 
@@ -63,6 +66,9 @@
     <script>
         AOS.init();
     </script>
+
+    <?php include '../components/footer/footer.php'; ?>
+
 
 </body>
 
