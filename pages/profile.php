@@ -17,6 +17,7 @@ $name = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "Nome não disp
 <html lang="pt-br">
 
 <head>
+<link rel="icon" href="../assets/images/kidscript-shortcut-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../styles/utils.css">
