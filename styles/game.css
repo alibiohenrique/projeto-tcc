@@ -306,3 +306,8 @@ button svg:hover {
     color: #fff;
     box-shadow: 0px 4px 30px rgba(122, 255, 126, 0.882);
 }
+
+a{
+    color: #fff;
+    text-decoration: none;
+}

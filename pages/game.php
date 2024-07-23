@@ -416,6 +416,17 @@
 
             snake = [initalPosition]
         })
+
+        // for(var i = 0; i < 1; i++){
+        //     setTimeout(5)
+        //     body.innerHTML = '<div class="time-limit"><h3>Você excedeu o limite de tempo</h3><br>Volte amanhã para seguir aprendendo<br><button class="btn"><a href="select-game.php">Encerrar</a></button></h3></div>'
+
+        // }
+
+        setTimeout(function() {
+            document.body.innerHTML = '<div class="time-limit"><h3>Você excedeu o limite de tempo</h3><br>Volte amanhã para seguir aprendendo<br><button class="btn"><a href="select-game.php">Encerrar</a></button></h3></div>';
+        }, 3600000);
+        
     </script>
     <!--
     *** Referencias utilizadas nessa pagina ***
