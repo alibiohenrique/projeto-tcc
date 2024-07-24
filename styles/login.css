@@ -124,8 +124,8 @@ h2 {
 
 .btn:hover {
     color: var(--yellow);
-    border: 0.1rem solid var(--yellow);
-    background-color: var(--dark-purple);
+    border: 0.2rem solid var(--yellow);
+    background-color: var(--purple);
 }
 
 .btn-submit .input input {
@@ -199,14 +199,14 @@ h2 {
     }
 
     .btn {
-        color: var(--dark-purple);
+        color: var(--purple);
         background-color: var(--yellow);
         border: 0.15rem solid var(--yellow);
     }
 
     .btn:hover {
         color: var(--yellow);
-        background-color: var(--dark-purple);
+        background-color: var(--purple);
     }
 
     .btn-submit {

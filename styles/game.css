@@ -219,6 +219,8 @@ canvas {
     align-items: center;
     justify-content: center;
     cursor: grab;
+    transition: 0.5s ease;
+
 }
 
 .btn-play:hover{
