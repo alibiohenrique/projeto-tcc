@@ -42,7 +42,7 @@ $name = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "Nome não disp
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="landing-page">
 
     <?php include '../components/header/header.php'; ?>
 

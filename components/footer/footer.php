@@ -18,7 +18,7 @@
     </div>
    
     <div class="btn-back">
-        <a href="#header"><button href="" class="btn">Voltar ao topo</button></a>
+        <a href="#landing-page"><button href="" class="btn">Voltar ao topo</button></a>
     </div>
     
 </footer>
