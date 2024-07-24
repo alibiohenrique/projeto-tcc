@@ -182,8 +182,8 @@ canvas {
     margin: 0;
     padding: 1em;
     position: absolute;
-    transform: translate(-50%);
-    top: 50%;
+    transform: translate(-50% );
+    top: 50vh;
     left: 50%;
     display: none;
     flex-direction: column;
@@ -192,6 +192,8 @@ canvas {
     background: var(--dark-purple);
     border-radius: 10px;
 }
+
+
 
 .game-over {
     text-transform: uppercase;
@@ -211,12 +213,17 @@ canvas {
     padding: 10px;
     font-weight: 700;
     font-size: 1em;
-    color: #238d1d;
+    color: var(--background-panel);
     margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: grab;
+}
+
+.btn-play:hover{
+    color: var(--white);
+    background-color: var(--purple);
 }
 
 body {
@@ -312,4 +319,15 @@ button svg:hover {
 a{
     color: #fff;
     text-decoration: none;
+}
+
+@media screen and (max-width:768px)  {
+    .menu-screen{
+        top: 30vh;
+    }
+}
+@media screen and (max-width:320px)  {
+    .menu-screen{
+        top: 20vh;
+    }
 }
