@@ -91,7 +91,7 @@ button{
 .btn-exp {
     background-color: var(--btn-exp);
     font-weight: 1000;
-    color: rgb(0, 0, 0);
+    color: black;
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -101,22 +101,6 @@ button{
 }
 
 .btn-exp:hover {
+    transition: 0.5s ease;
     box-shadow: 0px 4px 30px rgba(122, 255, 126, 0.882);
-}
-
-.btn-blocked {
-    background-color: var(--dark-gray);
-    font-weight: 1000;
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.845);
-    border-radius: 8px;
-    margin: 50px;
-}
-
-.btn-blocked:hover {
-    box-shadow: 0px 4px 30px rgba(189, 24, 24, 0.882);
-    transition: 0.3s;
 }
