@@ -25,21 +25,6 @@ header {
     border-radius: 30px;
 }
 
-.title-btn{
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-}
-
-.title-btn .btn-exp{
-    margin-top: 5px;
-}
-
-.text-content .btn-exp{
-    background: var(--cyan);
-    margin-top: 20px;
-}
-
 .video {
     width: 100%;
 }
@@ -71,9 +56,15 @@ header {
 .ligth-mode p, .ligth-mode h2{
     color: #000;
 }
+.btn_div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 100%;
+}
 
 .btn{
-    margin-top: 20px;
+    margin: 20px 0;
     font-size: 1em;
     font-family: gliker;
 }
@@ -82,13 +73,6 @@ header {
     background: var(--black);
 }
 
-.program_module{
-    display: visible;
-}
-
-.style_module{
-    display: none;
-}
 
 @media screen and (width > 768px) {
 

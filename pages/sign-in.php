@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Erro: Os emails não coincidem.";
     } else {
         // Encriptografar a senha que acabou de ser recebida
-        // Esse trecho do código foi gerado por Inteligênicia Artificial
+        // Esse trecho do código foi gerado por Inteligência Artificial
         $hashed_password = password_hash($password_input, PASSWORD_DEFAULT);
 
         $sql = "INSERT INTO users (username, user_password, user_email, user_age, user_name) VALUES (?, ?, ?, ?, ?)";

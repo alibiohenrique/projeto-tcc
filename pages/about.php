@@ -28,6 +28,9 @@
         <h2>Sobre Nós</h2 data-aos="fade-left">
 
         <div class="mvv">
+
+        <!--  Utilização de Data aos para animações da página  -->
+
             <div class="mission card" data-aos="fade-left">
                 <h3>Nossa missão</h3>
                 <p>

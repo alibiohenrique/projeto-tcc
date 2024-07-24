@@ -25,7 +25,7 @@
                     <span class="material-symbols-outlined">
                         play_circle
                     </span>
-                    <p class="highlight-hover">Jogue</p>
+                    <p class="highlight-hover">Aprenda</p>
                 </a>
             </li>
             
