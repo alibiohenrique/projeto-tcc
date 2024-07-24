@@ -24,7 +24,7 @@
             <div class="expSection" id="expSection">
                 <div class="exp-inform">
                     <div class="video">
-                        <!-- Referência para criação visual do botãõ Universe.io -->
+                        <!-- Referência para criação visual do botão Universe.io -->
                         <div class="btn_div">
                             <label class="switch btn-exp">
                                 <input type="checkbox" id="toggle">
