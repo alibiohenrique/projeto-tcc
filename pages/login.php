@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 header("Location: profile.php");
                 exit();
             } else {
-                echo "Senha incorreta.";
+                echo "Usuário e/ou senha incorreta.";
             }
         } else {
             echo "Nenhum usuário encontrado";

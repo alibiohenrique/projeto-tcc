@@ -30,6 +30,8 @@ main {
 }
 
 .landing-page {
+    overflow: hidden;
+    min-height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,6 +42,10 @@ main {
     background: var(--purple);
     color: var(--white);
     text-wrap: wrap;
+}
+
+.landing-page * {
+    overflow: hidden;
 }
 
 .top-texts {

@@ -10,6 +10,7 @@
 }
 
 html{
+    overflow-x: hidden;
     scroll-behavior: smooth;
     transition: 0.5s ease;
 }
@@ -302,26 +303,27 @@ hr {
 
 .sign-in {
     background: none;
-    color: #ebdc17;
-    border: solid #ebdc17 2px;
+    color: var(--yellow);
+    border: solid var(--yellow) 2px;
 }
 
 
 .sign-in:hover {
-    background: #ebdc17;
+    transition: 0.5.s;
+    background: var(--yellow);
     color: var(--darker-purple);
 }
 
 .login {
-    background: #ebdc17;
+    background: var(--yellow);
     color: var(--darker-purple);
-    border: solid #ebdc17 2px;
+    border: solid var(--yellow) 2px;
 }
 
 .login:hover {
     background: none;
-    color: #ebdc17;
-    border: solid #ebdc17 2px;
+    color: var(--yellow);
+    border: solid var(--yellow) 2px;
 }
 
 .time-limit {
