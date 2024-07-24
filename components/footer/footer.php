@@ -18,7 +18,7 @@
     </div>
    
     <div class="btn-back">
-        <a href="#"><button href="" class="btn">Voltar ao topo</button></a>
+        <a href="#header"><button href="" class="btn">Voltar ao topo</button></a>
     </div>
     
 </footer>

@@ -9,6 +9,11 @@
     font-family: roboto;
 }
 
+html{
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+
 /* fonts */
 
 h1 {
