@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../styles/game.css">
 
     <!-- icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
     <!-- icons -->
     <title>KidScript | Snake Game</title>
 
@@ -27,8 +28,10 @@
         <div class="ideHeader">
             <span>snake game style</span>
             <button onclick="openIde()" class="ideBtn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
                 </svg>
             </button>
         </div>
@@ -60,12 +63,15 @@
 
 
         <?php
+
         if ($_SERVER["REQUEST_METHOD"] == "GET") {
+            // ***    
             $elemento = isset($_GET['elemento']) ? $_GET['elemento'] : '';
             $atributo1 = isset($_GET['atributo1']) ? $_GET['atributo1'] : '';
             $valor1 = isset($_GET['valor1']) ? $_GET['valor1'] : '';
-
+            // **
             $cor = $valor1;
+
         }
 
         if ($elemento == 'campo') {
@@ -92,44 +98,59 @@
             <img src="../assets/images/rotate.png" alt="">
         </button>
         <button id="toggleNav" onclick="toggleNav()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-bar-down" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M3.646 4.146a.5.5 0 0 1 .708 0L8 7.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708M1 11.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-bar-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M3.646 4.146a.5.5 0 0 1 .708 0L8 7.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708M1 11.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5" />
             </svg>
         </button>
         <canvas width="600" height="600"></canvas>
         <div class="gameNav">
             <button id="toggleNav1" onclick="toggleNav()">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-bar-up" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M3.646 11.854a.5.5 0 0 0 .708 0L8 8.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708M2.4 5.2c0 .22.18.4.4.4h10.4a.4.4 0 0 0 0-.8H2.8a.4.4 0 0 0-.4.4" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-bar-up"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M3.646 11.854a.5.5 0 0 0 .708 0L8 8.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708M2.4 5.2c0 .22.18.4.4.4h10.4a.4.4 0 0 0 0-.8H2.8a.4.4 0 0 0-.4.4" />
                 </svg>
             </button>
 
             <div class="control">
                 <button onclick="leftPressed()">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
-                        <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1" />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-square-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1" />
                     </svg>
                 </button>
                 <div class="sides">
                     <button onclick="upPressed()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
-                            <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0" />
                         </svg></button>
                     <button onclick="downPressed()">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
-                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-down-square-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0" />
                         </svg>
                     </button>
                 </div><button onclick="rightPressed()">
-                    <svg id="arrowRigth" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
-                        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1" />
+                    <svg id="arrowRigth" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1" />
                     </svg>
                 </button>
             </div>
             <button onclick="openIde()" class="ideBtn">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-file-earmark-code" viewBox="0 0 16 16">
-                    <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
-                    <path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-file-earmark-code"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
+                    <path
+                        d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708" />
                 </svg>
             </button>
         </div>
@@ -171,7 +192,7 @@
         let snake = [{
             x: 300,
             y: 300
-        }, ]
+        },]
 
         const addScore = () => {
             score.innerHTML = +score.innerHTML + 10
@@ -190,12 +211,12 @@
             x: randomPosition(0, 570),
             y: randomPosition(0, 570),
             color: '<?php
-                    $foodDefaultColor = "red";
-                    if ($elemento == "comida") {
-                        $foodDefaultColor = $cor;
-                    }
-                    echo $foodDefaultColor;
-                    ?>'
+            $foodDefaultColor = "red";
+            if ($elemento == "comida") {
+                $foodDefaultColor = $cor;
+            }
+            echo $foodDefaultColor;
+            ?>'
         }
 
         let direction, loopId; // loopId fica aqui para poder se chamada mais tarde antes da declaração do que ela faz, para que o loop anterior possa ser limpo antes de executar ele novamente
@@ -219,31 +240,31 @@
 
         const drawSnake = () => {
             ctx.fillStyle = '<?php
-                                $snakeDefaultColor = "#0e420b";
-                                if ($elemento == "corpo") {
-                                    $snakeDefaultColor = $cor;
-                                }
-                                echo $snakeDefaultColor;
-                                ?>'
+            $snakeDefaultColor = "#0e420b";
+            if ($elemento == "corpo") {
+                $snakeDefaultColor = $cor;
+            }
+            echo $snakeDefaultColor;
+            ?>'
 
-            snake.forEach((position, index) => {
+        snake.forEach((position, index) => {
 
-                if (index == snake.length - 1) {
-                    ctx.fillStyle = '<?php
-                                        $snakeHeadDefaultColor = "#238d1d";
-                                        if ($elemento == "cabeca") {
-                                            $snakeHeadDefaultColor = $cor;
-                                        }
-                                        echo $snakeHeadDefaultColor;
-                                        ?>'
-                    // colore o ultimo elemento, que é a cabeça da cobra
+            if (index == snake.length - 1) {
+                ctx.fillStyle = '<?php
+                $snakeHeadDefaultColor = "#238d1d";
+                if ($elemento == "cabeca") {
+                    $snakeHeadDefaultColor = $cor;
                 }
+                echo $snakeHeadDefaultColor;
+                ?>'
+                // colore o ultimo elemento, que é a cabeça da cobra
+            }
 
-                ctx.beginPath();
-                ctx.arc(position.x + 15, position.y + 15, size / 2, size / 2, Math.PI * 2, true) // posição x, posição y (vertical e horizontal, "size, size" = tamanho declarado na variável fixa de nome size)
-                ctx.fill()
-                ctx.stroke()
-            })
+            ctx.beginPath();
+            ctx.arc(position.x + 15, position.y + 15, size / 2, size / 2, Math.PI * 2, true) // posição x, posição y (vertical e horizontal, "size, size" = tamanho declarado na variável fixa de nome size)
+            ctx.fill()
+            ctx.stroke()
+        })
         }
 
         const moveSnake = () => {
@@ -283,24 +304,24 @@
         const drawGrid = () => {
             ctx.lineWidth = 1
             ctx.strokeStyle = '<?php
-                                $lineDefaultColor = "#19191";
-                                if ($elemento == "linhas") {
-                                    $lineDefaultColor = $cor;
-                                }
-                                echo $lineDefaultColor;
-                                ?>'
-
-            for (let i = 30; i < canvas.width; i += 30) {
-                ctx.beginPath()
-                ctx.lineTo(i, 0)
-                ctx.lineTo(i, 600)
-                ctx.stroke()
-
-                ctx.beginPath()
-                ctx.lineTo(0, i)
-                ctx.lineTo(600, i)
-                ctx.stroke()
+            $lineDefaultColor = "#19191";
+            if ($elemento == "linhas") {
+                $lineDefaultColor = $cor;
             }
+            echo $lineDefaultColor;
+            ?>'
+
+        for (let i = 30; i < canvas.width; i += 30) {
+            ctx.beginPath()
+            ctx.lineTo(i, 0)
+            ctx.lineTo(i, 600)
+            ctx.stroke()
+
+            ctx.beginPath()
+            ctx.lineTo(0, i)
+            ctx.lineTo(600, i)
+            ctx.stroke()
+        }
 
         }
 
@@ -422,11 +443,11 @@
         //     body.innerHTML = '<div class="time-limit"><h3>Você excedeu o limite de tempo</h3><br>Volte amanhã para seguir aprendendo<br><button class="btn"><a href="select-game.php">Encerrar</a></button></h3></div>'
 
         // }
-
-        setTimeout(function() {
+        // ***
+        setTimeout(function () {
             document.body.innerHTML = '<div class="time-limit"><h3>Você excedeu o limite de tempo</h3><br>Volte amanhã para seguir aprendendo<br><button class="btn"><a href="select-game.php">Encerrar</a></button></h3></div>';
         }, 3600000);
-
+        //**
     </script>
     <!--
     *** Referencias utilizadas nessa pagina ***
@@ -435,7 +456,9 @@
     https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
     https://chatgpt.com/
         Esta pagina contem diversos trexos de codigo que utilizaram
-    ia como ferramenta de desenvolvimento e Referencias de codigo.
+    ia como ferramenta de desenvolvimento e Referencias de codigo. 
+    Apenas os marcados com *** no inicio e ** no fim contem codigo 
+    copiado de ia
     -->
 </body>
 
