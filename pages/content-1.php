@@ -24,13 +24,15 @@
             <div class="expSection" id="expSection">
                 <div class="exp-inform">
                     <div class="video">
-                        <div class="title-btn">
-
-                            <h2>2. Linguagem de Estilo</h2>
+                    <div class="btn_div">
                             <label class="switch btn-exp">
                                 <input type="checkbox" id="toggle">
                                 <span class="slider"></span>
                             </label>
+                        </div>
+                        <div class="title-btn">
+                            
+                            <h2>2. Linguagem de Estilo</h2>
                         </div>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/c5Na7YaEKyE?si=18bZDWRURvV-Heup" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>

@@ -24,13 +24,16 @@
             <div class="expSection" id="expSection">
                 <div class="exp-inform">
                     <div class="video">
-                        <div class="title-btn">
-
-                            <h2>1. Introdução à programação</h2>
+                        <!-- Referência para criação visual do botãõ Universe.io -->
+                        <div class="btn_div">
                             <label class="switch btn-exp">
                                 <input type="checkbox" id="toggle">
                                 <span class="slider"></span>
                             </label>
+                        </div>
+
+                        <div class="title-btn">
+                            <h2>1. Introdução à programação</h2>
                         </div>
                         <iframe src="https://www.youtube.com/embed/eIEPOiuk-Gs?si=wSboZT3AJj4EQNFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
@@ -38,7 +41,6 @@
 
                     <div id="modulo" class="text-content">
                         <h2>O que é programação?</h2>
-                        <!-- <p>Programação é como aprender um novo idioma para se comunicar com máquinas e computadores. Quando programamos, damos instruções especificas sobre o que as máquinas devem fazer. Com isso, é possível criar aplicativos, jogos, sites e controlar robôs, ensinando as máquinas a realizar tarefas de acordo com suas necessidades e desejos.</p> -->
 
                         <p>A programação é como falar com máquinas e computadores e foi criada para dizer o que queremos que as máquinas façam. Com a programação, é possível criar aplicativos, jogos, sites e controlar robôs, ensinando as máquinas a realizar tarefas de acordo com nossas necessidades</p>
 

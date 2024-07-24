@@ -23,9 +23,6 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
-    </style>
 
     <!-- Page styles -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -33,7 +30,7 @@
 
 <body>
 
-    <header id="header">
+    <header>
         <ul class="navbar">
             <li class="logo">
                 <img src="assets/images/logo.png" alt="" width="180px">
@@ -60,7 +57,7 @@
                     <span class="material-symbols-outlined">
                         play_circle
                     </span>
-                    <p class="highlight-hover">Jogue</p>
+                    <p class="highlight-hover">Aprenda</p>
                 </a>
             </li>
             <li class="icons">
@@ -74,7 +71,7 @@
     </header>
 
     <main>
-        <div class="landing-page">
+        <div class="landing-page" id="landing-page">
         <img id="mobileLogo" src="assets/images/logo.png" alt="logo" width="250px">
             <div class="top-texts">
                 <h2>
@@ -101,6 +98,9 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+
+        <!-- Utilizção de Data aos para animações da página -->
+
         <h2 class="section-title" data-aos="fade-left">Aprenda Jogando
             <hr>
         </h2>
@@ -214,7 +214,7 @@
     </div>
 
     <div class="btn-back">
-        <a href="#header"><button href="" class="btn">Voltar ao topo</button></a>
+        <a href="#landing-page"><button href="" class="btn">Voltar ao topo</button></a>
     </div>
 
 </footer>

@@ -1,3 +1,4 @@
+// Referência para criar o blur W3schools e developer.mozilla
 
 function activeBlur(){
     const element = document.getElementById("blur");

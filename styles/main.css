@@ -288,9 +288,10 @@ hr {
     }
 }
 
+/* Inteligência Artifial utilizada para referênciar sintaxe de media screen */
 
 @media screen and (width < 768px) {
-
+    
     iframe {
         height: 25em;
     }

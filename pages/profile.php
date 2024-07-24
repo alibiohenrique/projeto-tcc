@@ -45,6 +45,8 @@ $name = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "Nome não disp
 
         <div class="section profile" id="section">
 
+        <!-- Funcionalidade de pop-up utilizando bootstrap -->
+
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
