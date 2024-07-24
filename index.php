@@ -33,7 +33,7 @@
 
 <body>
 
-    <header>
+    <header id="header">
         <ul class="navbar">
             <li class="logo">
                 <img src="assets/images/logo.png" alt="" width="180px">
@@ -214,7 +214,7 @@
     </div>
 
     <div class="btn-back">
-        <a href="#"><button href="" class="btn">Voltar ao topo</button></a>
+        <a href="#header"><button href="" class="btn">Voltar ao topo</button></a>
     </div>
 
 </footer>

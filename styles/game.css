@@ -180,7 +180,7 @@ canvas {
 
 .menu-screen {
     margin: 0;
-    padding: 0;
+    padding: 1em;
     position: absolute;
     transform: translate(-50%);
     top: 50%;
@@ -189,6 +189,8 @@ canvas {
     flex-direction: column;
     align-items: center;
     align-self: center;
+    background: var(--dark-purple);
+    border-radius: 10px;
 }
 
 .game-over {
