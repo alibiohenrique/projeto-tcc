@@ -28,7 +28,7 @@
         <h2>Sobre Nós</h2>
 
         <div class="mvv">
-            <div class="mission card">
+            <div class="mission card" data-aos="fade-left">
                 <h3>Nossa missão</h3>
                 <p>
                     Nosso propósito é transformar a forma como as crianças interagem com a tecnologia, oferecendo uma
@@ -38,7 +38,7 @@
                 </p>
             </div>
 
-            <div class="values card">
+            <div class="values card" data-aos="fade-left">
                 <h3>Nossos valores</h3>
                 <p>
                     Em nosso projeto, temos como valores fundamentais a educação de qualidade, a responsabilidade
@@ -46,7 +46,7 @@
                 </p>
             </div>
 
-            <div class="vision card">
+            <div class="vision card" data-aos="fade-left">
                 <h3>Nossa visão</h3>
                 <p>
                     Nossa visão é inspirar uma nova geração de jovens programadores, capacitando-os para um futuro

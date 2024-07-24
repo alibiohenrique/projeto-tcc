@@ -26,9 +26,6 @@
     <?php include '../components/header/header.php'; ?>
 
     <main>
-        <div class="select-game-title">
-            <h1>Bora Aprender e Brincar?</h1>
-        </div>
         <div class="card snake-game">
             <div class="content">
                 <h2>Introdução à programação</h2>
