@@ -21,7 +21,11 @@ main {
     overflow: hidden !important;
 }
 
-.section{
+#mobileLogo {
+    display: none;
+}
+
+.section {
     min-height: 50%;
 }
 
@@ -60,7 +64,7 @@ span {
     font-size: 3em;
 }
 
-.btnSection{
+.btnSection {
     text-align: center;
 }
 
@@ -93,7 +97,7 @@ iframe {
     color: var(--purple);
 }
 
-.section-title hr{
+.section-title hr {
     margin: 5px auto;
     width: 30vw;
 }
@@ -105,12 +109,12 @@ iframe {
     flex-direction: row;
 }
 
-.card{
+.card {
     width: 32%;
     text-align: center;
 }
 
-.card p{
+.card p {
     min-height: 16em;
 }
 
@@ -124,9 +128,9 @@ iframe {
 
 
 hr {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: var(--dark-purple) 1px solid;
 
 }
@@ -148,7 +152,7 @@ hr {
 .call-to-action {
     background: var(--purple);
     height: 70vh;
-     display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -161,7 +165,13 @@ hr {
     width: 30%;
     flex-direction: column;
 }
-.cta-asset{
+
+
+#cta-btn {
+    width: fit-content;
+}
+
+.cta-asset {
     display: flex;
     align-items: end;
 }
@@ -170,7 +180,7 @@ hr {
     width: 300px;
 }
 
-.cta-asset .marlon{
+.cta-asset .marlon {
     width: 350px;
     max-height: 185px;
 }
@@ -197,13 +207,17 @@ hr {
     color: #FBA2B0;
 }
 
-@media screen and (width < 1015px){
-    .images img{
+@media screen and (width < 1015px) {
+    .images img {
         display: none;
     }
 }
 
 @media screen and (max-width: 768px) {
+    #mobileLogo {
+        display: flex;
+    }
+
     .landing-page {
         background-repeat: no-repeat;
         background-size: cover;
@@ -246,7 +260,7 @@ hr {
         flex-direction: column;
     }
 
-    .card{
+    .card {
         width: 100%;
     }
 

@@ -8,6 +8,10 @@ body {
     background: #000;
 }
 
+h1 {
+    margin-top: 1rem;
+}
+
 .card {
     background: #272727;
     width: 80vw;
@@ -17,7 +21,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     overflow: hidden;
-    margin: 10%;
+    margin: 5% 10%;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -73,27 +77,12 @@ button{
     text-align: center;
 }
 
-.monkey-game {
-    filter: opacity(40%);
-}
-
-.monkey-game:hover {
-    filter: opacity(100%);
-    transition: 0.5s;
-}
-
 .snake-game img {
     width: 20%;
+    margin-top: 10px;
 }
 
-.monkey-game img {
-    width: 32%;
-    margin-top: -5%;
-    margin-bottom: -5%;
-}
-
-.snake-game h2,
-.monkey-game {
+.snake-game h2{
     padding-top: 5%;
     color: azure;
     font-weight: 700;

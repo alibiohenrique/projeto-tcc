@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="../components/header/header.css">
     <link rel="stylesheet" href="../styles/utils.css">
-    <link rel="stylesheet" href="../styles/explication.css">
+    <link rel="stylesheet" href="../styles/content.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 
@@ -66,7 +66,7 @@
             </div>
     </main>
 
-    <script src="../assets/script/explication.js"></script>
+    <script src="../assets/script/content.js"></script>
 </body>
 
 </html>

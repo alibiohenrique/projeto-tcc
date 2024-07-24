@@ -75,6 +75,7 @@
 
     <main>
         <div class="landing-page">
+        <img id="mobileLogo" src="assets/images/logo.png" alt="logo" width="250px">
             <div class="top-texts">
                 <h2>
                     Aprenda programação
@@ -137,28 +138,28 @@
         </div>
 
 
-        <h2 class="section-title">Mais sobre esta jornada
+        <h2 class="section-title" data-aos="fade-left">Mais sobre esta jornada
             <hr>
         </h2>
 
         <div class="journey">
 
-            <div class="journey-card">
+            <div class="journey-card" data-aos="fade-left">
                 <img src="./assets/images/nestor.png" alt="" width="180px">
                 <h3>Plataforma Gamificada</h3>
 
             </div>
-            <div class="journey-card">
+            <div class="journey-card" data-aos="fade-left">
                 <img src="./assets/images/carol.png" alt="" width="180px">
                 <h3>2ª a 8ª série</h3>
 
             </div>
-            <div class="journey-card">
+            <div class="journey-card" data-aos="fade-left">
                 <img src="./assets/images/gabriel.png" alt="" width="180px">
                 <h3>Texto baseado em programação</h3>
 
             </div>
-            <div class="journey-card">
+            <div class="journey-card" data-aos="fade-left">
                 <img src="./assets/images/alibio.png" alt="" width="180px">
                 <h3>Controle de Tempo</h3>
 
@@ -166,21 +167,21 @@
 
         </div>
 
-        <div class="call-to-action">
+        <div class="call-to-action" >
             <div class="cta-asset">
-                <img src="assets/images/misael_marlon.png" alt="" width="400px" class="misael">
+                <img src="assets/images/misael_marlon.png" alt="" width="400px" class="misael"data-aos="fade-left">
                
             </div>
             <div class="calling-to-action">
-                <h2>
+                <h2 data-aos="fade-left">
                     Junte-se à <span>KidScript</span>
                 </h2>
                 <br>
-                <h3>
+                <h3 data-aos="fade-left">
                     Aprenda programação de forma interativa e divertida.
                 </h3>
-                <a href="pages/sign-in.php">
-                    <button class="btn login">
+                <a href="pages/sign-in.php" data-aos="fade-left">
+                    <button class="btn login" id="cta-btn">
                         <strong>Comece Hoje</strong>
                     </button>
                 </a>
@@ -193,12 +194,12 @@
     </script>
 </body>
 <footer class="footer">
-<div class="footer-map">
+    <div class="footer-map">
         <a href="https://linktr.ee/kidscript.org">Fale conosco</a>
         <a href="pages/about.php">Sobre nós</a>
         <a href="pages/select-game.php">Aprenda agora</a>
         <a href="pages/unlogged.php">Meu usuário</a>
-       
+
         <a href="https://ios.org.br/">Instituto da Oportunidade Social</a>
 
     </div>
@@ -207,14 +208,15 @@
 
         <p> Todos os direitos reservados.
             <br>
-            Desenvolvido por KidScript™ &reg &copy</p>
+            Desenvolvido por KidScript™ &reg &copy
+        </p>
 
     </div>
-   
+
     <div class="btn-back">
         <a href="#header"><button href="" class="btn">Voltar ao topo</button></a>
     </div>
-    
+
 </footer>
 
 </html>

@@ -6,7 +6,7 @@
     <link rel="icon" href="../assets/images/kidscript-shortcut-icon.png">
     <link rel="stylesheet" href="../components/header/header.css">
     <link rel="stylesheet" href="../styles/utils.css">
-    <link rel="stylesheet" href="../styles/explication.css">
+    <link rel="stylesheet" href="../styles/content.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 
@@ -53,7 +53,7 @@
                         <h2>Algoritmos</h2>
                         <p>Quando juntamos vários comandos, formamos um algoritmo, que é como uma lista de tarefas para as máquinas fazerem.</p>
 
-                        <a href="./explication_copy.php"><button class="btn login">
+                        <a href="./content-1.php"><button class="btn login">
                                 Próximo módulo
                             </button></a>
                     </div>
@@ -61,7 +61,7 @@
             </div>
     </main>
 
-    <script src="../assets/script/explication.js"></script>
+    <script src="../assets/script/content.js"></script>
 </body>
 
 </html>
