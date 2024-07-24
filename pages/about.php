@@ -25,7 +25,7 @@
 
     <main>
 
-        <h2>Sobre Nós</h2>
+        <h2>Sobre Nós</h2 data-aos="fade-left">
 
         <div class="mvv">
             <div class="mission card" data-aos="fade-left">

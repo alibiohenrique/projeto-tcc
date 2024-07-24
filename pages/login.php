@@ -2,6 +2,7 @@
 <?php
 include '../components/configs/config.php';
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username_input = mysqli_real_escape_string($conn, $_POST['username-input']);
     $password_input = mysqli_real_escape_string($conn, $_POST['password-input']);
@@ -9,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "SELECT * FROM users WHERE username = ?";
     $stmt = mysqli_stmt_init($conn);
     if (mysqli_stmt_prepare($stmt, $sql)) {
+        // Esse trecho do código foi gerado por Inteligênicia Artificial
         mysqli_stmt_bind_param($stmt, "s", $username_input);
         mysqli_stmt_execute($stmt);
         $result = mysqli_stmt_get_result($stmt);

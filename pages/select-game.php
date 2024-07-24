@@ -34,10 +34,10 @@
                     <li style="color:#fff"> &diams; Entenda como funcionam as linguagens de estilo</li>
                     <li> &diams; Pratique se divertindo com o snake game</li>
                 </ul>
-                <a href="../pages/explication.php"><button class="btn btn-exp">Conteúdos</button></a>
+                <a href="../pages/content.php"><button class="btn btn-exp">Conteúdos</button></a>
             </div>
             <div class="game">
-                <h2>Com o <span>Snake Game</span></h2>
+                <h2>Snake Game</h2>
 
                 <img src="../assets/images/snake-transparent.png" alt="">
                 <a href="../pages/game.php"><button class="btn btn-exp">
