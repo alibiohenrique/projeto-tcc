@@ -30,7 +30,7 @@
             </li>
             
             <li class="icons">
-                <a href="../pages/unlogged.php" class="navlink">
+                <a href="../pages/profile.php" class="navlink">
                     <span class="material-symbols-outlined">
                         person
                     </span>
