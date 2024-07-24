@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 
     <meta charset="UTF-8">
-    <title>kidscript</title>
+    <title>KidScript | Linguagem de Estilo</title>
 </head>
 
 <body>
