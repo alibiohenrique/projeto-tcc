@@ -25,11 +25,11 @@
 
     <main>
 
-        <h2>Sobre Nós</h2 data-aos="fade-left">
+        <h2 data-aos="fade-left" id="landing-page">Sobre Nós</h2>
 
         <div class="mvv">
 
-        <!--  Utilizção de Data aos para animações da página  -->
+        <!--  Utilização de Data aos para animações da página  -->
 
             <div class="mission card" data-aos="fade-left">
                 <h3>Nossa missão</h3>

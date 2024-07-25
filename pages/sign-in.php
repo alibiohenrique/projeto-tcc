@@ -3,6 +3,11 @@
 
 include '../components/configs/config.php';
 
+if (isset($_SESSION['username'])) {
+    header("Location: profile.php");
+    exit();
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username_input = mysqli_real_escape_string($conn, $_POST['username-input']);
     $password_input = mysqli_real_escape_string($conn, $_POST['password-input']);
