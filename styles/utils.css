@@ -1,4 +1,13 @@
 @charset "utf-8";
+@font-face {
+    font-family: roboto;
+    src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: gliker;
+    src: url(../assets/fonts/Gliker/Gliker-Regular.ttf);
+}
 
 /* default settings  */
 
@@ -9,7 +18,7 @@
     font-family: roboto;
 }
 
-html{
+html {
     overflow-x: hidden;
     scroll-behavior: smooth;
     transition: 0.5s ease;
@@ -41,7 +50,7 @@ p {
     color: var(--dark-purple);
 }
 
-input{
+input {
     outline: none;
 }
 
@@ -84,25 +93,6 @@ input[type="number"] {
     --background: var(--light-purple);
 }
 
-@font-face {
-    font-family: roboto;
-    src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-family: openSans;
-    src: url(../assets/fonts/Open-Sans/OpenSans-VariableFont_wdth\,wght.ttf);
-}
-
-@font-face {
-    font-family: horizon;
-    src: url(../assets/fonts/Horizon-Font/horizon.otf);
-}
-
-@font-face {
-    font-family: gliker;
-    src: url(../assets/fonts/Gliker/Gliker-Regular.ttf);
-}
 
 /* ref */
 
@@ -362,3 +352,11 @@ hr {
 }
 
 /* background blur effect */
+
+.card-msg {
+    background: var(--light-purple);
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+    z-index: 20;
+}
