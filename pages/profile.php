@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Check if user is logged in
+// Checa se o usuário não está logado, se não estiver, então manda para a página de não logado
 if (!isset($_SESSION['username'])) {
     header("Location: unlogged.php");
     exit();
