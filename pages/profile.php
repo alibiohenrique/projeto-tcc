@@ -51,13 +51,13 @@ $name = isset($_SESSION['user_name']) ? $_SESSION['user_name'] : "Nome não disp
         <div class="section profile" id="section">
 
         <div class="logo-profile">
-                <img src="../assets/images/logo.png" alt="" width="250px">
+                <img src="../assets/images/logo.png" alt="Logo Kidscript" width="250px">
             </div>
 
             <div class="profile-card">
 
                 <h2><?php echo htmlspecialchars($name); ?></h2>
-                <img src="../assets/images/user.png" alt="">
+                <img src="../assets/images/user.png" alt="Imagem meu usuário">
                 <h3><?php echo htmlspecialchars($age); ?> anos</h3>
                 <h4><?php echo htmlspecialchars($username); ?></h4>
 

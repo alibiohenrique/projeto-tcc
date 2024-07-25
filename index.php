@@ -33,7 +33,7 @@
     <header>
         <ul class="navbar">
             <li class="logo">
-                <img src="assets/images/logo.png" alt="" width="180px">
+                <img src="assets/images/logo.png" alt="Logo Kidscript" width="180px">
             </li>
 
             <li class="icons">
@@ -72,7 +72,7 @@
 
     <main>
         <div class="landing-page" id="landing-page">
-        <img id="mobileLogo" src="assets/images/logo.png" alt="logo" width="250px">
+        <img id="mobileLogo" src="assets/images/logo.png" alt="Logo Kidscript" width="250px">
             <div class="top-texts">
                 <h2>
                     Aprenda programação
@@ -89,7 +89,7 @@
         </div>
 
         <div class="images">
-            <img src="./assets/images/mascoteInvert.png" alt="">
+            <img src="./assets/images/mascoteInvert.png" alt="Mascote Kidscript">
         </div>
 
         <div class="section landing-seguiment">
@@ -145,22 +145,22 @@
         <div class="journey">
 
             <div class="journey-card" data-aos="fade-left">
-                <img src="./assets/images/nestor.png" alt="" width="180px">
+                <img src="./assets/images/nestor.png" alt="Mascote Nestor" width="180px">
                 <h3>Plataforma Gamificada</h3>
 
             </div>
             <div class="journey-card" data-aos="fade-left">
-                <img src="./assets/images/carol.png" alt="" width="180px">
+                <img src="./assets/images/carol.png" alt="Mascote Carol" width="180px">
                 <h3>2ª a 8ª série</h3>
 
             </div>
             <div class="journey-card" data-aos="fade-left">
-                <img src="./assets/images/gabriel.png" alt="" width="180px">
+                <img src="./assets/images/gabriel.png" alt="Mascote Gabriel" width="180px">
                 <h3>Texto baseado em programação</h3>
 
             </div>
             <div class="journey-card" data-aos="fade-left">
-                <img src="./assets/images/alibio.png" alt="" width="180px">
+                <img src="./assets/images/alibio.png" alt="Mascote Alibio" width="180px">
                 <h3>Controle de Tempo</h3>
 
             </div>
@@ -169,7 +169,7 @@
 
         <div class="call-to-action" >
             <div class="cta-asset">
-                <img src="assets/images/misael_marlon.png" alt="" width="400px" class="misael"data-aos="fade-left">
+                <img src="assets/images/misael_marlon.png" alt="Mascote Marlon" width="400px" class="misael"data-aos="fade-left">
                
             </div>
             <div class="calling-to-action">

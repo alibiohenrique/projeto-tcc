@@ -104,7 +104,7 @@ if (!isset($_SESSION['username'])) {
             </div>
         </div>
         <button id="rotate" onclick="landScape()">
-            <img src="../assets/images/rotate.png" alt="">
+            <img src="../assets/images/rotate.png" alt="Botão de rotacionar">
         </button>
         <button id="toggleNav" onclick="toggleNav()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"

@@ -1,4 +1,3 @@
-
 <?php
 include '../components/configs/config.php';
 
@@ -65,7 +64,7 @@ mysqli_close($conn);
     <div class="container">
         <div class="pop-up login-page">
             <div class="logo-login">
-                <img src="../assets/images/logo.png" alt="" width="250px">
+                <img src="../assets/images/logo.png" alt="Logo Kidscript" width="250px">
             </div>
             <div class="login-title">
                 <h2>LOGIN</h2>
@@ -82,6 +81,7 @@ mysqli_close($conn);
                 <div class="btn-submit input">
                     <input type="submit" value="Entrar" class="btn btn-submit">
                 </div>
+
             </form>
             <div class="input sign-in-page-btn">
                 <a href="sign-in.php">Não tem uma conta? Cadastre-se</a>
