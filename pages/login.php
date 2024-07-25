@@ -28,10 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 header("Location: profile.php");
                 exit();
             } else {
-                echo "Usuário e/ou senha incorreta.";
+                echo "<div class='card-msg'><p>Usuário ou senha incorreta.</p></div>";
             }
         } else {
-            echo "Nenhum usuário encontrado";
+            echo "<div class='card-msg'><p>Nenhum usuário encontrado</p></div>";
         }
     } else {
         echo "Error: " . mysqli_error($conn);
