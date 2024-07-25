@@ -3,6 +3,11 @@
 
 include '../components/configs/config.php';
 
+if (isset($_SESSION['username'])) {
+    header("Location: profile.php");
+    exit();
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username_input = mysqli_real_escape_string($conn, $_POST['username-input']);
     $password_input = mysqli_real_escape_string($conn, $_POST['password-input']);
@@ -14,9 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Checar se as senhas são iguais
     if ($password_input !== $password_input_validation) {
-        echo "Erro: As senhas não coincidem.";
+        echo "<div class='card-msg'><p>Erro: As senhas não coincidem.</p></div>";
     } else if ($email_input !== $email_input_validation) {
-        echo "Erro: Os emails não coincidem.";
+        echo "<div class='card-msg'><p>Erro: Os emails não coincidem.</p></div>";
     } else {
         // Encriptografar a senha que acabou de ser recebida
         // Esse trecho do código foi gerado por Inteligência Artificial

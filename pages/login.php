@@ -1,6 +1,10 @@
 <?php
 include '../components/configs/config.php';
 
+if (isset($_SESSION['username'])) {
+    header("Location: profile.php");
+    exit();
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username_input = mysqli_real_escape_string($conn, $_POST['username-input']);
@@ -23,10 +27,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 header("Location: profile.php");
                 exit();
             } else {
-                echo "Usuário e/ou senha incorreta.";
+                echo "<div class='card-msg'><p>Usuário ou senha incorreta.</p></div>";
             }
         } else {
-            echo "Nenhum usuário encontrado";
+            echo "<div class='card-msg'><p>Nenhum usuário encontrado</p></div>";
         }
     } else {
         echo "Error: " . mysqli_error($conn);

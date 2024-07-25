@@ -39,7 +39,7 @@ $picture = isset($_SESSION['user_picture']) ? $_SESSION['user_picture'] : '../as
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="landing-page">
     <script src="../assets/script/change-picture.js"></script>
 
     <?php include '../components/header/header.php'; ?>

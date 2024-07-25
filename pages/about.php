@@ -25,7 +25,7 @@
 
     <main>
 
-        <h2>Sobre Nós</h2 data-aos="fade-left">
+        <h2 data-aos="fade-left" id="landing-page">Sobre Nós</h2>
 
         <div class="mvv">
 
