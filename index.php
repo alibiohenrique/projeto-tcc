@@ -72,7 +72,7 @@
 
     <main>
         <div class="landing-page" id="landing-page">
-        <img id="mobileLogo" src="assets/images/logo.png" alt="Logo Kidscript" width="250px">
+            <img id="mobileLogo" src="assets/images/logo.png" alt="Logo Kidscript" width="250px">
             <div class="top-texts">
                 <h2>
                     Aprenda programação
@@ -167,10 +167,11 @@
 
         </div>
 
-        <div class="call-to-action" >
+        <div class="call-to-action">
             <div class="cta-asset">
-                <img src="assets/images/misael_marlon.png" alt="Mascote Marlon" width="400px" class="misael"data-aos="fade-left">
-               
+                <img src="assets/images/misael_marlon.png" alt="Mascote Marlon" width="400px" class="misael"
+                    data-aos="fade-left">
+
             </div>
             <div class="calling-to-action">
                 <h2 data-aos="fade-left">

@@ -51,9 +51,15 @@ header {
     color: #fff;
 }
 
-.profile-card img {
+.profile-picture img {
     width: 150px;
     height: 150px;
+}
+
+.change-picture:hover, .profile-picture img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.2s;
 }
 
 .profile-text {
