@@ -1,7 +1,7 @@
 <header id="header">
         <ul class="navbar">
             <li class="logo">
-                <img src="../assets/images/logo.png" alt="" width="180px">
+                <img src="../assets/images/logo.png" alt="Logo Kidscript" width="180px">
             </li>
 
             <li class="icons">

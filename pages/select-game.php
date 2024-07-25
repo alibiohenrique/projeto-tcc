@@ -39,7 +39,7 @@
             <div class="game">
                 <h2>Snake Game</h2>
 
-                <img src="../assets/images/snake-transparent.png" alt="">
+                <img src="../assets/images/snake-transparent.png" alt="Snake Game">
                 <a href="../pages/game.php"><button class="btn btn-exp">
                         Jogar
                     </button></a>

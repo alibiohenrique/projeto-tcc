@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <div class="pop-up sign-in-page">
             <div class="logo-login">
-                <img src="../assets/images/logo.png" alt="" width="250px">
+                <img src="../assets/images/logo.png" alt="Logo Kidscript" width="250px">
             </div>
             <div class="sign-in-title">
                 <h2>FAÇA SEU CADASTRO</h2>

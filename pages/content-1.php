@@ -49,12 +49,12 @@
                         <p>Depois, definimos oque queremos mudar dentro do elemento, como a cor, junto com o valor que define ela.</p>
                         <p> Formando assim esta estrutura de comando:</p>
 
-                        <img src="../assets/images/ex1.png" alt="" width="200px">
+                        <img src="../assets/images/ex1.png" alt="Exemplo 1 Linguagem de estilo" width="200px">
 
                         <h2>Exemplo:</h2>
                         <p>Como exemplo, faremos um código que muda a parede de uma casa ficticia:</p>
                         
-                        <img src="../assets/images/ex2.png" alt="" width="200px">
+                        <img src="../assets/images/ex2.png" alt="Exemplo 2 Linguagem de estilo" width="200px">
                         
                         <h2>Pratique!</h2>
                         <p>Agora que tu já sabe como definir cores diferentes para os elementos da tela, pratique seu aprendizado mudando as cores do jogo Snake Game!</p>
