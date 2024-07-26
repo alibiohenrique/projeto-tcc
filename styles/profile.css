@@ -54,6 +54,8 @@ header {
 .profile-picture img {
     width: 150px;
     height: 150px;
+    border-radius: 50%;
+    border: 0.15rem solid var(--yellow);
 }
 
 .profile-picture img:hover {
