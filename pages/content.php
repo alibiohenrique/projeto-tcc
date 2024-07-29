@@ -49,7 +49,7 @@
                         <p>A programação tem diferentes linguagens, que são maneiras de falar com as máquinas e usamos essas linguagens para escrever comandos com palavras e símbolos. </p>
 
                         <h2>Comandos</h2>
-                        <p>Os comandos são escritos com palavras e simbolos que dizem as máquinas o que elas devem fazer passo a passo e seguirem a ordem correta .</p>
+                        <p>Os comandos são escritos com palavras e símbolos que dizem as máquinas o que elas devem fazer passo a passo e seguirem a ordem correta .</p>
 
 
                         <h2>Algoritmos</h2>

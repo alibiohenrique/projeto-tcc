@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" href="../assets/images/kidscript-shortcut-icon.png">
     <link rel="stylesheet" href="../components/header/header.css">
     <link rel="stylesheet" href="../styles/utils.css">
     <link rel="stylesheet" href="../styles/content.css">
